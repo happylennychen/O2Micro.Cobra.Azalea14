@@ -7169,9 +7169,6 @@
           <Group>Azalea14</Group>
           <Description>thm1_adc_data_8t</Description>
         </SFL>
-        <SFL Name="Trim">
-          <Order>17</Order>
-        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00037900">
@@ -7269,8 +7266,8 @@
     </Element>
     <Element Guid="0x00037C00">
       <PhysicalData>0</PhysicalData>
-      <PhyRef>1</PhyRef>
-      <RegRef>1</RegRef>
+      <PhyRef>12.5</PhyRef>
+      <RegRef>4</RegRef>
       <SubType>0</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
@@ -7295,6 +7292,9 @@
           <Write>false</Write>
           <Group>Azalea14</Group>
           <Description>vbatt_adc_data_8t</Description>
+        </SFL>
+        <SFL Name="Trim">
+          <Order>17</Order>
         </SFL>
       </Private>
     </Element>

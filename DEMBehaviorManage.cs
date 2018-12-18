@@ -447,9 +447,10 @@ namespace O2Micro.Cobra.Azalea14
                 #region trim
                 case ElementDefine.COMMAND.SLOP_TRIM:
                     Parameter[] voltageparams = new Parameter[14];
-                    Parameter[] tempparams = new Parameter[2];
+                    Parameter tempparam = new Parameter();
                     Parameter sarcurrparam = new Parameter();
                     Parameter ccurrparam = new Parameter();
+                    Parameter vbatt = new Parameter();
                     ParamContainer demparameterlist = msg.task_parameterlist;
                     if (demparameterlist == null) return ret;
 
@@ -462,10 +463,9 @@ namespace O2Micro.Cobra.Azalea14
                             byte index = (byte)((param.guid - 0x00036100) >> 8);
                             voltageparams[index] = param;
                         }
-                        else if (param.guid <= 0x00037700 && param.guid >= 0x00037600)
+                        else if (param.guid == 0x00037600)
                         {
-                            byte index = (byte)((param.guid - 0x00037600) >> 8);
-                            tempparams[index] = param;
+                            tempparam = param;
                         }
                         else if (param.guid == 0x00037500)
                         {
@@ -474,6 +474,10 @@ namespace O2Micro.Cobra.Azalea14
                         else if (param.guid == 0x00033900)
                         {
                             ccurrparam = param;
+                        }
+                        else if (param.guid == 0x00037c00)
+                        {
+                            vbatt = param;
                         }
 
                     }
@@ -490,6 +494,8 @@ namespace O2Micro.Cobra.Azalea14
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
                     #endregion
                     #region Clear Offset
+                    ret = WriteWord(0x93, 0);
+                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
                     ret = WriteWord(0x9a, 0);
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
                     ret = WriteWord(0x9b, 0);
@@ -498,7 +504,7 @@ namespace O2Micro.Cobra.Azalea14
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
                     ret = WriteWord(0x9d, 0);
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
-                    ret = WriteWord(0x93, 0);
+                    ret = WriteWord(0x9e, 0);
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
                     ret = WriteWord(0x9f, 0);
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
@@ -551,26 +557,17 @@ namespace O2Micro.Cobra.Azalea14
                         #endregion
                         Thread.Sleep(100);
                         #region read adc
-                        ushort[] tempadc = new ushort[2];
-                        for (byte i = 0; i < 2; i++)
-                        {
-                            ret = ReadWord((byte)(i + 0x76), ref tempadc[i]);
-                            if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
-                        }
+                        ushort tempadc = new ushort();
+                        ret = ReadWord(0x76, ref tempadc);
+                        if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
                         #endregion
                         #region calculate
-                        double[] tempphy = new double[2];
-                        for (byte i = 0; i < 2; i++)
-                        {
-                            short s = (short)tempadc[i];
-                            tempphy[i] = s * 0.3125 / 4;
-                        }
+                        double tempphy = new double();
+                        short s = (short)tempadc;
+                        tempphy = s * 0.3125 / 4;
                         #endregion
                         #region save
-                        for (byte i = 0; i < 2; i++)
-                        {
-                            tempparams[i].sphydata += tempphy[i].ToString() + ",";
-                        }
+                        tempparam.sphydata += tempphy.ToString() + ",";
                         #endregion
                     }
                     #endregion
@@ -642,7 +639,29 @@ namespace O2Micro.Cobra.Azalea14
                         ccurrparam.sphydata += ccurrphy.ToString() + ",";
                         #endregion
                     }
-#endregion
+                    #endregion
+                    #region vbatt
+                    for (ushort code = 0; code < 16; code++)
+                    {
+                        #region write code
+                        ret = WriteWord(0x99, (ushort)(code<<8));
+                        if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
+                        #endregion
+                        Thread.Sleep(100);
+                        #region read adc
+                        ushort vbattadc = 0;
+                        ret = ReadWord((byte)(0x7c), ref vbattadc);
+                        if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
+                        #endregion
+                        #region calculate
+                        double vbattphy = 0;
+                        vbattphy = vbattadc * 12.5 / 4;
+                        #endregion
+                        #region save
+                        vbatt.sphydata += vbattphy.ToString() + ",";
+                        #endregion
+                    }
+                    #endregion
                     break;
         #endregion
             }
