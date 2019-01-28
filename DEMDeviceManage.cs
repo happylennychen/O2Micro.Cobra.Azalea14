@@ -18,18 +18,15 @@ namespace O2Micro.Cobra.Azalea14
         {
             get { return (m_busoption.GetATMElementbyGuid(AutomationElement.GUIDATMTestStart).dbValue > 0); }
         }
-
-        private double m_EtRx;
-        internal double etrx
+        private double m_Rsense;
+        internal double rsense
         {
             get
             {
-                Parameter param = tempParamlist.GetParameterByGuid(ElementDefine.TpETRx);
-                if (param == null) return 0.0;
+                Parameter param = tempParamlist.GetParameterByGuid(ElementDefine.TpRsense);
+                if (param == null) return 2.5;
                 else return param.phydata;
-                //return m_PullupR; 
             }
-            //set { m_PullupR = value; }
         }
 
         //internal ParamContainer EFParamlist = null;
@@ -54,12 +51,27 @@ namespace O2Micro.Cobra.Azalea14
         #endregion
         #region Enable Control bit
         #endregion
+
         #region Dynamic ErrorCode
         public Dictionary<UInt32, string> m_dynamicErrorLib_dic = new Dictionary<uint, string>()
         {
+            {ElementDefine.IDS_ERR_DEM_READCADC_TIMEOUT,"Read CADC timeout!"},
         };
         #endregion
 
+
+        public ElementDefine.CADC_MODE cadc_mode = ElementDefine.CADC_MODE.DISABLE;
+
+        public struct THM
+        {
+            public ushort ADC1;
+            public ushort ADC2;
+            public ushort max;
+            public ushort min;
+            public ushort thm_crrt;
+        }
+
+        public THM[] thms = new THM[2];
         #endregion
 
         #region other functions

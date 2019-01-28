@@ -64,8 +64,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="xml y\DeviceDescriptor.xml" />
-    <Content Include="xml y\ExtensionDescriptor.xml" />
+    <Content Include="xml y\DeviceDescriptor.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="xml y\ExtensionDescriptor.xml">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="xml m\" />

@@ -73,24 +73,96 @@ namespace O2Micro.Cobra.Azalea14
         public void Hex2Physical(ref Parameter p)
         {
             UInt16 wdata = 0;
-            double dtmp = 0;
+            double ddata = 0;
+            short sdata = 0;
             UInt32 ret = LibErrorCode.IDS_ERR_SUCCESSFUL;
 
             if (p == null) return;
             switch ((ElementDefine.SUBTYPE)p.subtype)
             {
-                default:
+                case ElementDefine.SUBTYPE.VOLTAGE:
+                    ret = ReadSignedFromRegImg(p, ref sdata);
+                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
                     {
-                        ret = ReadFromRegImg(p, ref wdata);
-                        if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
-                        {
-                            p.phydata = ElementDefine.PARAM_PHYSICAL_ERROR;
-                            break;
-                        }
-                        dtmp = (double)((double)wdata * p.phyref / p.regref);
-                        p.phydata = dtmp + p.offset;
+                        p.phydata = ElementDefine.PARAM_PHYSICAL_ERROR;
                         break;
                     }
+                    p.phydata = Regular2Physical(sdata, p.regref, p.phyref);
+                    break;
+                case ElementDefine.SUBTYPE.INT_TEMP:
+                    ret = ReadSignedFromRegImg(p, ref sdata);
+                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                    {
+                        p.phydata = ElementDefine.PARAM_PHYSICAL_ERROR;
+                        break;
+                    }
+                    ddata = Regular2Physical(sdata, p.regref, p.phyref);
+                    p.phydata = (double)((ddata - 1252.5) / 4.345 + 23.0);
+                    break;
+                case ElementDefine.SUBTYPE.EXT_TEMP:
+                    int index = 0;
+                    switch (p.guid)
+                    {
+                        case 0x00031300: index = 0; break;
+                        case 0x00031400: index = 1; break;
+                        case 0x00031500: index = 2; break;
+                        case 0x00031600: index = 3; break;
+                        case 0x00031700: index = 4; break;
+                    }
+
+                    ret = ReadFromRegImg(p, ref wdata);
+                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                    {
+                        p.phydata = ElementDefine.PARAM_PHYSICAL_ERROR;
+                        break;
+                    }
+                    ushort Cref = 0;
+                    Cref = parent.thms[index].thm_crrt;
+                    ddata = Regular2Physical(wdata, p.regref, p.phyref);
+                    ddata = ddata * 1000 / Cref;
+                    p.phydata = ResistToTemp(ddata);
+                    break;
+                case ElementDefine.SUBTYPE.SAR_CURRENT:
+                    ret = ReadFromRegImg(p, ref wdata);
+                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                    {
+                        p.phydata = ElementDefine.PARAM_PHYSICAL_ERROR;
+                        break;
+                    }
+                    sdata = (short)wdata;
+                    p.phydata = sdata * p.phyref * 1000 / parent.rsense; //需要带符号
+                    break;
+                case ElementDefine.SUBTYPE.CADC:
+                    if (parent.cadc_mode == ElementDefine.CADC_MODE.DISABLE)
+                        wdata = 0;
+                    else if (parent.cadc_mode == ElementDefine.CADC_MODE.TRIGGER)
+                    {
+                        wdata = parent.m_OpRegImg[0x39].val;
+                        ret = parent.m_OpRegImg[0x39].err;
+                    }
+                    else if (parent.cadc_mode == ElementDefine.CADC_MODE.MOVING)
+                    {
+                        wdata = parent.m_OpRegImg[0x17].val;
+                        ret = parent.m_OpRegImg[0x17].err;
+                    }
+                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                    {
+                        p.phydata = ElementDefine.PARAM_PHYSICAL_ERROR;
+                        break;
+                    }
+                    sdata = (short)wdata;
+                    p.phydata = sdata * p.phyref * 1000 / parent.rsense; //需要带符号
+                    break;
+                default:
+                    ret = ReadFromRegImg(p, ref wdata);
+                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                    {
+                        p.phydata = ElementDefine.PARAM_PHYSICAL_ERROR;
+                        break;
+                    }
+                    ddata = (double)((double)wdata * p.phyref / p.regref);
+                    p.phydata = ddata + p.offset;
+                    break;
             }
         }
 
@@ -111,6 +183,21 @@ namespace O2Micro.Cobra.Azalea14
             return dval;
         }
 
+        /// <summary>
+        /// 转换Hex -> Physical
+        /// </summary>
+        /// <param name="sVal"></param>
+        /// <param name="RegularRef"></param>
+        /// <param name="PhysicalRef"></param>
+        /// <returns></returns>
+        private double Regular2Physical(short sVal, double RegularRef, double PhysicalRef)
+        {
+            double dval;
+
+            dval = (double)((double)(sVal * PhysicalRef) / (double)RegularRef);
+
+            return (double)dval;
+        }
         /// <summary>
         /// 转换Physical -> Hex
         /// </summary>

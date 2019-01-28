@@ -251,7 +251,552 @@
       </Private>
     </Element>
   </Section>
-  <Section Name="BoardSettings" Guid="0x00010000">
+  <Section Name ="BoardSettings" Guid ="0x00010000">
+    <Element Guid ="0x00010000">
+      <PhysicalData>2.5</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>41</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>0</Order>
+          <NickName>Rsense(mohm)</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>2.5</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0.1</MinValue>
+          <MaxValue>25.5</MaxValue>
+          <Description>The value of the sensor resistor</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010002">
+      <PhysicalData>111300</PhysicalData>
+      <Key>-30</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>1</Order>
+          <NickName>-30℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>111300</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010003">
+      <PhysicalData>86430</PhysicalData>
+      <Key>-25</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>2</Order>
+          <NickName>-25℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>86430</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010004">
+      <PhysicalData>67770</PhysicalData>
+      <Key>-20</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>3</Order>
+          <NickName>-20℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>67770</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010005">
+      <PhysicalData>53410</PhysicalData>
+      <Key>-15</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>4</Order>
+          <NickName>-15℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>53410</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010006">
+      <PhysicalData>42470</PhysicalData>
+      <Key>-10</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>5</Order>
+          <NickName>-10℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>42470</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010007">
+      <PhysicalData>33900</PhysicalData>
+      <Key>-5</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>6</Order>
+          <NickName>-5℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>33900</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010008">
+      <PhysicalData>27280</PhysicalData>
+      <Key>0</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>7</Order>
+          <NickName>0℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>27280</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010009">
+      <PhysicalData>22050</PhysicalData>
+      <Key>5</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>8</Order>
+          <NickName>5℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>22050</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x0001000A">
+      <PhysicalData>17960</PhysicalData>
+      <Key>10</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>9</Order>
+          <NickName>10℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>17960</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x0001000B">
+      <PhysicalData>14690</PhysicalData>
+      <Key>15</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>0a</Order>
+          <NickName>15℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>14690</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x0001000C">
+      <PhysicalData>12090</PhysicalData>
+      <Key>20</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>0b</Order>
+          <NickName>20℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>12090</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x0001000D">
+      <PhysicalData>10000</PhysicalData>
+      <Key>25</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>0c</Order>
+          <NickName>25℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>10000</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x0001000E">
+      <PhysicalData>8313</PhysicalData>
+      <Key>30</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>0d</Order>
+          <NickName>30℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>8313</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x0001000F">
+      <PhysicalData>6940</PhysicalData>
+      <Key>35</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>0e</Order>
+          <NickName>35℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>6940</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010010">
+      <PhysicalData>5827</PhysicalData>
+      <Key>40</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>0f</Order>
+          <NickName>40℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>5827</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010011">
+      <PhysicalData>4911</PhysicalData>
+      <Key>45</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>10</Order>
+          <NickName>45℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>4911</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010012">
+      <PhysicalData>4160</PhysicalData>
+      <Key>50</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>11</Order>
+          <NickName>50℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>4160</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010013">
+      <PhysicalData>3800</PhysicalData>
+      <Key>55</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>12</Order>
+          <NickName>55℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>3800</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010014">
+      <PhysicalData>3020</PhysicalData>
+      <Key>60</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>13</Order>
+          <NickName>60℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>3020</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010015">
+      <PhysicalData>2588</PhysicalData>
+      <Key>65</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>14</Order>
+          <NickName>65℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>2588</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010016">
+      <PhysicalData>2228</PhysicalData>
+      <Key>70</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>15</Order>
+          <NickName>70℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>2228</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010017">
+      <PhysicalData>1924</PhysicalData>
+      <Key>75</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>16</Order>
+          <NickName>75℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>1924</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010018">
+      <PhysicalData>1668</PhysicalData>
+      <Key>80</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>17</Order>
+          <NickName>80℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>1668</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010019">
+      <PhysicalData>1451</PhysicalData>
+      <Key>85</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>18</Order>
+          <NickName>85℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>1451</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x0001001A">
+      <PhysicalData>1266</PhysicalData>
+      <Key>90</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="Board Config">
+          <Order>19</Order>
+          <NickName>90℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>1266</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
   </Section>
   <Section Name="Operation" Guid="0x00030000">
     <Element Guid="0x00030000">
@@ -376,6 +921,18 @@
           <Group>Azalea14</Group>
           <Description>final_cadc_flag</Description>
         </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>0</Order>
+          <NickName>final cadc flag</NickName>
+          <LogName>final cadc flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>final cadc flag</Description>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00030101">
@@ -406,6 +963,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>cadc_trigger_flag</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>1</Order>
+          <NickName>cadc trigger flag</NickName>
+          <LogName>cadc trigger flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>cadc trigger flag</Description>
         </SFL>
       </Private>
     </Element>
@@ -438,6 +1007,18 @@
           <Group>Azalea14</Group>
           <Description>cadc_moving_flag</Description>
         </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>2</Order>
+          <NickName>cadc moving flag</NickName>
+          <LogName>cadc moving flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>cadc moving flag</Description>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00030103">
@@ -468,6 +1049,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>cc_overflow_flag</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>3</Order>
+          <NickName>cc overflow flag</NickName>
+          <LogName>cc overflow flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>cc overflow flag</Description>
         </SFL>
       </Private>
     </Element>
@@ -500,6 +1093,18 @@
           <Group>Azalea14</Group>
           <Description>auto_scan_flag</Description>
         </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>4</Order>
+          <NickName>auto scan flag</NickName>
+          <LogName>auto scan flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>auto scan flag</Description>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00030105">
@@ -530,6 +1135,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>trigger_scan_flag</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>5</Order>
+          <NickName>trigger scan flag</NickName>
+          <LogName>trigger scan flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>trigger scan flag</Description>
         </SFL>
       </Private>
     </Element>
@@ -562,6 +1179,18 @@
           <Group>Azalea14</Group>
           <Description>trigger_single_flag</Description>
         </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>6</Order>
+          <NickName>trigger single flag</NickName>
+          <LogName>trigger single flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>trigger single flag</Description>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00030107">
@@ -592,6 +1221,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>trigger_sync_flag</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>7</Order>
+          <NickName>trigger sync flag</NickName>
+          <LogName>trigger sync flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>trigger sync flag</Description>
         </SFL>
       </Private>
     </Element>
@@ -624,6 +1265,18 @@
           <Group>Azalea14</Group>
           <Description>int_trigger_flag</Description>
         </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>8</Order>
+          <NickName>int trigger flag</NickName>
+          <LogName>int trigger flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>int trigger flag</Description>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00030109">
@@ -654,6 +1307,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>mcu_timeout_flag</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>9</Order>
+          <NickName>mcu timeout flag</NickName>
+          <LogName>mcu timeout flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>mcu timeout flag</Description>
         </SFL>
       </Private>
     </Element>
@@ -686,6 +1351,18 @@
           <Group>Azalea14</Group>
           <Description>chgrin_wkup_flag</Description>
         </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>a</Order>
+          <NickName>chgrin wkup flag</NickName>
+          <LogName>chgrin wkup flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>chgrin wkup flag</Description>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x0003010B">
@@ -716,6 +1393,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>chgrin_flag</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>b</Order>
+          <NickName>chgrin flag</NickName>
+          <LogName>chgrin flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>chgrin flag</Description>
         </SFL>
       </Private>
     </Element>
@@ -1182,6 +1871,18 @@
           <Group>Azalea14</Group>
           <Description>scp_flag</Description>
         </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>c</Order>
+          <NickName>scp flag</NickName>
+          <LogName>scp flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>scp flag</Description>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00030301">
@@ -1212,6 +1913,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>doc2p_flag</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>d</Order>
+          <NickName>doc2p flag</NickName>
+          <LogName>doc2p flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>doc2p flag</Description>
         </SFL>
       </Private>
     </Element>
@@ -1244,6 +1957,18 @@
           <Group>Azalea14</Group>
           <Description>doc1p_flag</Description>
         </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>e</Order>
+          <NickName>doc1p flag</NickName>
+          <LogName>doc1p flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>doc1p flag</Description>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00030303">
@@ -1274,6 +1999,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>cocp_flag</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>f</Order>
+          <NickName>cocp flag</NickName>
+          <LogName>cocp flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>cocp flag</Description>
         </SFL>
       </Private>
     </Element>
@@ -1306,6 +2043,18 @@
           <Group>Azalea14</Group>
           <Description>ovp_flag</Description>
         </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>10</Order>
+          <NickName>ovp flag</NickName>
+          <LogName>ovp flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>ovp flag</Description>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00030305">
@@ -1336,6 +2085,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>iotp_flag</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>11</Order>
+          <NickName>iotp flag</NickName>
+          <LogName>iotp flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>iotp flag</Description>
         </SFL>
       </Private>
     </Element>
@@ -1368,6 +2129,18 @@
           <Group>Azalea14</Group>
           <Description>indsg_flag</Description>
         </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>12</Order>
+          <NickName>indsg flag</NickName>
+          <LogName>indsg flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>indsg flag</Description>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00030307">
@@ -1398,6 +2171,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>uvp_flag</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>13</Order>
+          <NickName>uvp flag</NickName>
+          <LogName>uvp flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>uvp flag</Description>
         </SFL>
       </Private>
     </Element>
@@ -1430,6 +2215,18 @@
           <Group>Azalea14</Group>
           <Description>isens_wkup_flag</Description>
         </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>14</Order>
+          <NickName>isens wkup flag</NickName>
+          <LogName>isens wkup flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>isens wkup flag</Description>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00030309">
@@ -1460,6 +2257,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>pin_wkup_flag</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>15</Order>
+          <NickName>pin wkup flag</NickName>
+          <LogName>pin wkup flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>pin wkup flag</Description>
         </SFL>
       </Private>
     </Element>
@@ -1492,6 +2301,18 @@
           <Group>Azalea14</Group>
           <Description>timer_wkup_flag</Description>
         </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>16</Order>
+          <NickName>timer wkup flag</NickName>
+          <LogName>timer wkup flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>timer wkup flag</Description>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x0003030B">
@@ -1522,6 +2343,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>loadon_flag</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>17</Order>
+          <NickName>loadon flag</NickName>
+          <LogName>loadon flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>loadon flag</Description>
         </SFL>
       </Private>
     </Element>
@@ -1554,6 +2387,18 @@
           <Group>Azalea14</Group>
           <Description>loadoff_flag</Description>
         </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>18</Order>
+          <NickName>loadoff flag</NickName>
+          <LogName>loadoff flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>loadoff flag</Description>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x0003030D">
@@ -1584,6 +2429,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>i2c_timeout_flag</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>19</Order>
+          <NickName>i2c timeout flag</NickName>
+          <LogName>i2c timeout flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>i2c timeout flag</Description>
         </SFL>
       </Private>
     </Element>
@@ -1616,6 +2473,18 @@
           <Group>Azalea14</Group>
           <Description>cb_timeout_flag</Description>
         </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>1a</Order>
+          <NickName>cb timeout flag</NickName>
+          <LogName>cb timeout flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>cb timeout flag</Description>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x0003030F">
@@ -1646,6 +2515,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>porn_flag</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>1b</Order>
+          <NickName>porn flag</NickName>
+          <LogName>porn flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>porn flag</Description>
         </SFL>
       </Private>
     </Element>
@@ -3261,6 +4142,37 @@
         </SFL>
       </Private>
     </Element>
+    <Element Guid="0x00030F01">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>3f</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>63</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>F</Address>
+          <StartBit>1</StartBit>
+          <BitsNumber>6</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>F</Index>
+          <BitStart>1</BitStart>
+          <Length>6</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>Reserved</Description>
+        </SFL>
+      </Private>
+    </Element>
     <Element Guid="0x00030F07">
       <PhysicalData>0</PhysicalData>
       <PhyRef>1</PhyRef>
@@ -3289,6 +4201,37 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>sw_mapping_req</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x00030F08">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>ff</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>255</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>F</Address>
+          <StartBit>8</StartBit>
+          <BitsNumber>8</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>F</Index>
+          <BitStart>8</BitStart>
+          <Length>8</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>Reserved</Description>
         </SFL>
       </Private>
     </Element>
@@ -3476,6 +4419,19 @@
           <Group>Azalea14</Group>
           <Description>chgrin_valid</Description>
         </SFL>
+        <SFL Name="Scan">
+          <NickName>chgrin valid</NickName>
+          <Group>3</Group>
+          <SubGroup>0</SubGroup>
+          <GroupName>State Group</GroupName>
+          <Order>0</Order>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Description>chgrin valid</Description>
+          <LogName>chgrin valid</LogName>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00031201">
@@ -3506,6 +4462,19 @@
           <Write>false</Write>
           <Group>Azalea14</Group>
           <Description>loadoff_valid</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <NickName>loadoff valid</NickName>
+          <Group>3</Group>
+          <SubGroup>0</SubGroup>
+          <GroupName>State Group</GroupName>
+          <Order>1</Order>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Description>loadoff valid</Description>
+          <LogName>loadoff valid</LogName>
         </SFL>
       </Private>
     </Element>
@@ -3538,6 +4507,19 @@
           <Group>Azalea14</Group>
           <Description>loadon_valid</Description>
         </SFL>
+        <SFL Name="Scan">
+          <NickName>loadon valid</NickName>
+          <Group>3</Group>
+          <SubGroup>0</SubGroup>
+          <GroupName>State Group</GroupName>
+          <Order>2</Order>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Description>loadon valid</Description>
+          <LogName>loadon valid</LogName>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00031203">
@@ -3568,6 +4550,19 @@
           <Write>false</Write>
           <Group>Azalea14</Group>
           <Description>in_chg_state</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>3</Group>
+          <SubGroup>0</SubGroup>
+          <GroupName>State Group</GroupName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Order>3</Order>
+          <NickName>in chg valid</NickName>
+          <Description>in chg valid</Description>
+          <LogName>in chg valid</LogName>
         </SFL>
       </Private>
     </Element>
@@ -3600,6 +4595,19 @@
           <Group>Azalea14</Group>
           <Description>in_dsg_state</Description>
         </SFL>
+        <SFL Name="Scan">
+          <Group>3</Group>
+          <SubGroup>0</SubGroup>
+          <GroupName>State Group</GroupName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Order>4</Order>
+          <NickName>in dsg valid</NickName>
+          <Description>in dsg valid</Description>
+          <LogName>in dsg valid</LogName>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00031205">
@@ -3630,6 +4638,19 @@
           <Write>false</Write>
           <Group>Azalea14</Group>
           <Description>scp_event</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>3</Group>
+          <SubGroup>0</SubGroup>
+          <GroupName>State Group</GroupName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Order>5</Order>
+          <NickName>scp event</NickName>
+          <Description>scp event</Description>
+          <LogName>scp event</LogName>
         </SFL>
       </Private>
     </Element>
@@ -3662,6 +4683,19 @@
           <Group>Azalea14</Group>
           <Description>doc2p_event</Description>
         </SFL>
+        <SFL Name="Scan">
+          <Group>3</Group>
+          <SubGroup>0</SubGroup>
+          <GroupName>State Group</GroupName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Order>6</Order>
+          <NickName>doc2p event</NickName>
+          <Description>doc2p event</Description>
+          <LogName>doc2p event</LogName>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00031207">
@@ -3692,6 +4726,19 @@
           <Write>false</Write>
           <Group>Azalea14</Group>
           <Description>doc1p_event</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>3</Group>
+          <SubGroup>0</SubGroup>
+          <GroupName>State Group</GroupName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Order>7</Order>
+          <NickName>doc1p event</NickName>
+          <Description>doc1p event</Description>
+          <LogName>doc1p event</LogName>
         </SFL>
       </Private>
     </Element>
@@ -3724,6 +4771,19 @@
           <Group>Azalea14</Group>
           <Description>cocp_event</Description>
         </SFL>
+        <SFL Name="Scan">
+          <Group>3</Group>
+          <SubGroup>0</SubGroup>
+          <GroupName>State Group</GroupName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Order>8</Order>
+          <NickName>cocp event</NickName>
+          <Description>cocp event</Description>
+          <LogName>cocp event</LogName>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00031209">
@@ -3754,6 +4814,19 @@
           <Write>false</Write>
           <Group>Azalea14</Group>
           <Description>ovp_event</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>3</Group>
+          <SubGroup>0</SubGroup>
+          <GroupName>State Group</GroupName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Order>9</Order>
+          <NickName>ovp event</NickName>
+          <Description>ovp event</Description>
+          <LogName>ovp event</LogName>
         </SFL>
       </Private>
     </Element>
@@ -3786,6 +4859,19 @@
           <Group>Azalea14</Group>
           <Description>iotp_state</Description>
         </SFL>
+        <SFL Name="Scan">
+          <Group>3</Group>
+          <SubGroup>0</SubGroup>
+          <GroupName>State Group</GroupName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Order>a</Order>
+          <NickName>iotp event</NickName>
+          <Description>iotp event</Description>
+          <LogName>iotp event</LogName>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x0003120B">
@@ -3816,6 +4902,19 @@
           <Write>false</Write>
           <Group>Azalea14</Group>
           <Description>dsg_drv</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>3</Group>
+          <SubGroup>0</SubGroup>
+          <GroupName>State Group</GroupName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Order>b</Order>
+          <NickName>dsg drv</NickName>
+          <Description>dsg drv</Description>
+          <LogName>dsg drv</LogName>
         </SFL>
       </Private>
     </Element>
@@ -3848,6 +4947,19 @@
           <Group>Azalea14</Group>
           <Description>chg_drv</Description>
         </SFL>
+        <SFL Name="Scan">
+          <Group>3</Group>
+          <SubGroup>0</SubGroup>
+          <GroupName>State Group</GroupName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Order>c</Order>
+          <NickName>chg drv</NickName>
+          <Description>chg drv</Description>
+          <LogName>chg drv</LogName>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x0003120D">
@@ -3878,6 +4990,19 @@
           <Write>false</Write>
           <Group>Azalea14</Group>
           <Description>ohtp_state</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>3</Group>
+          <SubGroup>0</SubGroup>
+          <GroupName>State Group</GroupName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Order>d</Order>
+          <NickName>ohtp state</NickName>
+          <Description>ohtp state</Description>
+          <LogName>ohtp state</LogName>
         </SFL>
       </Private>
     </Element>
@@ -3910,6 +5035,19 @@
           <Group>Azalea14</Group>
           <Description>uvp_event</Description>
         </SFL>
+        <SFL Name="Scan">
+          <Group>3</Group>
+          <SubGroup>0</SubGroup>
+          <GroupName>State Group</GroupName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Order>e</Order>
+          <NickName>uvp event</NickName>
+          <Description>uvp event</Description>
+          <LogName>uvp event</LogName>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x0003120F">
@@ -3940,6 +5078,19 @@
           <Write>false</Write>
           <Group>Azalea14</Group>
           <Description>indsg_state</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>3</Group>
+          <SubGroup>0</SubGroup>
+          <GroupName>State Group</GroupName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Order>f</Order>
+          <NickName>indsg state</NickName>
+          <Description>indsg state</Description>
+          <LogName>indsg state</LogName>
         </SFL>
       </Private>
     </Element>
@@ -5586,37 +6737,6 @@
         </SFL>
       </Private>
     </Element>
-    <Element Guid="0x00033805">
-      <PhysicalData>0</PhysicalData>
-      <PhyRef>1</PhyRef>
-      <RegRef>1</RegRef>
-      <SubType>0</SubType>
-      <HexMin>0</HexMin>
-      <HexMax>1</HexMax>
-      <PhyMin>0</PhyMin>
-      <PhyMax>1</PhyMax>
-      <LocationList>
-        <Location Position="Low">
-          <Address>38</Address>
-          <StartBit>5</StartBit>
-          <BitsNumber>1</BitsNumber>
-        </Location>
-      </LocationList>
-      <Private>
-        <SFL Name="Expert">
-          <CustomerMode>true</CustomerMode>
-          <BitTotal>10</BitTotal>
-          <Index>38</Index>
-          <BitStart>5</BitStart>
-          <Length>1</Length>
-          <Value>0</Value>
-          <Read>true</Read>
-          <Write>false</Write>
-          <Group>Azalea14</Group>
-          <Description>cadc_dither_enable</Description>
-        </SFL>
-      </Private>
-    </Element>
     <Element Guid="0x00033806">
       <PhysicalData>0</PhysicalData>
       <PhyRef>1</PhyRef>
@@ -5642,6 +6762,37 @@
           <Length>1</Length>
           <Value>0</Value>
           <Read>true</Read>
+          <Write>false</Write>
+          <Group>Azalea14</Group>
+          <Description>cadc_dither_enable</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x00033807">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>38</Address>
+          <StartBit>7</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>38</Index>
+          <BitStart>7</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>sw_cadc_dither_enable</Description>
@@ -5650,9 +6801,9 @@
     </Element>
     <Element Guid="0x00033900">
       <PhysicalData>0</PhysicalData>
-      <PhyRef>7.8125</PhyRef>
+      <PhyRef>0.0078125</PhyRef>
       <RegRef>1</RegRef>
-      <SubType>0</SubType>
+      <SubType>5</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -5679,6 +6830,23 @@
         </SFL>
         <SFL Name="Trim">
           <Order>0</Order>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>2</Group>
+          <SubGroup>0</SubGroup>
+          <Order>1</Order>
+          <LogName>cadc data</LogName>
+          <NickName>2</NickName>
+          <DefValue>0</DefValue>
+          <MinValue>-10000</MinValue>
+          <MaxValue>10000</MaxValue>
+          <Usability>false</Usability>
+          <Description>cadc data</Description>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>cadc</LogName>
+          <Order>22</Order>
         </SFL>
       </Private>
     </Element>
@@ -6567,9 +7735,9 @@
     </Element>
     <Element Guid="0x00036000">
       <PhysicalData>0</PhysicalData>
-      <PhyRef>1</PhyRef>
+      <PhyRef>0.078125</PhyRef>
       <RegRef>1</RegRef>
-      <SubType>0</SubType>
+      <SubType>1</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -6594,13 +7762,30 @@
           <Group>Azalea14</Group>
           <Description>int_adc_data_8t</Description>
         </SFL>
+        <SFL Name="Scan">
+          <NickName>IntTmp</NickName>
+          <Group>1</Group>
+          <SubGroup>0</SubGroup>
+          <Order>0</Order>
+          <DefValue>25</DefValue>
+          <MinValue>-256</MinValue>
+          <MaxValue>256</MaxValue>
+          <Usability>false</Usability>
+          <Description>intmp</Description>
+          <LogName>intmp</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>intmp</LogName>
+          <Order>0</Order>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00036100">
       <PhysicalData>0</PhysicalData>
       <PhyRef>0.625</PhyRef>
       <RegRef>4</RegRef>
-      <SubType>0</SubType>
+      <SubType>3</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -6628,13 +7813,30 @@
         <SFL Name="Trim">
           <Order>1</Order>
         </SFL>
+        <SFL Name="Scan">
+          <NickName>Cell1</NickName>
+          <Group>0</Group>
+          <SubGroup>0</SubGroup>
+          <Order>0</Order>
+          <DefValue>2000</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>5000</MaxValue>
+          <Usability>false</Usability>
+          <Description>Cell1 Voltage</Description>
+          <LogName>Cell1 Voltage</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>cell1</LogName>
+          <Order>1</Order>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00036200">
       <PhysicalData>0</PhysicalData>
       <PhyRef>0.625</PhyRef>
       <RegRef>4</RegRef>
-      <SubType>0</SubType>
+      <SubType>3</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -6662,13 +7864,30 @@
         <SFL Name="Trim">
           <Order>2</Order>
         </SFL>
+        <SFL Name="Scan">
+          <NickName>Cell2</NickName>
+          <Group>0</Group>
+          <SubGroup>0</SubGroup>
+          <Order>1</Order>
+          <DefValue>2000</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>5000</MaxValue>
+          <Usability>false</Usability>
+          <Description>Cell2 Voltage</Description>
+          <LogName>Cell2 Voltage</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>cell2</LogName>
+          <Order>2</Order>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00036300">
       <PhysicalData>0</PhysicalData>
       <PhyRef>0.625</PhyRef>
       <RegRef>4</RegRef>
-      <SubType>0</SubType>
+      <SubType>3</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -6696,13 +7915,30 @@
         <SFL Name="Trim">
           <Order>3</Order>
         </SFL>
+        <SFL Name="Scan">
+          <NickName>Cell3</NickName>
+          <Group>0</Group>
+          <SubGroup>0</SubGroup>
+          <Order>2</Order>
+          <DefValue>2000</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>5000</MaxValue>
+          <Usability>false</Usability>
+          <Description>Cell3 Voltage</Description>
+          <LogName>Cell3 Voltage</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>cell3</LogName>
+          <Order>3</Order>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00036400">
       <PhysicalData>0</PhysicalData>
       <PhyRef>0.625</PhyRef>
       <RegRef>4</RegRef>
-      <SubType>0</SubType>
+      <SubType>3</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -6730,13 +7966,30 @@
         <SFL Name="Trim">
           <Order>4</Order>
         </SFL>
+        <SFL Name="Scan">
+          <NickName>Cell4</NickName>
+          <Group>0</Group>
+          <SubGroup>0</SubGroup>
+          <Order>3</Order>
+          <DefValue>2000</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>5000</MaxValue>
+          <Usability>false</Usability>
+          <Description>Cell4 Voltage</Description>
+          <LogName>Cell4 Voltage</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>cell4</LogName>
+          <Order>4</Order>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00036500">
       <PhysicalData>0</PhysicalData>
       <PhyRef>0.625</PhyRef>
       <RegRef>4</RegRef>
-      <SubType>0</SubType>
+      <SubType>3</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -6764,13 +8017,30 @@
         <SFL Name="Trim">
           <Order>5</Order>
         </SFL>
+        <SFL Name="Scan">
+          <NickName>Cell5</NickName>
+          <Group>0</Group>
+          <SubGroup>0</SubGroup>
+          <Order>4</Order>
+          <DefValue>2000</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>5000</MaxValue>
+          <Usability>false</Usability>
+          <Description>Cell5 Voltage</Description>
+          <LogName>Cell5 Voltage</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>cell5</LogName>
+          <Order>5</Order>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00036600">
       <PhysicalData>0</PhysicalData>
       <PhyRef>0.625</PhyRef>
       <RegRef>4</RegRef>
-      <SubType>0</SubType>
+      <SubType>3</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -6798,13 +8068,30 @@
         <SFL Name="Trim">
           <Order>6</Order>
         </SFL>
+        <SFL Name="Scan">
+          <NickName>Cell6</NickName>
+          <Group>0</Group>
+          <SubGroup>0</SubGroup>
+          <Order>5</Order>
+          <DefValue>2000</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>5000</MaxValue>
+          <Usability>false</Usability>
+          <Description>Cell6 Voltage</Description>
+          <LogName>Cell6 Voltage</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>cell6</LogName>
+          <Order>6</Order>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00036700">
       <PhysicalData>0</PhysicalData>
       <PhyRef>0.625</PhyRef>
       <RegRef>4</RegRef>
-      <SubType>0</SubType>
+      <SubType>3</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -6832,13 +8119,30 @@
         <SFL Name="Trim">
           <Order>7</Order>
         </SFL>
+        <SFL Name="Scan">
+          <NickName>Cell7</NickName>
+          <Group>0</Group>
+          <SubGroup>0</SubGroup>
+          <Order>6</Order>
+          <DefValue>2000</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>5000</MaxValue>
+          <Usability>false</Usability>
+          <Description>Cell7 Voltage</Description>
+          <LogName>Cell7 Voltage</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>cell7</LogName>
+          <Order>7</Order>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00036800">
       <PhysicalData>0</PhysicalData>
       <PhyRef>0.625</PhyRef>
       <RegRef>4</RegRef>
-      <SubType>0</SubType>
+      <SubType>3</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -6866,13 +8170,30 @@
         <SFL Name="Trim">
           <Order>8</Order>
         </SFL>
+        <SFL Name="Scan">
+          <NickName>Cell8</NickName>
+          <Group>0</Group>
+          <SubGroup>0</SubGroup>
+          <Order>7</Order>
+          <DefValue>2000</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>5000</MaxValue>
+          <Usability>false</Usability>
+          <Description>Cell8 Voltage</Description>
+          <LogName>Cell8 Voltage</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>cell8</LogName>
+          <Order>8</Order>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00036900">
       <PhysicalData>0</PhysicalData>
       <PhyRef>0.625</PhyRef>
       <RegRef>4</RegRef>
-      <SubType>0</SubType>
+      <SubType>3</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -6900,13 +8221,30 @@
         <SFL Name="Trim">
           <Order>9</Order>
         </SFL>
+        <SFL Name="Scan">
+          <NickName>Cell9</NickName>
+          <Group>0</Group>
+          <SubGroup>0</SubGroup>
+          <Order>8</Order>
+          <DefValue>2000</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>5000</MaxValue>
+          <Usability>false</Usability>
+          <Description>Cell9 Voltage</Description>
+          <LogName>Cell9 Voltage</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>cell9</LogName>
+          <Order>9</Order>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00036A00">
       <PhysicalData>0</PhysicalData>
       <PhyRef>0.625</PhyRef>
       <RegRef>4</RegRef>
-      <SubType>0</SubType>
+      <SubType>3</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -6934,13 +8272,30 @@
         <SFL Name="Trim">
           <Order>10</Order>
         </SFL>
+        <SFL Name="Scan">
+          <NickName>Cell10</NickName>
+          <Group>0</Group>
+          <SubGroup>0</SubGroup>
+          <Order>9</Order>
+          <DefValue>2000</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>5000</MaxValue>
+          <Usability>false</Usability>
+          <Description>Cell10 Voltage</Description>
+          <LogName>Cell10 Voltage</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>cell10</LogName>
+          <Order>10</Order>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00036B00">
       <PhysicalData>0</PhysicalData>
       <PhyRef>0.625</PhyRef>
       <RegRef>4</RegRef>
-      <SubType>0</SubType>
+      <SubType>3</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -6968,13 +8323,30 @@
         <SFL Name="Trim">
           <Order>11</Order>
         </SFL>
+        <SFL Name="Scan">
+          <NickName>Cell11</NickName>
+          <Group>0</Group>
+          <SubGroup>0</SubGroup>
+          <Order>10</Order>
+          <DefValue>2000</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>5000</MaxValue>
+          <Usability>false</Usability>
+          <Description>Cell11 Voltage</Description>
+          <LogName>Cell11 Voltage</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>cell11</LogName>
+          <Order>11</Order>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00036C00">
       <PhysicalData>0</PhysicalData>
       <PhyRef>0.625</PhyRef>
       <RegRef>4</RegRef>
-      <SubType>0</SubType>
+      <SubType>3</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -7002,13 +8374,30 @@
         <SFL Name="Trim">
           <Order>12</Order>
         </SFL>
+        <SFL Name="Scan">
+          <NickName>Cell12</NickName>
+          <Group>0</Group>
+          <SubGroup>0</SubGroup>
+          <Order>11</Order>
+          <DefValue>2000</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>5000</MaxValue>
+          <Usability>false</Usability>
+          <Description>Cell12 Voltage</Description>
+          <LogName>Cell12 Voltage</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>cell12</LogName>
+          <Order>12</Order>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00036D00">
       <PhysicalData>0</PhysicalData>
       <PhyRef>0.625</PhyRef>
       <RegRef>4</RegRef>
-      <SubType>0</SubType>
+      <SubType>3</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -7036,13 +8425,30 @@
         <SFL Name="Trim">
           <Order>13</Order>
         </SFL>
+        <SFL Name="Scan">
+          <NickName>Cell13</NickName>
+          <Group>0</Group>
+          <SubGroup>0</SubGroup>
+          <Order>12</Order>
+          <DefValue>2000</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>5000</MaxValue>
+          <Usability>false</Usability>
+          <Description>Cell13 Voltage</Description>
+          <LogName>Cell13 Voltage</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>cell13</LogName>
+          <Order>13</Order>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00036E00">
       <PhysicalData>0</PhysicalData>
       <PhyRef>0.625</PhyRef>
       <RegRef>4</RegRef>
-      <SubType>0</SubType>
+      <SubType>3</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -7070,13 +8476,30 @@
         <SFL Name="Trim">
           <Order>14</Order>
         </SFL>
+        <SFL Name="Scan">
+          <NickName>Cell14</NickName>
+          <Group>0</Group>
+          <SubGroup>0</SubGroup>
+          <Order>13</Order>
+          <DefValue>2000</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>5000</MaxValue>
+          <Usability>false</Usability>
+          <Description>Cell14 Voltage</Description>
+          <LogName>Cell14 Voltage</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>cell14</LogName>
+          <Order>14</Order>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00037500">
       <PhysicalData>0</PhysicalData>
-      <PhyRef>31.25</PhyRef>
-      <RegRef>4</RegRef>
-      <SubType>0</SubType>
+      <PhyRef>0.0078125</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>4</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -7104,13 +8527,30 @@
         <SFL Name="Trim">
           <Order>15</Order>
         </SFL>
+        <SFL Name="Scan">
+          <Group>2</Group>
+          <SubGroup>0</SubGroup>
+          <Order>0</Order>
+          <LogName>isense</LogName>
+          <NickName>1</NickName>
+          <DefValue>0</DefValue>
+          <MinValue>-10000</MinValue>
+          <MaxValue>10000</MaxValue>
+          <Usability>false</Usability>
+          <Description>isense</Description>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>isens</LogName>
+          <Order>15</Order>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00037600">
       <PhysicalData>0</PhysicalData>
       <PhyRef>0.3125</PhyRef>
       <RegRef>4</RegRef>
-      <SubType>0</SubType>
+      <SubType>2</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -7138,13 +8578,30 @@
         <SFL Name="Trim">
           <Order>16</Order>
         </SFL>
+        <SFL Name="Scan">
+          <NickName>Thm0</NickName>
+          <Group>1</Group>
+          <SubGroup>1</SubGroup>
+          <Order>0</Order>
+          <DefValue>25</DefValue>
+          <MinValue>-256</MinValue>
+          <MaxValue>256</MaxValue>
+          <Usability>false</Usability>
+          <Description>thm0</Description>
+          <LogName>thm0</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>thm0</LogName>
+          <Order>20</Order>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00037700">
       <PhysicalData>0</PhysicalData>
       <PhyRef>0.3125</PhyRef>
       <RegRef>4</RegRef>
-      <SubType>0</SubType>
+      <SubType>2</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -7168,6 +8625,23 @@
           <Write>false</Write>
           <Group>Azalea14</Group>
           <Description>thm1_adc_data_8t</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <NickName>Thm1</NickName>
+          <Group>1</Group>
+          <SubGroup>1</SubGroup>
+          <Order>1</Order>
+          <DefValue>25</DefValue>
+          <MinValue>-256</MinValue>
+          <MaxValue>256</MaxValue>
+          <Usability>false</Usability>
+          <Description>thm1</Description>
+          <LogName>thm1</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>thm1</LogName>
+          <Order>21</Order>
         </SFL>
       </Private>
     </Element>
@@ -7268,7 +8742,7 @@
       <PhysicalData>0</PhysicalData>
       <PhyRef>12.5</PhyRef>
       <RegRef>4</RegRef>
-      <SubType>0</SubType>
+      <SubType>3</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -7296,13 +8770,30 @@
         <SFL Name="Trim">
           <Order>17</Order>
         </SFL>
+        <SFL Name="Scan">
+          <NickName>vbatt</NickName>
+          <Group>6</Group>
+          <SubGroup>0</SubGroup>
+          <Order>0</Order>
+          <DefValue>0</DefValue>
+          <MinValue>-81920</MinValue>
+          <MaxValue>81920</MaxValue>
+          <Usability>false</Usability>
+          <Description>vbatt</Description>
+          <LogName>vbatt</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>vbatt</LogName>
+          <Order>16</Order>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00037D00">
       <PhysicalData>0</PhysicalData>
-      <PhyRef>1</PhyRef>
-      <RegRef>1</RegRef>
-      <SubType>0</SubType>
+      <PhyRef>12.5</PhyRef>
+      <RegRef>4</RegRef>
+      <SubType>3</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -7327,13 +8818,30 @@
           <Group>Azalea14</Group>
           <Description>vcc_adc_ data_8t</Description>
         </SFL>
+        <SFL Name="Scan">
+          <NickName>vcc</NickName>
+          <Group>6</Group>
+          <SubGroup>0</SubGroup>
+          <Order>1</Order>
+          <DefValue>0</DefValue>
+          <MinValue>-81920</MinValue>
+          <MaxValue>81920</MaxValue>
+          <Usability>false</Usability>
+          <Description>vcc</Description>
+          <LogName>vcc</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>vcc</LogName>
+          <Order>17</Order>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00037E00">
       <PhysicalData>0</PhysicalData>
-      <PhyRef>1</PhyRef>
-      <RegRef>1</RegRef>
-      <SubType>0</SubType>
+      <PhyRef>1.25</PhyRef>
+      <RegRef>4</RegRef>
+      <SubType>3</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -7358,13 +8866,30 @@
           <Group>Azalea14</Group>
           <Description>v50v_adc_ data_8t</Description>
         </SFL>
+        <SFL Name="Scan">
+          <NickName>v50v</NickName>
+          <Group>6</Group>
+          <SubGroup>0</SubGroup>
+          <Order>2</Order>
+          <DefValue>0</DefValue>
+          <MinValue>-81920</MinValue>
+          <MaxValue>81920</MaxValue>
+          <Usability>false</Usability>
+          <Description>v50v</Description>
+          <LogName>v50v</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>v50v</LogName>
+          <Order>18</Order>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00037F00">
       <PhysicalData>0</PhysicalData>
-      <PhyRef>1</PhyRef>
-      <RegRef>1</RegRef>
-      <SubType>0</SubType>
+      <PhyRef>1.25</PhyRef>
+      <RegRef>4</RegRef>
+      <SubType>3</SubType>
       <HexMin>0</HexMin>
       <HexMax>FFFF</HexMax>
       <PhyMin>0</PhyMin>
@@ -7388,6 +8913,23 @@
           <Write>false</Write>
           <Group>Azalea14</Group>
           <Description>vmcu_adc_ data_8t</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <NickName>vmcu</NickName>
+          <Group>6</Group>
+          <SubGroup>0</SubGroup>
+          <Order>3</Order>
+          <DefValue>0</DefValue>
+          <MinValue>-81920</MinValue>
+          <MaxValue>81920</MaxValue>
+          <Usability>false</Usability>
+          <Description>vmcu</Description>
+          <LogName>vmcu</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>vmcu</LogName>
+          <Order>19</Order>
         </SFL>
       </Private>
     </Element>
