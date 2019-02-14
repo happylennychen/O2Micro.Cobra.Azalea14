@@ -3838,14 +3838,14 @@
       <RegRef>1</RegRef>
       <SubType>0</SubType>
       <HexMin>0</HexMin>
-      <HexMax>7</HexMax>
+      <HexMax>f</HexMax>
       <PhyMin>0</PhyMin>
-      <PhyMax>7</PhyMax>
+      <PhyMax>15</PhyMax>
       <LocationList>
         <Location Position="Low">
           <Address>C</Address>
           <StartBit>4</StartBit>
-          <BitsNumber>3</BitsNumber>
+          <BitsNumber>4</BitsNumber>
         </Location>
       </LocationList>
       <Private>
@@ -3854,7 +3854,7 @@
           <BitTotal>10</BitTotal>
           <Index>C</Index>
           <BitStart>4</BitStart>
-          <Length>3</Length>
+          <Length>4</Length>
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
@@ -5218,6 +5218,37 @@
         </SFL>
       </Private>
     </Element>
+    <Element Guid="0x00031601">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1f</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>63</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>16</Address>
+          <StartBit>1</StartBit>
+          <BitsNumber>5</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>16</Index>
+          <BitStart>1</BitStart>
+          <Length>5</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>Reserved</Description>
+        </SFL>
+      </Private>
+    </Element>
     <Element Guid="0x00031606">
       <PhysicalData>0</PhysicalData>
       <PhyRef>1</PhyRef>
@@ -5277,6 +5308,37 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>sleep_req</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x00031608">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>ff</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>255</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>16</Address>
+          <StartBit>8</StartBit>
+          <BitsNumber>8</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>16</Index>
+          <BitStart>8</BitStart>
+          <Length>8</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>Reserved</Description>
         </SFL>
       </Private>
     </Element>
@@ -6735,6 +6797,18 @@
           <Group>Azalea14</Group>
           <Description>cc_always_enable</Description>
         </SFL>
+        <SFL Name="Scan">
+          <NickName>cc a e</NickName>
+          <Group>6</Group>
+          <SubGroup>0</SubGroup>
+          <Order>4</Order>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Description>cc always enable</Description>
+          <LogName>cc always enable</LogName>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00033806">
@@ -6852,13 +6926,13 @@
     </Element>
     <Element Guid="0x00033A00">
       <PhysicalData>0</PhysicalData>
-      <PhyRef>1</PhyRef>
+      <PhyRef>0.5</PhyRef>
       <RegRef>1</RegRef>
-      <SubType>0</SubType>
+      <SubType>6</SubType>
       <HexMin>0</HexMin>
-      <HexMax>FFFF</HexMax>
-      <PhyMin>0</PhyMin>
-      <PhyMax>65535</PhyMax>
+      <HexMax>4294967295</HexMax>
+      <PhyMin>-2147483648</PhyMin>
+      <PhyMax>2147483647</PhyMax>
       <LocationList>
         <Location Position="High">
           <Address>3A</Address>
@@ -6880,9 +6954,21 @@
           <Length>20</Length>
           <Value>0</Value>
           <Read>true</Read>
-          <Write>false</Write>
+          <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>coulomb_counter</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <NickName>cc</NickName>
+          <Group>6</Group>
+          <SubGroup>0</SubGroup>
+          <Order>5</Order>
+          <DefValue>0</DefValue>
+          <MinValue>-2147483648</MinValue>
+          <MaxValue>2147483647</MaxValue>
+          <Usability>false</Usability>
+          <Description>coulomb counter</Description>
+          <LogName>coulomb counter</LogName>
         </SFL>
       </Private>
     </Element>
@@ -6896,13 +6982,8 @@
       <PhyMin>0</PhyMin>
       <PhyMax>65535</PhyMax>
       <LocationList>
-        <Location Position="High">
-          <Address>3C</Address>
-          <StartBit>0</StartBit>
-          <BitsNumber>16</BitsNumber>
-        </Location>
         <Location Position="Low">
-          <Address>3D</Address>
+          <Address>3C</Address>
           <StartBit>0</StartBit>
           <BitsNumber>16</BitsNumber>
         </Location>
@@ -6918,7 +6999,62 @@
           <Read>true</Read>
           <Write>false</Write>
           <Group>Azalea14</Group>
-          <Description>raw_cadc_data</Description>
+          <Description>raw_cadc_data_0</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <NickName>raw cadc data 0</NickName>
+          <Group>6</Group>
+          <SubGroup>0</SubGroup>
+          <Order>6</Order>
+          <DefValue>0</DefValue>
+          <MinValue>-32767</MinValue>
+          <MaxValue>32768</MaxValue>
+          <Usability>false</Usability>
+          <Description>raw cadc data 0</Description>
+          <LogName>raw cadc data 0</LogName>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x00033D00">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>FFFF</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>65535</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>3D</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>16</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>3D</Index>
+          <BitStart>0</BitStart>
+          <Length>20</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>false</Write>
+          <Group>Azalea14</Group>
+          <Description>raw_cadc_data_1</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <NickName>raw cadc data 1</NickName>
+          <Group>6</Group>
+          <SubGroup>0</SubGroup>
+          <Order>7</Order>
+          <DefValue>0</DefValue>
+          <MinValue>-32767</MinValue>
+          <MaxValue>32768</MaxValue>
+          <Usability>false</Usability>
+          <Description>raw cadc data 1</Description>
+          <LogName>raw cadc data 1</LogName>
         </SFL>
       </Private>
     </Element>
@@ -6932,13 +7068,8 @@
       <PhyMin>0</PhyMin>
       <PhyMax>65535</PhyMax>
       <LocationList>
-        <Location Position="High">
-          <Address>3E</Address>
-          <StartBit>0</StartBit>
-          <BitsNumber>16</BitsNumber>
-        </Location>
         <Location Position="Low">
-          <Address>3F</Address>
+          <Address>3E</Address>
           <StartBit>0</StartBit>
           <BitsNumber>16</BitsNumber>
         </Location>
@@ -6954,7 +7085,62 @@
           <Read>true</Read>
           <Write>false</Write>
           <Group>Azalea14</Group>
-          <Description>cadc_offset</Description>
+          <Description>cadc_offset_0</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <NickName>cadc offset 0</NickName>
+          <Group>6</Group>
+          <SubGroup>0</SubGroup>
+          <Order>8</Order>
+          <DefValue>0</DefValue>
+          <MinValue>-32767</MinValue>
+          <MaxValue>32768</MaxValue>
+          <Usability>false</Usability>
+          <Description>cadc offset 0</Description>
+          <LogName>cadc offset 0</LogName>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x00033F00">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>FFFF</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>65535</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>3F</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>16</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>3F</Index>
+          <BitStart>0</BitStart>
+          <Length>20</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>false</Write>
+          <Group>Azalea14</Group>
+          <Description>cadc_offset_1</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <NickName>cadc offset 0</NickName>
+          <Group>6</Group>
+          <SubGroup>0</SubGroup>
+          <Order>9</Order>
+          <DefValue>0</DefValue>
+          <MinValue>-32767</MinValue>
+          <MaxValue>32768</MaxValue>
+          <Usability>false</Usability>
+          <Description>cadc offset 1</Description>
+          <LogName>cadc offset 1</LogName>
         </SFL>
       </Private>
     </Element>

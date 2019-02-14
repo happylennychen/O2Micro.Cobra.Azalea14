@@ -153,6 +153,28 @@ namespace O2Micro.Cobra.Azalea14
                     sdata = (short)wdata;
                     p.phydata = sdata * p.phyref * 1000 / parent.rsense; //需要带符号
                     break;
+                case ElementDefine.SUBTYPE.COULOMB_COUNTER:
+                    {
+                        UInt32 udata = 0;
+                        Int32 idata = 0;
+                        //ret = ReadSignedFromRegImg(p, ref idata);
+                        udata = parent.m_OpRegImg[0x3a].val;
+                        udata <<= 16;
+                        udata |= parent.m_OpRegImg[0x3b].val;
+                        idata = (int)udata;
+                        if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                        {
+                            p.phydata = ElementDefine.PARAM_PHYSICAL_ERROR;
+                            break;
+                        }
+                        /*
+                        ddata = (double)((double)idata * p.phyref / p.regref);   //uVs
+                        ddata = ddata / parent.rsense;  //mAs
+                        ddata /= 3600;               //mAH  */
+                        ddata = ((double)idata * 0.0078125 * 0.128) / (3600 * parent.rsense);
+                        p.phydata = ddata;
+                        break;
+                    }
                 default:
                     ret = ReadFromRegImg(p, ref wdata);
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)

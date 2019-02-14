@@ -177,6 +177,8 @@ namespace O2Micro.Cobra.Azalea14
                     {
                         pval = ElementDefine.PARAM_HEX_ERROR;
                         ret = LibErrorCode.IDS_ERR_BUS_DATA_PEC_ERROR;
+                        Thread.Sleep(10);
+                        continue;
                     }
                     else
                     {
@@ -247,6 +249,8 @@ namespace O2Micro.Cobra.Azalea14
 
         public UInt32 Read(ref TASKMessage msg)
         {
+            if (msg.gm.sflname == "SCS")
+                return LibErrorCode.IDS_ERR_SUCCESSFUL;
             Reg reg = null;
             bool bsim = true;
             byte baddress = 0;
@@ -920,52 +924,18 @@ namespace O2Micro.Cobra.Azalea14
                     break;
                 #endregion
                 case ElementDefine.COMMAND.SCS:
-                    Parameter p = new Parameter();
-                    foreach (Parameter t in msg.task_parameterlist.parameterlist)
+                    if (msg.task_parameterlist.parameterlist[0].guid == ElementDefine.TRIGGER_CADC)
                     {
-                        if (t.guid != ElementDefine.TRIGGER_CADC)
-                            continue;
-                        else
-                        {
-                            p = t; break;
-                        }
-                    }
-                    if (p == null) return LibErrorCode.IDS_ERR_DEM_LOST_PARAMETER;
-                    #region trigger mode
-                    ushort temp = 0;
-                    ret = ActiveModeCheck();
-                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
-                        return ret;
-                    bool cadc_trigger_flag = false;
-                    {
-                        ret = WriteWord(0x01, 0x0002);        //Clear cadc_trigger_flag
+                        ret = ReadCADC(ElementDefine.CADC_MODE.TRIGGER);
                         if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
                             return ret;
-                        ret = WriteWord(0x38, 0x06);        //Set cadc_one_or_four, sw_cadc_ctrl=0b10
+                    }
+                    else
+                    {
+                        ret = ReadSAR(ref msg);
                         if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
                             return ret;
-                        for (byte i = 0; i < ElementDefine.CADC_RETRY_COUNT; i++)
-                        {
-                            Thread.Sleep(60);
-                            ret = ReadWord(0x01, ref temp);
-                            if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
-                                return ret;
-                            if ((temp & 0x0002) == 0x0002)
-                            {
-                                cadc_trigger_flag = true;
-                                break;
-                            }
-                        }
-                        if (cadc_trigger_flag)   //转换完成
-                        {
-                            ret = LibErrorCode.IDS_ERR_SUCCESSFUL;
-                        }
-                        else
-                        {
-                            ret = ElementDefine.IDS_ERR_DEM_READCADC_TIMEOUT;
-                        }
                     }
-                    #endregion
                     break;
             }
             return ret;

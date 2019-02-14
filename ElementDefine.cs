@@ -56,6 +56,7 @@ namespace O2Micro.Cobra.Azalea14
             VOLTAGE = 3,
             SAR_CURRENT = 4,
             CADC = 5,
+            COULOMB_COUNTER = 6,
             EXT_TEMP_TABLE = 40,
             INT_TEMP_REFER = 41
         }
