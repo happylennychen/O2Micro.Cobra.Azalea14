@@ -41,6 +41,7 @@ namespace O2Micro.Cobra.Azalea14
         internal const UInt32 OperationElement = 0x00030000;
         internal const UInt32 TRIGGER_CADC = 0x00033900; //
         internal const UInt32 MOVING_CADC = 0x00031700; //
+        internal const UInt32 COULOMB_COUNTER = 0x00033a00; //
         internal const UInt32 THM0 = 0x00037600; //
         internal const UInt32 THM1 = 0x00037700; //
         #endregion
@@ -78,6 +79,7 @@ namespace O2Micro.Cobra.Azalea14
         {
             SLOP_TRIM = 5,
             WATCH_DOG = 6,
+            PASSWORD = 7,
             SCS = 0x31,
             OPTIONS = 0xFFFF
         }

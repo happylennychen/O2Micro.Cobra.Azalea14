@@ -480,18 +480,11 @@ namespace O2Micro.Cobra.Azalea14
             }
         }
 
-        private UInt32 ReadSAR(ref TASKMessage msg)
+        private UInt32 ReadSAR(ref TASKMessage sarmsg)
         {
             UInt32 ret = LibErrorCode.IDS_ERR_SUCCESSFUL;
 
-            TASKMessage sarmsg = new TASKMessage();  //only contains sar adc parameters
             TASKMessage tmpmsg = new TASKMessage();  //only contains temperature parameters
-
-            foreach (Parameter p in msg.task_parameterlist.parameterlist)
-            {
-                if (p.guid != ElementDefine.TRIGGER_CADC && p.guid != ElementDefine.MOVING_CADC)
-                    sarmsg.task_parameterlist.parameterlist.Add(p);
-            }
 
             ushort thm_crrt_sel = 0;
             ret = ReadWord(0x11, ref thm_crrt_sel); //保存原始值
@@ -895,6 +888,23 @@ namespace O2Micro.Cobra.Azalea14
                 #endregion
                 #region Scan SFL commands
                 case ElementDefine.COMMAND.OPTIONS:
+
+                    TASKMessage sarmsg = new TASKMessage();  //only contains sar adc parameters
+                    TASKMessage noadcmsg = new TASKMessage();  //only contains none parameters
+
+                    foreach (Parameter p in msg.task_parameterlist.parameterlist)
+                    {
+                        byte addr = (byte)((p.guid & 0x0000ff00) >> 8);
+                        if (p.guid == ElementDefine.TRIGGER_CADC || p.guid == ElementDefine.MOVING_CADC)
+                        { }
+                        else if (addr >= 0x60 && addr <= 0x7f)
+                            sarmsg.task_parameterlist.parameterlist.Add(p);
+                        else
+                        {
+                            noadcmsg.task_parameterlist.parameterlist.Add(p);
+                        }
+                    }
+
                     var options = SharedAPI.DeserializeStringToDictionary<string, string>(msg.sub_task_json);
                     switch (options["SAR ADC Mode"])
                     {
@@ -902,7 +912,7 @@ namespace O2Micro.Cobra.Azalea14
                             //ret = ReadSAR(ref msg, ElementDefine.SAR_MODE.DISABLE);
                             break;
                         case "8_Time_Average":
-                            ret = ReadSAR(ref msg);
+                            ret = ReadSAR(ref sarmsg);
                             break;
                     }
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
@@ -921,6 +931,9 @@ namespace O2Micro.Cobra.Azalea14
                     }
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
                         return ret;
+                    Read(ref noadcmsg);
+                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                        return ret;
                     break;
                 #endregion
                 case ElementDefine.COMMAND.SCS:
@@ -936,6 +949,43 @@ namespace O2Micro.Cobra.Azalea14
                         if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
                             return ret;
                     }
+                    break;
+                case ElementDefine.COMMAND.PASSWORD:
+                    msg.percent = 20;
+                    ret = GetRegisteInfor(ref msg);
+                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                        return ret;
+                    msg.percent = 30;
+                    ret = Read(ref msg);
+                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                        return ret;
+                    msg.percent = 40;
+                    ret = parent.ConvertPhysicalToHex(ref msg);
+                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                        return ret;
+
+                    msg.percent = 50;
+                    ret = WriteWord(0x0f, 0x3714);
+                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                        return ret;
+
+                    msg.percent = 60;
+                    ret = Write(ref msg);
+                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                        return ret;
+                    msg.percent = 70;
+                    ret = Read(ref msg);
+                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                        return ret;
+                    msg.percent = 80;
+                    ret = parent.ConvertHexToPhysical(ref msg);
+                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                        return ret;
+
+                    msg.percent = 90;
+                    ret = WriteWord(0x0f, 0x0);
+                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                        return ret;
                     break;
             }
             return ret;

@@ -3011,6 +3011,264 @@
           <BitsNumber>8</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>1900mV</Item>
+        <Item>1905mV</Item>
+        <Item>1910mV</Item>
+        <Item>1915mV</Item>
+        <Item>1920mV</Item>
+        <Item>1925mV</Item>
+        <Item>1930mV</Item>
+        <Item>1935mV</Item>
+        <Item>1940mV</Item>
+        <Item>1945mV</Item>
+        <Item>1950mV</Item>
+        <Item>1955mV</Item>
+        <Item>1960mV</Item>
+        <Item>1965mV</Item>
+        <Item>1970mV</Item>
+        <Item>1975mV</Item>
+        <Item>1980mV</Item>
+        <Item>1985mV</Item>
+        <Item>1990mV</Item>
+        <Item>1995mV</Item>
+        <Item>2000mV</Item>
+        <Item>2005mV</Item>
+        <Item>2010mV</Item>
+        <Item>2015mV</Item>
+        <Item>2020mV</Item>
+        <Item>2025mV</Item>
+        <Item>2030mV</Item>
+        <Item>2035mV</Item>
+        <Item>2040mV</Item>
+        <Item>2045mV</Item>
+        <Item>2050mV</Item>
+        <Item>2055mV</Item>
+        <Item>2060mV</Item>
+        <Item>2065mV</Item>
+        <Item>2070mV</Item>
+        <Item>2075mV</Item>
+        <Item>2080mV</Item>
+        <Item>2085mV</Item>
+        <Item>2090mV</Item>
+        <Item>2095mV</Item>
+        <Item>2100mV</Item>
+        <Item>2105mV</Item>
+        <Item>2110mV</Item>
+        <Item>2115mV</Item>
+        <Item>2120mV</Item>
+        <Item>2125mV</Item>
+        <Item>2130mV</Item>
+        <Item>2135mV</Item>
+        <Item>2140mV</Item>
+        <Item>2145mV</Item>
+        <Item>2150mV</Item>
+        <Item>2155mV</Item>
+        <Item>2160mV</Item>
+        <Item>2165mV</Item>
+        <Item>2170mV</Item>
+        <Item>2175mV</Item>
+        <Item>2180mV</Item>
+        <Item>2185mV</Item>
+        <Item>2190mV</Item>
+        <Item>2195mV</Item>
+        <Item>2200mV</Item>
+        <Item>2205mV</Item>
+        <Item>2210mV</Item>
+        <Item>2215mV</Item>
+        <Item>2220mV</Item>
+        <Item>2225mV</Item>
+        <Item>2230mV</Item>
+        <Item>2235mV</Item>
+        <Item>2240mV</Item>
+        <Item>2245mV</Item>
+        <Item>2250mV</Item>
+        <Item>2255mV</Item>
+        <Item>2260mV</Item>
+        <Item>2265mV</Item>
+        <Item>2270mV</Item>
+        <Item>2275mV</Item>
+        <Item>2280mV</Item>
+        <Item>2285mV</Item>
+        <Item>2290mV</Item>
+        <Item>2295mV</Item>
+        <Item>2300mV</Item>
+        <Item>2305mV</Item>
+        <Item>2310mV</Item>
+        <Item>2315mV</Item>
+        <Item>2320mV</Item>
+        <Item>2325mV</Item>
+        <Item>2330mV</Item>
+        <Item>2335mV</Item>
+        <Item>2340mV</Item>
+        <Item>2345mV</Item>
+        <Item>2350mV</Item>
+        <Item>2355mV</Item>
+        <Item>2360mV</Item>
+        <Item>2365mV</Item>
+        <Item>2370mV</Item>
+        <Item>2375mV</Item>
+        <Item>2380mV</Item>
+        <Item>2385mV</Item>
+        <Item>2390mV</Item>
+        <Item>2395mV</Item>
+        <Item>2400mV</Item>
+        <Item>2405mV</Item>
+        <Item>2410mV</Item>
+        <Item>2415mV</Item>
+        <Item>2420mV</Item>
+        <Item>2425mV</Item>
+        <Item>2430mV</Item>
+        <Item>2435mV</Item>
+        <Item>2440mV</Item>
+        <Item>2445mV</Item>
+        <Item>2450mV</Item>
+        <Item>2455mV</Item>
+        <Item>2460mV</Item>
+        <Item>2465mV</Item>
+        <Item>2470mV</Item>
+        <Item>2475mV</Item>
+        <Item>2480mV</Item>
+        <Item>2485mV</Item>
+        <Item>2490mV</Item>
+        <Item>2495mV</Item>
+        <Item>2500mV</Item>
+        <Item>2505mV</Item>
+        <Item>2510mV</Item>
+        <Item>2515mV</Item>
+        <Item>2520mV</Item>
+        <Item>2525mV</Item>
+        <Item>2530mV</Item>
+        <Item>2535mV</Item>
+        <Item>2540mV</Item>
+        <Item>2545mV</Item>
+        <Item>2550mV</Item>
+        <Item>2555mV</Item>
+        <Item>2560mV</Item>
+        <Item>2565mV</Item>
+        <Item>2570mV</Item>
+        <Item>2575mV</Item>
+        <Item>2580mV</Item>
+        <Item>2585mV</Item>
+        <Item>2590mV</Item>
+        <Item>2595mV</Item>
+        <Item>2600mV</Item>
+        <Item>2605mV</Item>
+        <Item>2610mV</Item>
+        <Item>2615mV</Item>
+        <Item>2620mV</Item>
+        <Item>2625mV</Item>
+        <Item>2630mV</Item>
+        <Item>2635mV</Item>
+        <Item>2640mV</Item>
+        <Item>2645mV</Item>
+        <Item>2650mV</Item>
+        <Item>2655mV</Item>
+        <Item>2660mV</Item>
+        <Item>2665mV</Item>
+        <Item>2670mV</Item>
+        <Item>2675mV</Item>
+        <Item>2680mV</Item>
+        <Item>2685mV</Item>
+        <Item>2690mV</Item>
+        <Item>2695mV</Item>
+        <Item>2700mV</Item>
+        <Item>2705mV</Item>
+        <Item>2710mV</Item>
+        <Item>2715mV</Item>
+        <Item>2720mV</Item>
+        <Item>2725mV</Item>
+        <Item>2730mV</Item>
+        <Item>2735mV</Item>
+        <Item>2740mV</Item>
+        <Item>2745mV</Item>
+        <Item>2750mV</Item>
+        <Item>2755mV</Item>
+        <Item>2760mV</Item>
+        <Item>2765mV</Item>
+        <Item>2770mV</Item>
+        <Item>2775mV</Item>
+        <Item>2780mV</Item>
+        <Item>2785mV</Item>
+        <Item>2790mV</Item>
+        <Item>2795mV</Item>
+        <Item>2800mV</Item>
+        <Item>2805mV</Item>
+        <Item>2810mV</Item>
+        <Item>2815mV</Item>
+        <Item>2820mV</Item>
+        <Item>2825mV</Item>
+        <Item>2830mV</Item>
+        <Item>2835mV</Item>
+        <Item>2840mV</Item>
+        <Item>2845mV</Item>
+        <Item>2850mV</Item>
+        <Item>2855mV</Item>
+        <Item>2860mV</Item>
+        <Item>2865mV</Item>
+        <Item>2870mV</Item>
+        <Item>2875mV</Item>
+        <Item>2880mV</Item>
+        <Item>2885mV</Item>
+        <Item>2890mV</Item>
+        <Item>2895mV</Item>
+        <Item>2900mV</Item>
+        <Item>2905mV</Item>
+        <Item>2910mV</Item>
+        <Item>2915mV</Item>
+        <Item>2920mV</Item>
+        <Item>2925mV</Item>
+        <Item>2930mV</Item>
+        <Item>2935mV</Item>
+        <Item>2940mV</Item>
+        <Item>2945mV</Item>
+        <Item>2950mV</Item>
+        <Item>2955mV</Item>
+        <Item>2960mV</Item>
+        <Item>2965mV</Item>
+        <Item>2970mV</Item>
+        <Item>2975mV</Item>
+        <Item>2980mV</Item>
+        <Item>2985mV</Item>
+        <Item>2990mV</Item>
+        <Item>2995mV</Item>
+        <Item>3000mV</Item>
+        <Item>3005mV</Item>
+        <Item>3010mV</Item>
+        <Item>3015mV</Item>
+        <Item>3020mV</Item>
+        <Item>3025mV</Item>
+        <Item>3030mV</Item>
+        <Item>3035mV</Item>
+        <Item>3040mV</Item>
+        <Item>3045mV</Item>
+        <Item>3050mV</Item>
+        <Item>3055mV</Item>
+        <Item>3060mV</Item>
+        <Item>3065mV</Item>
+        <Item>3070mV</Item>
+        <Item>3075mV</Item>
+        <Item>3080mV</Item>
+        <Item>3085mV</Item>
+        <Item>3090mV</Item>
+        <Item>3095mV</Item>
+        <Item>3100mV</Item>
+        <Item>3105mV</Item>
+        <Item>3110mV</Item>
+        <Item>3115mV</Item>
+        <Item>3120mV</Item>
+        <Item>3125mV</Item>
+        <Item>3130mV</Item>
+        <Item>3135mV</Item>
+        <Item>3140mV</Item>
+        <Item>3145mV</Item>
+        <Item>3150mV</Item>
+        <Item>3155mV</Item>
+        <Item>3160mV</Item>
+        <Item>3165mV</Item>
+        <Item>3170mV</Item>
+        <Item>3175mV</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3023,6 +3281,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>uvp_th</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>1</Order>
+          <NickName>uvp_th</NickName>
+          <Catalog>UV</Catalog>
+          <DefValue>120</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>255</MaxValue>
+          <Description>Threshold for UV protection</Description>
         </SFL>
       </Private>
     </Element>
@@ -3042,6 +3312,72 @@
           <BitsNumber>6</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>10mV</Item>
+        <Item>30mV</Item>
+        <Item>50mV</Item>
+        <Item>70mV</Item>
+        <Item>90mV</Item>
+        <Item>110mV</Item>
+        <Item>130mV</Item>
+        <Item>150mV</Item>
+        <Item>170mV</Item>
+        <Item>190mV</Item>
+        <Item>210mV</Item>
+        <Item>230mV</Item>
+        <Item>250mV</Item>
+        <Item>270mV</Item>
+        <Item>290mV</Item>
+        <Item>310mV</Item>
+        <Item>330mV</Item>
+        <Item>350mV</Item>
+        <Item>370mV</Item>
+        <Item>390mV</Item>
+        <Item>410mV</Item>
+        <Item>430mV</Item>
+        <Item>450mV</Item>
+        <Item>470mV</Item>
+        <Item>490mV</Item>
+        <Item>510mV</Item>
+        <Item>530mV</Item>
+        <Item>550mV</Item>
+        <Item>570mV</Item>
+        <Item>590mV</Item>
+        <Item>610mV</Item>
+        <Item>630mV</Item>
+        <Item>650mV</Item>
+        <Item>670mV</Item>
+        <Item>690mV</Item>
+        <Item>710mV</Item>
+        <Item>730mV</Item>
+        <Item>750mV</Item>
+        <Item>770mV</Item>
+        <Item>790mV</Item>
+        <Item>810mV</Item>
+        <Item>830mV</Item>
+        <Item>850mV</Item>
+        <Item>870mV</Item>
+        <Item>890mV</Item>
+        <Item>910mV</Item>
+        <Item>930mV</Item>
+        <Item>950mV</Item>
+        <Item>970mV</Item>
+        <Item>990mV</Item>
+        <Item>1010mV</Item>
+        <Item>1030mV</Item>
+        <Item>1050mV</Item>
+        <Item>1070mV</Item>
+        <Item>1090mV</Item>
+        <Item>1110mV</Item>
+        <Item>1130mV</Item>
+        <Item>1150mV</Item>
+        <Item>1170mV</Item>
+        <Item>1190mV</Item>
+        <Item>1210mV</Item>
+        <Item>1230mV</Item>
+        <Item>1250mV</Item>
+        <Item>1270mV</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3054,6 +3390,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>uvp_rls_hys</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>2</Order>
+          <NickName>uvp_rls_hys</NickName>
+          <Catalog>UV</Catalog>
+          <DefValue>20</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>63</MaxValue>
+          <Description>hysteresis voltage for UV release</Description>
         </SFL>
       </Private>
     </Element>
@@ -3073,6 +3421,12 @@
           <BitsNumber>2</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>2 cycles</Item>
+        <Item>4 cycles</Item>
+        <Item>8 cycles</Item>
+        <Item>12 cycles</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3085,6 +3439,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>uvp_dly</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>3</Order>
+          <NickName>uvp_dly</NickName>
+          <Catalog>UV</Catalog>
+          <DefValue>1</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>3</MaxValue>
+          <Description>UV delay scan cycle</Description>
         </SFL>
       </Private>
     </Element>
@@ -3104,6 +3470,24 @@
           <BitsNumber>4</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>Disable</Item>
+        <Item>1500mV</Item>
+        <Item>1600mV</Item>
+        <Item>1700mV</Item>
+        <Item>1800mV</Item>
+        <Item>1900mV</Item>
+        <Item>2000mV</Item>
+        <Item>2100mV</Item>
+        <Item>2200mV</Item>
+        <Item>2300mV</Item>
+        <Item>2400mV</Item>
+        <Item>2500mV</Item>
+        <Item>2600mV</Item>
+        <Item>2700mV</Item>
+        <Item>2800mV</Item>
+        <Item>2900mV</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3116,6 +3500,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>uv_shutdown_th</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>4</Order>
+          <NickName>uv shutdown th</NickName>
+          <Catalog>UV</Catalog>
+          <DefValue>6</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>15</MaxValue>
+          <Description>UV shutdown threshold</Description>
         </SFL>
       </Private>
     </Element>
@@ -3135,6 +3531,24 @@
           <BitsNumber>4</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>0.125mV</Item>
+        <Item>0.1875mV</Item>
+        <Item>0.25mV</Item>
+        <Item>0.3125mV</Item>
+        <Item>0.375mV</Item>
+        <Item>0.4375mV</Item>
+        <Item>0.5mV</Item>
+        <Item>0.5625mV</Item>
+        <Item>0.625mV</Item>
+        <Item>0.6875mV</Item>
+        <Item>0.75mV</Item>
+        <Item>0.8125mV</Item>
+        <Item>0.875mV</Item>
+        <Item>0.9375mV</Item>
+        <Item>1mV</Item>
+        <Item>1.0625mV</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3147,6 +3561,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>chg_th</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>1</Order>
+          <NickName>chg_th</NickName>
+          <Catalog>CHG</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>15</MaxValue>
+          <Description>threshold for charge current</Description>
         </SFL>
       </Private>
     </Element>
@@ -3166,6 +3592,24 @@
           <BitsNumber>4</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>0.25mV</Item>
+        <Item>0.375mV</Item>
+        <Item>0.5mV</Item>
+        <Item>0.625mV</Item>
+        <Item>0.75mV</Item>
+        <Item>0.875mV</Item>
+        <Item>1mV</Item>
+        <Item>1.125mV</Item>
+        <Item>1.25mV</Item>
+        <Item>1.375mV</Item>
+        <Item>1.5mV</Item>
+        <Item>1.625mV</Item>
+        <Item>1.75mV</Item>
+        <Item>1.875mV</Item>
+        <Item>2mV</Item>
+        <Item>2.125mV</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3178,6 +3622,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>dsg_th</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>1</Order>
+          <NickName>dsg_th</NickName>
+          <Catalog>DSG</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>15</MaxValue>
+          <Description>threshold for discharge current</Description>
         </SFL>
       </Private>
     </Element>
@@ -3197,6 +3653,12 @@
           <BitsNumber>2</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>2 cycles</Item>
+        <Item>4 cycles</Item>
+        <Item>8 cycles</Item>
+        <Item>12 cycles</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3209,6 +3671,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>uv_shutdown_dly</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>5</Order>
+          <NickName>uv_shutdown_dly</NickName>
+          <Catalog>UV</Catalog>
+          <DefValue>1</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>3</MaxValue>
+          <Description>UV shutdown delay scan cycle</Description>
         </SFL>
       </Private>
     </Element>
@@ -3228,6 +3702,264 @@
           <BitsNumber>8</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>3300mV</Item>
+        <Item>3305mV</Item>
+        <Item>3310mV</Item>
+        <Item>3315mV</Item>
+        <Item>3320mV</Item>
+        <Item>3325mV</Item>
+        <Item>3330mV</Item>
+        <Item>3335mV</Item>
+        <Item>3340mV</Item>
+        <Item>3345mV</Item>
+        <Item>3350mV</Item>
+        <Item>3355mV</Item>
+        <Item>3360mV</Item>
+        <Item>3365mV</Item>
+        <Item>3370mV</Item>
+        <Item>3375mV</Item>
+        <Item>3380mV</Item>
+        <Item>3385mV</Item>
+        <Item>3390mV</Item>
+        <Item>3395mV</Item>
+        <Item>3400mV</Item>
+        <Item>3405mV</Item>
+        <Item>3410mV</Item>
+        <Item>3415mV</Item>
+        <Item>3420mV</Item>
+        <Item>3425mV</Item>
+        <Item>3430mV</Item>
+        <Item>3435mV</Item>
+        <Item>3440mV</Item>
+        <Item>3445mV</Item>
+        <Item>3450mV</Item>
+        <Item>3455mV</Item>
+        <Item>3460mV</Item>
+        <Item>3465mV</Item>
+        <Item>3470mV</Item>
+        <Item>3475mV</Item>
+        <Item>3480mV</Item>
+        <Item>3485mV</Item>
+        <Item>3490mV</Item>
+        <Item>3495mV</Item>
+        <Item>3500mV</Item>
+        <Item>3505mV</Item>
+        <Item>3510mV</Item>
+        <Item>3515mV</Item>
+        <Item>3520mV</Item>
+        <Item>3525mV</Item>
+        <Item>3530mV</Item>
+        <Item>3535mV</Item>
+        <Item>3540mV</Item>
+        <Item>3545mV</Item>
+        <Item>3550mV</Item>
+        <Item>3555mV</Item>
+        <Item>3560mV</Item>
+        <Item>3565mV</Item>
+        <Item>3570mV</Item>
+        <Item>3575mV</Item>
+        <Item>3580mV</Item>
+        <Item>3585mV</Item>
+        <Item>3590mV</Item>
+        <Item>3595mV</Item>
+        <Item>3600mV</Item>
+        <Item>3605mV</Item>
+        <Item>3610mV</Item>
+        <Item>3615mV</Item>
+        <Item>3620mV</Item>
+        <Item>3625mV</Item>
+        <Item>3630mV</Item>
+        <Item>3635mV</Item>
+        <Item>3640mV</Item>
+        <Item>3645mV</Item>
+        <Item>3650mV</Item>
+        <Item>3655mV</Item>
+        <Item>3660mV</Item>
+        <Item>3665mV</Item>
+        <Item>3670mV</Item>
+        <Item>3675mV</Item>
+        <Item>3680mV</Item>
+        <Item>3685mV</Item>
+        <Item>3690mV</Item>
+        <Item>3695mV</Item>
+        <Item>3700mV</Item>
+        <Item>3705mV</Item>
+        <Item>3710mV</Item>
+        <Item>3715mV</Item>
+        <Item>3720mV</Item>
+        <Item>3725mV</Item>
+        <Item>3730mV</Item>
+        <Item>3735mV</Item>
+        <Item>3740mV</Item>
+        <Item>3745mV</Item>
+        <Item>3750mV</Item>
+        <Item>3755mV</Item>
+        <Item>3760mV</Item>
+        <Item>3765mV</Item>
+        <Item>3770mV</Item>
+        <Item>3775mV</Item>
+        <Item>3780mV</Item>
+        <Item>3785mV</Item>
+        <Item>3790mV</Item>
+        <Item>3795mV</Item>
+        <Item>3800mV</Item>
+        <Item>3805mV</Item>
+        <Item>3810mV</Item>
+        <Item>3815mV</Item>
+        <Item>3820mV</Item>
+        <Item>3825mV</Item>
+        <Item>3830mV</Item>
+        <Item>3835mV</Item>
+        <Item>3840mV</Item>
+        <Item>3845mV</Item>
+        <Item>3850mV</Item>
+        <Item>3855mV</Item>
+        <Item>3860mV</Item>
+        <Item>3865mV</Item>
+        <Item>3870mV</Item>
+        <Item>3875mV</Item>
+        <Item>3880mV</Item>
+        <Item>3885mV</Item>
+        <Item>3890mV</Item>
+        <Item>3895mV</Item>
+        <Item>3900mV</Item>
+        <Item>3905mV</Item>
+        <Item>3910mV</Item>
+        <Item>3915mV</Item>
+        <Item>3920mV</Item>
+        <Item>3925mV</Item>
+        <Item>3930mV</Item>
+        <Item>3935mV</Item>
+        <Item>3940mV</Item>
+        <Item>3945mV</Item>
+        <Item>3950mV</Item>
+        <Item>3955mV</Item>
+        <Item>3960mV</Item>
+        <Item>3965mV</Item>
+        <Item>3970mV</Item>
+        <Item>3975mV</Item>
+        <Item>3980mV</Item>
+        <Item>3985mV</Item>
+        <Item>3990mV</Item>
+        <Item>3995mV</Item>
+        <Item>4000mV</Item>
+        <Item>4005mV</Item>
+        <Item>4010mV</Item>
+        <Item>4015mV</Item>
+        <Item>4020mV</Item>
+        <Item>4025mV</Item>
+        <Item>4030mV</Item>
+        <Item>4035mV</Item>
+        <Item>4040mV</Item>
+        <Item>4045mV</Item>
+        <Item>4050mV</Item>
+        <Item>4055mV</Item>
+        <Item>4060mV</Item>
+        <Item>4065mV</Item>
+        <Item>4070mV</Item>
+        <Item>4075mV</Item>
+        <Item>4080mV</Item>
+        <Item>4085mV</Item>
+        <Item>4090mV</Item>
+        <Item>4095mV</Item>
+        <Item>4100mV</Item>
+        <Item>4105mV</Item>
+        <Item>4110mV</Item>
+        <Item>4115mV</Item>
+        <Item>4120mV</Item>
+        <Item>4125mV</Item>
+        <Item>4130mV</Item>
+        <Item>4135mV</Item>
+        <Item>4140mV</Item>
+        <Item>4145mV</Item>
+        <Item>4150mV</Item>
+        <Item>4155mV</Item>
+        <Item>4160mV</Item>
+        <Item>4165mV</Item>
+        <Item>4170mV</Item>
+        <Item>4175mV</Item>
+        <Item>4180mV</Item>
+        <Item>4185mV</Item>
+        <Item>4190mV</Item>
+        <Item>4195mV</Item>
+        <Item>4200mV</Item>
+        <Item>4205mV</Item>
+        <Item>4210mV</Item>
+        <Item>4215mV</Item>
+        <Item>4220mV</Item>
+        <Item>4225mV</Item>
+        <Item>4230mV</Item>
+        <Item>4235mV</Item>
+        <Item>4240mV</Item>
+        <Item>4245mV</Item>
+        <Item>4250mV</Item>
+        <Item>4255mV</Item>
+        <Item>4260mV</Item>
+        <Item>4265mV</Item>
+        <Item>4270mV</Item>
+        <Item>4275mV</Item>
+        <Item>4280mV</Item>
+        <Item>4285mV</Item>
+        <Item>4290mV</Item>
+        <Item>4295mV</Item>
+        <Item>4300mV</Item>
+        <Item>4305mV</Item>
+        <Item>4310mV</Item>
+        <Item>4315mV</Item>
+        <Item>4320mV</Item>
+        <Item>4325mV</Item>
+        <Item>4330mV</Item>
+        <Item>4335mV</Item>
+        <Item>4340mV</Item>
+        <Item>4345mV</Item>
+        <Item>4350mV</Item>
+        <Item>4355mV</Item>
+        <Item>4360mV</Item>
+        <Item>4365mV</Item>
+        <Item>4370mV</Item>
+        <Item>4375mV</Item>
+        <Item>4380mV</Item>
+        <Item>4385mV</Item>
+        <Item>4390mV</Item>
+        <Item>4395mV</Item>
+        <Item>4400mV</Item>
+        <Item>4405mV</Item>
+        <Item>4410mV</Item>
+        <Item>4415mV</Item>
+        <Item>4420mV</Item>
+        <Item>4425mV</Item>
+        <Item>4430mV</Item>
+        <Item>4435mV</Item>
+        <Item>4440mV</Item>
+        <Item>4445mV</Item>
+        <Item>4450mV</Item>
+        <Item>4455mV</Item>
+        <Item>4460mV</Item>
+        <Item>4465mV</Item>
+        <Item>4470mV</Item>
+        <Item>4475mV</Item>
+        <Item>4480mV</Item>
+        <Item>4485mV</Item>
+        <Item>4490mV</Item>
+        <Item>4495mV</Item>
+        <Item>4500mV</Item>
+        <Item>4505mV</Item>
+        <Item>4510mV</Item>
+        <Item>4515mV</Item>
+        <Item>4520mV</Item>
+        <Item>4525mV</Item>
+        <Item>4530mV</Item>
+        <Item>4535mV</Item>
+        <Item>4540mV</Item>
+        <Item>4545mV</Item>
+        <Item>4550mV</Item>
+        <Item>4555mV</Item>
+        <Item>4560mV</Item>
+        <Item>4565mV</Item>
+        <Item>4570mV</Item>
+        <Item>4575mV</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3240,6 +3972,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>ovp_th</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>1</Order>
+          <NickName>ovp_th</NickName>
+          <Catalog>OV</Catalog>
+          <DefValue>180</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>255</MaxValue>
+          <Description>Threshold for OV protection</Description>
         </SFL>
       </Private>
     </Element>
@@ -3259,6 +4003,72 @@
           <BitsNumber>6</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>Disable</Item>
+        <Item>10mV</Item>
+        <Item>20mV</Item>
+        <Item>30mV</Item>
+        <Item>40mV</Item>
+        <Item>50mV</Item>
+        <Item>60mV</Item>
+        <Item>70mV</Item>
+        <Item>80mV</Item>
+        <Item>90mV</Item>
+        <Item>100mV</Item>
+        <Item>110mV</Item>
+        <Item>120mV</Item>
+        <Item>130mV</Item>
+        <Item>140mV</Item>
+        <Item>150mV</Item>
+        <Item>160mV</Item>
+        <Item>170mV</Item>
+        <Item>180mV</Item>
+        <Item>190mV</Item>
+        <Item>200mV</Item>
+        <Item>210mV</Item>
+        <Item>220mV</Item>
+        <Item>230mV</Item>
+        <Item>240mV</Item>
+        <Item>250mV</Item>
+        <Item>260mV</Item>
+        <Item>270mV</Item>
+        <Item>280mV</Item>
+        <Item>290mV</Item>
+        <Item>300mV</Item>
+        <Item>310mV</Item>
+        <Item>320mV</Item>
+        <Item>330mV</Item>
+        <Item>340mV</Item>
+        <Item>350mV</Item>
+        <Item>360mV</Item>
+        <Item>370mV</Item>
+        <Item>380mV</Item>
+        <Item>390mV</Item>
+        <Item>400mV</Item>
+        <Item>410mV</Item>
+        <Item>420mV</Item>
+        <Item>430mV</Item>
+        <Item>440mV</Item>
+        <Item>450mV</Item>
+        <Item>460mV</Item>
+        <Item>470mV</Item>
+        <Item>480mV</Item>
+        <Item>490mV</Item>
+        <Item>500mV</Item>
+        <Item>510mV</Item>
+        <Item>520mV</Item>
+        <Item>530mV</Item>
+        <Item>540mV</Item>
+        <Item>550mV</Item>
+        <Item>560mV</Item>
+        <Item>570mV</Item>
+        <Item>580mV</Item>
+        <Item>590mV</Item>
+        <Item>600mV</Item>
+        <Item>610mV</Item>
+        <Item>620mV</Item>
+        <Item>630mV</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3271,6 +4081,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>ovp_rls_hys</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>2</Order>
+          <NickName>ovp_rls_hys</NickName>
+          <Catalog>OV</Catalog>
+          <DefValue>20</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>63</MaxValue>
+          <Description>Hysteresis voltage for OV release</Description>
         </SFL>
       </Private>
     </Element>
@@ -3290,6 +4112,12 @@
           <BitsNumber>2</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>2 cycles</Item>
+        <Item>4 cycles</Item>
+        <Item>8 cycles</Item>
+        <Item>12 cycles</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3302,6 +4130,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>ovp_dly</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>3</Order>
+          <NickName>ovp_dly</NickName>
+          <Catalog>OV</Catalog>
+          <DefValue>1</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>3</MaxValue>
+          <Description>OV delay scan cycle</Description>
         </SFL>
       </Private>
     </Element>
@@ -3321,6 +4161,264 @@
           <BitsNumber>8</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>5mV</Item>
+        <Item>5.625mV</Item>
+        <Item>6.25mV</Item>
+        <Item>6.875mV</Item>
+        <Item>7.5mV</Item>
+        <Item>8.125mV</Item>
+        <Item>8.75mV</Item>
+        <Item>9.375mV</Item>
+        <Item>10mV</Item>
+        <Item>10.625mV</Item>
+        <Item>11.25mV</Item>
+        <Item>11.875mV</Item>
+        <Item>12.5mV</Item>
+        <Item>13.125mV</Item>
+        <Item>13.75mV</Item>
+        <Item>14.375mV</Item>
+        <Item>15mV</Item>
+        <Item>15.625mV</Item>
+        <Item>16.25mV</Item>
+        <Item>16.875mV</Item>
+        <Item>17.5mV</Item>
+        <Item>18.125mV</Item>
+        <Item>18.75mV</Item>
+        <Item>19.375mV</Item>
+        <Item>20mV</Item>
+        <Item>20.625mV</Item>
+        <Item>21.25mV</Item>
+        <Item>21.875mV</Item>
+        <Item>22.5mV</Item>
+        <Item>23.125mV</Item>
+        <Item>23.75mV</Item>
+        <Item>24.375mV</Item>
+        <Item>25mV</Item>
+        <Item>25.625mV</Item>
+        <Item>26.25mV</Item>
+        <Item>26.875mV</Item>
+        <Item>27.5mV</Item>
+        <Item>28.125mV</Item>
+        <Item>28.75mV</Item>
+        <Item>29.375mV</Item>
+        <Item>30mV</Item>
+        <Item>30.625mV</Item>
+        <Item>31.25mV</Item>
+        <Item>31.875mV</Item>
+        <Item>32.5mV</Item>
+        <Item>33.125mV</Item>
+        <Item>33.75mV</Item>
+        <Item>34.375mV</Item>
+        <Item>35mV</Item>
+        <Item>35.625mV</Item>
+        <Item>36.25mV</Item>
+        <Item>36.875mV</Item>
+        <Item>37.5mV</Item>
+        <Item>38.125mV</Item>
+        <Item>38.75mV</Item>
+        <Item>39.375mV</Item>
+        <Item>40mV</Item>
+        <Item>40.625mV</Item>
+        <Item>41.25mV</Item>
+        <Item>41.875mV</Item>
+        <Item>42.5mV</Item>
+        <Item>43.125mV</Item>
+        <Item>43.75mV</Item>
+        <Item>44.375mV</Item>
+        <Item>45mV</Item>
+        <Item>45.625mV</Item>
+        <Item>46.25mV</Item>
+        <Item>46.875mV</Item>
+        <Item>47.5mV</Item>
+        <Item>48.125mV</Item>
+        <Item>48.75mV</Item>
+        <Item>49.375mV</Item>
+        <Item>50mV</Item>
+        <Item>50.625mV</Item>
+        <Item>51.25mV</Item>
+        <Item>51.875mV</Item>
+        <Item>52.5mV</Item>
+        <Item>53.125mV</Item>
+        <Item>53.75mV</Item>
+        <Item>54.375mV</Item>
+        <Item>55mV</Item>
+        <Item>55.625mV</Item>
+        <Item>56.25mV</Item>
+        <Item>56.875mV</Item>
+        <Item>57.5mV</Item>
+        <Item>58.125mV</Item>
+        <Item>58.75mV</Item>
+        <Item>59.375mV</Item>
+        <Item>60mV</Item>
+        <Item>60.625mV</Item>
+        <Item>61.25mV</Item>
+        <Item>61.875mV</Item>
+        <Item>62.5mV</Item>
+        <Item>63.125mV</Item>
+        <Item>63.75mV</Item>
+        <Item>64.375mV</Item>
+        <Item>65mV</Item>
+        <Item>65.625mV</Item>
+        <Item>66.25mV</Item>
+        <Item>66.875mV</Item>
+        <Item>67.5mV</Item>
+        <Item>68.125mV</Item>
+        <Item>68.75mV</Item>
+        <Item>69.375mV</Item>
+        <Item>70mV</Item>
+        <Item>70.625mV</Item>
+        <Item>71.25mV</Item>
+        <Item>71.875mV</Item>
+        <Item>72.5mV</Item>
+        <Item>73.125mV</Item>
+        <Item>73.75mV</Item>
+        <Item>74.375mV</Item>
+        <Item>75mV</Item>
+        <Item>75.625mV</Item>
+        <Item>76.25mV</Item>
+        <Item>76.875mV</Item>
+        <Item>77.5mV</Item>
+        <Item>78.125mV</Item>
+        <Item>78.75mV</Item>
+        <Item>79.375mV</Item>
+        <Item>80mV</Item>
+        <Item>80.625mV</Item>
+        <Item>81.25mV</Item>
+        <Item>81.875mV</Item>
+        <Item>82.5mV</Item>
+        <Item>83.125mV</Item>
+        <Item>83.75mV</Item>
+        <Item>84.375mV</Item>
+        <Item>85mV</Item>
+        <Item>85.625mV</Item>
+        <Item>86.25mV</Item>
+        <Item>86.875mV</Item>
+        <Item>87.5mV</Item>
+        <Item>88.125mV</Item>
+        <Item>88.75mV</Item>
+        <Item>89.375mV</Item>
+        <Item>90mV</Item>
+        <Item>90.625mV</Item>
+        <Item>91.25mV</Item>
+        <Item>91.875mV</Item>
+        <Item>92.5mV</Item>
+        <Item>93.125mV</Item>
+        <Item>93.75mV</Item>
+        <Item>94.375mV</Item>
+        <Item>95mV</Item>
+        <Item>95.625mV</Item>
+        <Item>96.25mV</Item>
+        <Item>96.875mV</Item>
+        <Item>97.5mV</Item>
+        <Item>98.125mV</Item>
+        <Item>98.75mV</Item>
+        <Item>99.375mV</Item>
+        <Item>100mV</Item>
+        <Item>100.625mV</Item>
+        <Item>101.25mV</Item>
+        <Item>101.875mV</Item>
+        <Item>102.5mV</Item>
+        <Item>103.125mV</Item>
+        <Item>103.75mV</Item>
+        <Item>104.375mV</Item>
+        <Item>105mV</Item>
+        <Item>105.625mV</Item>
+        <Item>106.25mV</Item>
+        <Item>106.875mV</Item>
+        <Item>107.5mV</Item>
+        <Item>108.125mV</Item>
+        <Item>108.75mV</Item>
+        <Item>109.375mV</Item>
+        <Item>110mV</Item>
+        <Item>110.625mV</Item>
+        <Item>111.25mV</Item>
+        <Item>111.875mV</Item>
+        <Item>112.5mV</Item>
+        <Item>113.125mV</Item>
+        <Item>113.75mV</Item>
+        <Item>114.375mV</Item>
+        <Item>115mV</Item>
+        <Item>115.625mV</Item>
+        <Item>116.25mV</Item>
+        <Item>116.875mV</Item>
+        <Item>117.5mV</Item>
+        <Item>118.125mV</Item>
+        <Item>118.75mV</Item>
+        <Item>119.375mV</Item>
+        <Item>120mV</Item>
+        <Item>120.625mV</Item>
+        <Item>121.25mV</Item>
+        <Item>121.875mV</Item>
+        <Item>122.5mV</Item>
+        <Item>123.125mV</Item>
+        <Item>123.75mV</Item>
+        <Item>124.375mV</Item>
+        <Item>125mV</Item>
+        <Item>125.625mV</Item>
+        <Item>126.25mV</Item>
+        <Item>126.875mV</Item>
+        <Item>127.5mV</Item>
+        <Item>128.125mV</Item>
+        <Item>128.75mV</Item>
+        <Item>129.375mV</Item>
+        <Item>130mV</Item>
+        <Item>130.625mV</Item>
+        <Item>131.25mV</Item>
+        <Item>131.875mV</Item>
+        <Item>132.5mV</Item>
+        <Item>133.125mV</Item>
+        <Item>133.75mV</Item>
+        <Item>134.375mV</Item>
+        <Item>135mV</Item>
+        <Item>135.625mV</Item>
+        <Item>136.25mV</Item>
+        <Item>136.875mV</Item>
+        <Item>137.5mV</Item>
+        <Item>138.125mV</Item>
+        <Item>138.75mV</Item>
+        <Item>139.375mV</Item>
+        <Item>140mV</Item>
+        <Item>140.625mV</Item>
+        <Item>141.25mV</Item>
+        <Item>141.875mV</Item>
+        <Item>142.5mV</Item>
+        <Item>143.125mV</Item>
+        <Item>143.75mV</Item>
+        <Item>144.375mV</Item>
+        <Item>145mV</Item>
+        <Item>145.625mV</Item>
+        <Item>146.25mV</Item>
+        <Item>146.875mV</Item>
+        <Item>147.5mV</Item>
+        <Item>148.125mV</Item>
+        <Item>148.75mV</Item>
+        <Item>149.375mV</Item>
+        <Item>150mV</Item>
+        <Item>150.625mV</Item>
+        <Item>151.25mV</Item>
+        <Item>151.875mV</Item>
+        <Item>152.5mV</Item>
+        <Item>153.125mV</Item>
+        <Item>153.75mV</Item>
+        <Item>154.375mV</Item>
+        <Item>155mV</Item>
+        <Item>155.625mV</Item>
+        <Item>156.25mV</Item>
+        <Item>156.875mV</Item>
+        <Item>157.5mV</Item>
+        <Item>158.125mV</Item>
+        <Item>158.75mV</Item>
+        <Item>159.375mV</Item>
+        <Item>160mV</Item>
+        <Item>160.625mV</Item>
+        <Item>161.25mV</Item>
+        <Item>161.875mV</Item>
+        <Item>162.5mV</Item>
+        <Item>163.125mV</Item>
+        <Item>163.75mV</Item>
+        <Item>164.375mV</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3333,6 +4431,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>doc1p_th</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>1</Order>
+          <NickName>doc1p_th</NickName>
+          <Catalog>DOC</Catalog>
+          <DefValue>64</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>255</MaxValue>
+          <Description>Threshold for DOC1 protection</Description>
         </SFL>
       </Private>
     </Element>
@@ -3352,6 +4462,12 @@
           <BitsNumber>2</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>2 cycles</Item>
+        <Item>4 cycles</Item>
+        <Item>8 cycles</Item>
+        <Item>12 cycles</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3364,6 +4480,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>doc1p_dly</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>2</Order>
+          <NickName>doc1p_dly</NickName>
+          <Catalog>DOC</Catalog>
+          <DefValue>1</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>3</MaxValue>
+          <Description>DOC1P delay scan cycle</Description>
         </SFL>
       </Private>
     </Element>
@@ -3383,6 +4511,10 @@
           <BitsNumber>1</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>turn on discharge MOSFET when in charge</Item>
+        <Item>disable this function</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3395,6 +4527,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>dsgon_inchg_disable</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>2</Order>
+          <NickName>dsgon_inchg_disable</NickName>
+          <Catalog>CHG</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Description></Description>
         </SFL>
       </Private>
     </Element>
@@ -3414,6 +4558,10 @@
           <BitsNumber>1</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>turn on charge MOSFET when in discharge</Item>
+        <Item>disable this function</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3426,6 +4574,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>chgon_indsg_disable</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>2</Order>
+          <NickName>chgon_indsg_disable</NickName>
+          <Catalog>DSG</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Description></Description>
         </SFL>
       </Private>
     </Element>
@@ -3445,6 +4605,16 @@
           <BitsNumber>3</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>7</Item>
+        <Item>8</Item>
+        <Item>9</Item>
+        <Item>10</Item>
+        <Item>11</Item>
+        <Item>12</Item>
+        <Item>13</Item>
+        <Item>14</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3457,6 +4627,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>cell_num</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>1</Order>
+          <NickName>cell_num</NickName>
+          <Catalog>Miscellaneous</Catalog>
+          <DefValue>7</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>7</MaxValue>
+          <Description>cell number configuration</Description>
         </SFL>
       </Private>
     </Element>
@@ -3476,6 +4658,10 @@
           <BitsNumber>1</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>disable this function</Item>
+        <Item>enable load on or off detection during DSG MOSFET OFF</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3488,6 +4674,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>sw_load_detect_enable</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>2</Order>
+          <NickName>sw_load_detect_enable</NickName>
+          <Catalog>Miscellaneous</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Description></Description>
         </SFL>
       </Private>
     </Element>
@@ -3507,6 +4705,264 @@
           <BitsNumber>8</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>2.5mV</Item>
+        <Item>2.8125mV</Item>
+        <Item>3.125mV</Item>
+        <Item>3.4375mV</Item>
+        <Item>3.75mV</Item>
+        <Item>4.0625mV</Item>
+        <Item>4.375mV</Item>
+        <Item>4.6875mV</Item>
+        <Item>5mV</Item>
+        <Item>5.3125mV</Item>
+        <Item>5.625mV</Item>
+        <Item>5.9375mV</Item>
+        <Item>6.25mV</Item>
+        <Item>6.5625mV</Item>
+        <Item>6.875mV</Item>
+        <Item>7.1875mV</Item>
+        <Item>7.5mV</Item>
+        <Item>7.8125mV</Item>
+        <Item>8.125mV</Item>
+        <Item>8.4375mV</Item>
+        <Item>8.75mV</Item>
+        <Item>9.0625mV</Item>
+        <Item>9.375mV</Item>
+        <Item>9.6875mV</Item>
+        <Item>10mV</Item>
+        <Item>10.3125mV</Item>
+        <Item>10.625mV</Item>
+        <Item>10.9375mV</Item>
+        <Item>11.25mV</Item>
+        <Item>11.5625mV</Item>
+        <Item>11.875mV</Item>
+        <Item>12.1875mV</Item>
+        <Item>12.5mV</Item>
+        <Item>12.8125mV</Item>
+        <Item>13.125mV</Item>
+        <Item>13.4375mV</Item>
+        <Item>13.75mV</Item>
+        <Item>14.0625mV</Item>
+        <Item>14.375mV</Item>
+        <Item>14.6875mV</Item>
+        <Item>15mV</Item>
+        <Item>15.3125mV</Item>
+        <Item>15.625mV</Item>
+        <Item>15.9375mV</Item>
+        <Item>16.25mV</Item>
+        <Item>16.5625mV</Item>
+        <Item>16.875mV</Item>
+        <Item>17.1875mV</Item>
+        <Item>17.5mV</Item>
+        <Item>17.8125mV</Item>
+        <Item>18.125mV</Item>
+        <Item>18.4375mV</Item>
+        <Item>18.75mV</Item>
+        <Item>19.0625mV</Item>
+        <Item>19.375mV</Item>
+        <Item>19.6875mV</Item>
+        <Item>20mV</Item>
+        <Item>20.3125mV</Item>
+        <Item>20.625mV</Item>
+        <Item>20.9375mV</Item>
+        <Item>21.25mV</Item>
+        <Item>21.5625mV</Item>
+        <Item>21.875mV</Item>
+        <Item>22.1875mV</Item>
+        <Item>22.5mV</Item>
+        <Item>22.8125mV</Item>
+        <Item>23.125mV</Item>
+        <Item>23.4375mV</Item>
+        <Item>23.75mV</Item>
+        <Item>24.0625mV</Item>
+        <Item>24.375mV</Item>
+        <Item>24.6875mV</Item>
+        <Item>25mV</Item>
+        <Item>25.3125mV</Item>
+        <Item>25.625mV</Item>
+        <Item>25.9375mV</Item>
+        <Item>26.25mV</Item>
+        <Item>26.5625mV</Item>
+        <Item>26.875mV</Item>
+        <Item>27.1875mV</Item>
+        <Item>27.5mV</Item>
+        <Item>27.8125mV</Item>
+        <Item>28.125mV</Item>
+        <Item>28.4375mV</Item>
+        <Item>28.75mV</Item>
+        <Item>29.0625mV</Item>
+        <Item>29.375mV</Item>
+        <Item>29.6875mV</Item>
+        <Item>30mV</Item>
+        <Item>30.3125mV</Item>
+        <Item>30.625mV</Item>
+        <Item>30.9375mV</Item>
+        <Item>31.25mV</Item>
+        <Item>31.5625mV</Item>
+        <Item>31.875mV</Item>
+        <Item>32.1875mV</Item>
+        <Item>32.5mV</Item>
+        <Item>32.8125mV</Item>
+        <Item>33.125mV</Item>
+        <Item>33.4375mV</Item>
+        <Item>33.75mV</Item>
+        <Item>34.0625mV</Item>
+        <Item>34.375mV</Item>
+        <Item>34.6875mV</Item>
+        <Item>35mV</Item>
+        <Item>35.3125mV</Item>
+        <Item>35.625mV</Item>
+        <Item>35.9375mV</Item>
+        <Item>36.25mV</Item>
+        <Item>36.5625mV</Item>
+        <Item>36.875mV</Item>
+        <Item>37.1875mV</Item>
+        <Item>37.5mV</Item>
+        <Item>37.8125mV</Item>
+        <Item>38.125mV</Item>
+        <Item>38.4375mV</Item>
+        <Item>38.75mV</Item>
+        <Item>39.0625mV</Item>
+        <Item>39.375mV</Item>
+        <Item>39.6875mV</Item>
+        <Item>40mV</Item>
+        <Item>40.3125mV</Item>
+        <Item>40.625mV</Item>
+        <Item>40.9375mV</Item>
+        <Item>41.25mV</Item>
+        <Item>41.5625mV</Item>
+        <Item>41.875mV</Item>
+        <Item>42.1875mV</Item>
+        <Item>42.5mV</Item>
+        <Item>42.8125mV</Item>
+        <Item>43.125mV</Item>
+        <Item>43.4375mV</Item>
+        <Item>43.75mV</Item>
+        <Item>44.0625mV</Item>
+        <Item>44.375mV</Item>
+        <Item>44.6875mV</Item>
+        <Item>45mV</Item>
+        <Item>45.3125mV</Item>
+        <Item>45.625mV</Item>
+        <Item>45.9375mV</Item>
+        <Item>46.25mV</Item>
+        <Item>46.5625mV</Item>
+        <Item>46.875mV</Item>
+        <Item>47.1875mV</Item>
+        <Item>47.5mV</Item>
+        <Item>47.8125mV</Item>
+        <Item>48.125mV</Item>
+        <Item>48.4375mV</Item>
+        <Item>48.75mV</Item>
+        <Item>49.0625mV</Item>
+        <Item>49.375mV</Item>
+        <Item>49.6875mV</Item>
+        <Item>50mV</Item>
+        <Item>50.3125mV</Item>
+        <Item>50.625mV</Item>
+        <Item>50.9375mV</Item>
+        <Item>51.25mV</Item>
+        <Item>51.5625mV</Item>
+        <Item>51.875mV</Item>
+        <Item>52.1875mV</Item>
+        <Item>52.5mV</Item>
+        <Item>52.8125mV</Item>
+        <Item>53.125mV</Item>
+        <Item>53.4375mV</Item>
+        <Item>53.75mV</Item>
+        <Item>54.0625mV</Item>
+        <Item>54.375mV</Item>
+        <Item>54.6875mV</Item>
+        <Item>55mV</Item>
+        <Item>55.3125mV</Item>
+        <Item>55.625mV</Item>
+        <Item>55.9375mV</Item>
+        <Item>56.25mV</Item>
+        <Item>56.5625mV</Item>
+        <Item>56.875mV</Item>
+        <Item>57.1875mV</Item>
+        <Item>57.5mV</Item>
+        <Item>57.8125mV</Item>
+        <Item>58.125mV</Item>
+        <Item>58.4375mV</Item>
+        <Item>58.75mV</Item>
+        <Item>59.0625mV</Item>
+        <Item>59.375mV</Item>
+        <Item>59.6875mV</Item>
+        <Item>60mV</Item>
+        <Item>60.3125mV</Item>
+        <Item>60.625mV</Item>
+        <Item>60.9375mV</Item>
+        <Item>61.25mV</Item>
+        <Item>61.5625mV</Item>
+        <Item>61.875mV</Item>
+        <Item>62.1875mV</Item>
+        <Item>62.5mV</Item>
+        <Item>62.8125mV</Item>
+        <Item>63.125mV</Item>
+        <Item>63.4375mV</Item>
+        <Item>63.75mV</Item>
+        <Item>64.0625mV</Item>
+        <Item>64.375mV</Item>
+        <Item>64.6875mV</Item>
+        <Item>65mV</Item>
+        <Item>65.3125mV</Item>
+        <Item>65.625mV</Item>
+        <Item>65.9375mV</Item>
+        <Item>66.25mV</Item>
+        <Item>66.5625mV</Item>
+        <Item>66.875mV</Item>
+        <Item>67.1875mV</Item>
+        <Item>67.5mV</Item>
+        <Item>67.8125mV</Item>
+        <Item>68.125mV</Item>
+        <Item>68.4375mV</Item>
+        <Item>68.75mV</Item>
+        <Item>69.0625mV</Item>
+        <Item>69.375mV</Item>
+        <Item>69.6875mV</Item>
+        <Item>70mV</Item>
+        <Item>70.3125mV</Item>
+        <Item>70.625mV</Item>
+        <Item>70.9375mV</Item>
+        <Item>71.25mV</Item>
+        <Item>71.5625mV</Item>
+        <Item>71.875mV</Item>
+        <Item>72.1875mV</Item>
+        <Item>72.5mV</Item>
+        <Item>72.8125mV</Item>
+        <Item>73.125mV</Item>
+        <Item>73.4375mV</Item>
+        <Item>73.75mV</Item>
+        <Item>74.0625mV</Item>
+        <Item>74.375mV</Item>
+        <Item>74.6875mV</Item>
+        <Item>75mV</Item>
+        <Item>75.3125mV</Item>
+        <Item>75.625mV</Item>
+        <Item>75.9375mV</Item>
+        <Item>76.25mV</Item>
+        <Item>76.5625mV</Item>
+        <Item>76.875mV</Item>
+        <Item>77.1875mV</Item>
+        <Item>77.5mV</Item>
+        <Item>77.8125mV</Item>
+        <Item>78.125mV</Item>
+        <Item>78.4375mV</Item>
+        <Item>78.75mV</Item>
+        <Item>79.0625mV</Item>
+        <Item>79.375mV</Item>
+        <Item>79.6875mV</Item>
+        <Item>80mV</Item>
+        <Item>80.3125mV</Item>
+        <Item>80.625mV</Item>
+        <Item>80.9375mV</Item>
+        <Item>81.25mV</Item>
+        <Item>81.5625mV</Item>
+        <Item>81.875mV</Item>
+        <Item>82.1875mV</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3519,6 +4975,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>cocp_th</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>1</Order>
+          <NickName>cocp_th</NickName>
+          <Catalog>COC</Catalog>
+          <DefValue>32</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>255</MaxValue>
+          <Description>Threshold for COC protection</Description>
         </SFL>
       </Private>
     </Element>
@@ -3538,6 +5006,12 @@
           <BitsNumber>2</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>2 cycles</Item>
+        <Item>4 cycles</Item>
+        <Item>8 cycles</Item>
+        <Item>12 cycles</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3550,6 +5024,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>cocp_dly</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>2</Order>
+          <NickName>cocp_dly</NickName>
+          <Catalog>COC</Catalog>
+          <DefValue>1</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>3</MaxValue>
+          <Description>COCP delay scan cycle</Description>
         </SFL>
       </Private>
     </Element>
@@ -3569,6 +5055,10 @@
           <BitsNumber>1</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>disable this function</Item>
+        <Item>enable load on or off detection during DSG MOSFET OFF</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3581,6 +5071,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>sw_chgrin_detect_eable</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>3</Order>
+          <NickName>sw_chgrin_detect_eable</NickName>
+          <Catalog>Miscellaneous</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Description></Description>
         </SFL>
       </Private>
     </Element>
@@ -3600,6 +5102,24 @@
           <BitsNumber>4</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>10mV</Item>
+        <Item>20mV</Item>
+        <Item>30mV</Item>
+        <Item>40mV</Item>
+        <Item>50mV</Item>
+        <Item>60mV</Item>
+        <Item>70mV</Item>
+        <Item>80mV</Item>
+        <Item>90mV</Item>
+        <Item>100mV</Item>
+        <Item>110mV</Item>
+        <Item>120mV</Item>
+        <Item>130mV</Item>
+        <Item>140mV</Item>
+        <Item>150mV</Item>
+        <Item>160mV</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3612,6 +5132,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>doc2p_th</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>3</Order>
+          <NickName>doc2p_th</NickName>
+          <Catalog>DOC</Catalog>
+          <DefValue>10</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>15</MaxValue>
+          <Description>Discharge Over Current Level 2 (DOC2) threshold</Description>
         </SFL>
       </Private>
     </Element>
@@ -3631,6 +5163,24 @@
           <BitsNumber>4</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>62.5us</Item>
+        <Item>125us</Item>
+        <Item>187.5us</Item>
+        <Item>250us</Item>
+        <Item>312.5us</Item>
+        <Item>375us</Item>
+        <Item>437.5us</Item>
+        <Item>500us</Item>
+        <Item>562.5us</Item>
+        <Item>625us</Item>
+        <Item>687.5us</Item>
+        <Item>750us</Item>
+        <Item>812.5us</Item>
+        <Item>875us</Item>
+        <Item>937.5us</Item>
+        <Item>1000us</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3643,6 +5193,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>scp_dly</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>1</Order>
+          <NickName>scp_dly</NickName>
+          <Catalog>SC</Catalog>
+          <DefValue>8</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>15</MaxValue>
+          <Description>scp delay time</Description>
         </SFL>
       </Private>
     </Element>
@@ -3662,6 +5224,40 @@
           <BitsNumber>5</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>1ms</Item>
+        <Item>2ms</Item>
+        <Item>3ms</Item>
+        <Item>4ms</Item>
+        <Item>5ms</Item>
+        <Item>6ms</Item>
+        <Item>7ms</Item>
+        <Item>8ms</Item>
+        <Item>9ms</Item>
+        <Item>10ms</Item>
+        <Item>11ms</Item>
+        <Item>12ms</Item>
+        <Item>13ms</Item>
+        <Item>14ms</Item>
+        <Item>15ms</Item>
+        <Item>16ms</Item>
+        <Item>17ms</Item>
+        <Item>18ms</Item>
+        <Item>19ms</Item>
+        <Item>20ms</Item>
+        <Item>21ms</Item>
+        <Item>22ms</Item>
+        <Item>23ms</Item>
+        <Item>24ms</Item>
+        <Item>25ms</Item>
+        <Item>26ms</Item>
+        <Item>27ms</Item>
+        <Item>28ms</Item>
+        <Item>29ms</Item>
+        <Item>30ms</Item>
+        <Item>31ms</Item>
+        <Item>32ms</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3674,6 +5270,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>doc2p_dly</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>4</Order>
+          <NickName>doc2p_dly</NickName>
+          <Catalog>DOC</Catalog>
+          <DefValue>5</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>31</MaxValue>
+          <Description>doc2p delay time</Description>
         </SFL>
       </Private>
     </Element>
@@ -3693,6 +5301,10 @@
           <BitsNumber>1</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>enable/disable INDSG depends on dsg_drv</Item>
+        <Item>enable INDSG check always</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3705,6 +5317,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>sw_indsg_enable</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>4</Order>
+          <NickName>sw_indsg_enable</NickName>
+          <Catalog>Miscellaneous</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Description></Description>
         </SFL>
       </Private>
     </Element>
@@ -3724,6 +5348,12 @@
           <BitsNumber>2</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>1.5X</Item>
+        <Item>2.4X</Item>
+        <Item>4X</Item>
+        <Item>6X</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3736,6 +5366,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>scp_th</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>2</Order>
+          <NickName>scp_th</NickName>
+          <Catalog>SC</Catalog>
+          <DefValue>1</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>3</MaxValue>
+          <Description>SC threshold factor, N X doc2p_th</Description>
         </SFL>
       </Private>
     </Element>
@@ -3755,6 +5397,12 @@
           <BitsNumber>2</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>No EFETC function</Item>
+        <Item>allow EFETC high to turn on discharge MOSFET (Level Mode)</Item>
+        <Item>allow EFETC low to turn on discharge MOSFET (Level Mode)</Item>
+        <Item>allow PWM EFETC high to turn on discharge MOSFET (PWM Mode)</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3767,6 +5415,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>efetc_cfg</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>5</Order>
+          <NickName>efetc_cfg</NickName>
+          <Catalog>Miscellaneous</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>3</MaxValue>
+          <Description></Description>
         </SFL>
       </Private>
     </Element>
@@ -3786,6 +5446,16 @@
           <BitsNumber>4</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>Disabled</Item>
+        <Item>1s</Item>
+        <Item>2s</Item>
+        <Item>4s</Item>
+        <Item>8s</Item>
+        <Item>16s</Item>
+        <Item>32s</Item>
+        <Item>64s</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3798,6 +5468,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>wkup_time</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>6</Order>
+          <NickName>wkup_time</NickName>
+          <Catalog>Miscellaneous</Catalog>
+          <DefValue>5</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>7</MaxValue>
+          <Description></Description>
         </SFL>
       </Private>
     </Element>
@@ -3817,6 +5499,24 @@
           <BitsNumber>4</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>1 time unit</Item>
+        <Item>2 time unit</Item>
+        <Item>3 time unit</Item>
+        <Item>4 time unit</Item>
+        <Item>5 time unit</Item>
+        <Item>6 time unit</Item>
+        <Item>7 time unit</Item>
+        <Item>8 time unit</Item>
+        <Item>9 time unit</Item>
+        <Item>10 time unit</Item>
+        <Item>11 time unit</Item>
+        <Item>12 time unit</Item>
+        <Item>13 time unit</Item>
+        <Item>14 time unit</Item>
+        <Item>15 time unit</Item>
+        <Item>16 time unit</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3829,6 +5529,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>cell_cto_off_time</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>7</Order>
+          <NickName>cell_cto_off_time</NickName>
+          <Catalog>Miscellaneous</Catalog>
+          <DefValue>7</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>15</MaxValue>
+          <Description>the off time after bleeding</Description>
         </SFL>
       </Private>
     </Element>
@@ -3848,6 +5560,24 @@
           <BitsNumber>4</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>1 time unit</Item>
+        <Item>2 time unit</Item>
+        <Item>3 time unit</Item>
+        <Item>4 time unit</Item>
+        <Item>5 time unit</Item>
+        <Item>6 time unit</Item>
+        <Item>7 time unit</Item>
+        <Item>8 time unit</Item>
+        <Item>9 time unit</Item>
+        <Item>10 time unit</Item>
+        <Item>11 time unit</Item>
+        <Item>12 time unit</Item>
+        <Item>13 time unit</Item>
+        <Item>14 time unit</Item>
+        <Item>15 time unit</Item>
+        <Item>16 time unit</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3861,6 +5591,18 @@
           <Group>Azalea14</Group>
           <Description>cell_cto_on_time</Description>
         </SFL>
+        <SFL Name ="Register Config">
+          <Order>8</Order>
+          <NickName>cell_cto_on_time</NickName>
+          <Catalog>Miscellaneous</Catalog>
+          <DefValue>15</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>15</MaxValue>
+          <Description>the bleeding time for CTO</Description>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00030C08">
@@ -3869,28 +5611,46 @@
       <RegRef>1</RegRef>
       <SubType>0</SubType>
       <HexMin>0</HexMin>
-      <HexMax>7</HexMax>
+      <HexMax>3</HexMax>
       <PhyMin>0</PhyMin>
-      <PhyMax>7</PhyMax>
+      <PhyMax>3</PhyMax>
       <LocationList>
         <Location Position="Low">
           <Address>C</Address>
           <StartBit>8</StartBit>
-          <BitsNumber>3</BitsNumber>
+          <BitsNumber>2</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>16us</Item>
+        <Item>32us</Item>
+        <Item>64us</Item>
+        <Item>125us</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
           <BitTotal>10</BitTotal>
           <Index>C</Index>
           <BitStart>8</BitStart>
-          <Length>3</Length>
+          <Length>2</Length>
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
           <Group>Azalea14</Group>
-          <Description>cto_time_unit</Description>
+          <Description>cto_time_unit_sel</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>9</Order>
+          <NickName>cto_time_unit_sel</NickName>
+          <Catalog>Miscellaneous</Catalog>
+          <DefValue>1</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>3</MaxValue>
+          <Description></Description>
         </SFL>
       </Private>
     </Element>
@@ -3910,6 +5670,12 @@
           <BitsNumber>2</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>internal VREF for ADC is controlled by internal ADC, enabled internal VREF in advance 2ms before ADC started</Item>
+        <Item>always enable the internal VREF for ADC</Item>
+        <Item>always enable the internal VREF for ADC</Item>
+        <Item>select external VREF for ADC, so always disable the internal VREF</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3922,6 +5688,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>vref_adc_ctrl</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>10</Order>
+          <NickName>vref_adc_ctrl</NickName>
+          <Catalog>Miscellaneous</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>3</MaxValue>
+          <Description></Description>
         </SFL>
       </Private>
     </Element>
@@ -3941,6 +5719,24 @@
           <BitsNumber>4</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>24 cycles</Item>
+        <Item>25 cycles</Item>
+        <Item>26 cycles</Item>
+        <Item>27 cycles</Item>
+        <Item>28 cycles</Item>
+        <Item>29 cycles</Item>
+        <Item>30 cycles</Item>
+        <Item>31 cycles</Item>
+        <Item>32 cycles</Item>
+        <Item>33 cycles</Item>
+        <Item>34 cycles</Item>
+        <Item>35 cycles</Item>
+        <Item>36 cycles</Item>
+        <Item>37 cycles</Item>
+        <Item>38 cycles</Item>
+        <Item>39 cycles</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3953,6 +5749,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>inter_settling_time</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>11</Order>
+          <NickName>inter_settling_time</NickName>
+          <Catalog>Miscellaneous</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>15</MaxValue>
+          <Description>the programmable settling time for CELLs, and all other channels</Description>
         </SFL>
       </Private>
     </Element>
@@ -3972,6 +5780,24 @@
           <BitsNumber>4</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>24 cycles</Item>
+        <Item>25 cycles</Item>
+        <Item>26 cycles</Item>
+        <Item>27 cycles</Item>
+        <Item>28 cycles</Item>
+        <Item>29 cycles</Item>
+        <Item>30 cycles</Item>
+        <Item>31 cycles</Item>
+        <Item>32 cycles</Item>
+        <Item>33 cycles</Item>
+        <Item>34 cycles</Item>
+        <Item>35 cycles</Item>
+        <Item>36 cycles</Item>
+        <Item>37 cycles</Item>
+        <Item>38 cycles</Item>
+        <Item>39 cycles</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -3984,6 +5810,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>dda_settling_time</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>12</Order>
+          <NickName>dda_settling_time</NickName>
+          <Catalog>Miscellaneous</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>15</MaxValue>
+          <Description>the programmable settling time for ISENS ADC channel</Description>
         </SFL>
       </Private>
     </Element>
@@ -4003,6 +5841,136 @@
           <BitsNumber>7</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>64 cycles</Item>
+        <Item>65 cycles</Item>
+        <Item>66 cycles</Item>
+        <Item>67 cycles</Item>
+        <Item>68 cycles</Item>
+        <Item>69 cycles</Item>
+        <Item>70 cycles</Item>
+        <Item>71 cycles</Item>
+        <Item>72 cycles</Item>
+        <Item>73 cycles</Item>
+        <Item>74 cycles</Item>
+        <Item>75 cycles</Item>
+        <Item>76 cycles</Item>
+        <Item>77 cycles</Item>
+        <Item>78 cycles</Item>
+        <Item>79 cycles</Item>
+        <Item>80 cycles</Item>
+        <Item>81 cycles</Item>
+        <Item>82 cycles</Item>
+        <Item>83 cycles</Item>
+        <Item>84 cycles</Item>
+        <Item>85 cycles</Item>
+        <Item>86 cycles</Item>
+        <Item>87 cycles</Item>
+        <Item>88 cycles</Item>
+        <Item>89 cycles</Item>
+        <Item>90 cycles</Item>
+        <Item>91 cycles</Item>
+        <Item>92 cycles</Item>
+        <Item>93 cycles</Item>
+        <Item>94 cycles</Item>
+        <Item>95 cycles</Item>
+        <Item>96 cycles</Item>
+        <Item>97 cycles</Item>
+        <Item>98 cycles</Item>
+        <Item>99 cycles</Item>
+        <Item>100 cycles</Item>
+        <Item>101 cycles</Item>
+        <Item>102 cycles</Item>
+        <Item>103 cycles</Item>
+        <Item>104 cycles</Item>
+        <Item>105 cycles</Item>
+        <Item>106 cycles</Item>
+        <Item>107 cycles</Item>
+        <Item>108 cycles</Item>
+        <Item>109 cycles</Item>
+        <Item>110 cycles</Item>
+        <Item>111 cycles</Item>
+        <Item>112 cycles</Item>
+        <Item>113 cycles</Item>
+        <Item>114 cycles</Item>
+        <Item>115 cycles</Item>
+        <Item>116 cycles</Item>
+        <Item>117 cycles</Item>
+        <Item>118 cycles</Item>
+        <Item>119 cycles</Item>
+        <Item>120 cycles</Item>
+        <Item>121 cycles</Item>
+        <Item>122 cycles</Item>
+        <Item>123 cycles</Item>
+        <Item>124 cycles</Item>
+        <Item>125 cycles</Item>
+        <Item>126 cycles</Item>
+        <Item>127 cycles</Item>
+        <Item>128 cycles</Item>
+        <Item>129 cycles</Item>
+        <Item>130 cycles</Item>
+        <Item>131 cycles</Item>
+        <Item>132 cycles</Item>
+        <Item>133 cycles</Item>
+        <Item>134 cycles</Item>
+        <Item>135 cycles</Item>
+        <Item>136 cycles</Item>
+        <Item>137 cycles</Item>
+        <Item>138 cycles</Item>
+        <Item>139 cycles</Item>
+        <Item>140 cycles</Item>
+        <Item>141 cycles</Item>
+        <Item>142 cycles</Item>
+        <Item>143 cycles</Item>
+        <Item>144 cycles</Item>
+        <Item>145 cycles</Item>
+        <Item>146 cycles</Item>
+        <Item>147 cycles</Item>
+        <Item>148 cycles</Item>
+        <Item>149 cycles</Item>
+        <Item>150 cycles</Item>
+        <Item>151 cycles</Item>
+        <Item>152 cycles</Item>
+        <Item>153 cycles</Item>
+        <Item>154 cycles</Item>
+        <Item>155 cycles</Item>
+        <Item>156 cycles</Item>
+        <Item>157 cycles</Item>
+        <Item>158 cycles</Item>
+        <Item>159 cycles</Item>
+        <Item>160 cycles</Item>
+        <Item>161 cycles</Item>
+        <Item>162 cycles</Item>
+        <Item>163 cycles</Item>
+        <Item>164 cycles</Item>
+        <Item>165 cycles</Item>
+        <Item>166 cycles</Item>
+        <Item>167 cycles</Item>
+        <Item>168 cycles</Item>
+        <Item>169 cycles</Item>
+        <Item>170 cycles</Item>
+        <Item>171 cycles</Item>
+        <Item>172 cycles</Item>
+        <Item>173 cycles</Item>
+        <Item>174 cycles</Item>
+        <Item>175 cycles</Item>
+        <Item>176 cycles</Item>
+        <Item>177 cycles</Item>
+        <Item>178 cycles</Item>
+        <Item>179 cycles</Item>
+        <Item>180 cycles</Item>
+        <Item>181 cycles</Item>
+        <Item>182 cycles</Item>
+        <Item>183 cycles</Item>
+        <Item>184 cycles</Item>
+        <Item>185 cycles</Item>
+        <Item>186 cycles</Item>
+        <Item>187 cycles</Item>
+        <Item>188 cycles</Item>
+        <Item>189 cycles</Item>
+        <Item>190 cycles</Item>
+        <Item>191 cycles</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -4015,6 +5983,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>thm_settling_time</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>13</Order>
+          <NickName>thm_settling_time</NickName>
+          <Catalog>Miscellaneous</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>127</MaxValue>
+          <Description>the programmable settling time for THM0 and THM1 channel</Description>
         </SFL>
       </Private>
     </Element>
@@ -4251,6 +6231,10 @@
           <BitsNumber>1</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>Disable</Item>
+        <Item>Enable</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -4263,6 +6247,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>sw_chg_ctrl</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>3</Order>
+          <NickName>sw_chg_ctrl</NickName>
+          <Catalog>CHG</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Description>active high to allow to enable Charge Driver</Description>
         </SFL>
       </Private>
     </Element>
@@ -4282,6 +6278,10 @@
           <BitsNumber>1</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>Disable</Item>
+        <Item>Enable</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -4294,6 +6294,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>sw_dsg_ctrl</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>3</Order>
+          <NickName>sw_dsg_ctrl</NickName>
+          <Catalog>DSG</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Description>active high to allow to enable Disharge Driver</Description>
         </SFL>
       </Private>
     </Element>
@@ -6959,7 +8971,7 @@
           <Description>coulomb_counter</Description>
         </SFL>
         <SFL Name="Scan">
-          <NickName>cc</NickName>
+          <NickName>cc(mVh)</NickName>
           <Group>6</Group>
           <SubGroup>0</SubGroup>
           <Order>5</Order>
@@ -7001,18 +9013,6 @@
           <Group>Azalea14</Group>
           <Description>raw_cadc_data_0</Description>
         </SFL>
-        <SFL Name="Scan">
-          <NickName>raw cadc data 0</NickName>
-          <Group>6</Group>
-          <SubGroup>0</SubGroup>
-          <Order>6</Order>
-          <DefValue>0</DefValue>
-          <MinValue>-32767</MinValue>
-          <MaxValue>32768</MaxValue>
-          <Usability>false</Usability>
-          <Description>raw cadc data 0</Description>
-          <LogName>raw cadc data 0</LogName>
-        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00033D00">
@@ -7043,18 +9043,6 @@
           <Write>false</Write>
           <Group>Azalea14</Group>
           <Description>raw_cadc_data_1</Description>
-        </SFL>
-        <SFL Name="Scan">
-          <NickName>raw cadc data 1</NickName>
-          <Group>6</Group>
-          <SubGroup>0</SubGroup>
-          <Order>7</Order>
-          <DefValue>0</DefValue>
-          <MinValue>-32767</MinValue>
-          <MaxValue>32768</MaxValue>
-          <Usability>false</Usability>
-          <Description>raw cadc data 1</Description>
-          <LogName>raw cadc data 1</LogName>
         </SFL>
       </Private>
     </Element>
@@ -7087,18 +9075,6 @@
           <Group>Azalea14</Group>
           <Description>cadc_offset_0</Description>
         </SFL>
-        <SFL Name="Scan">
-          <NickName>cadc offset 0</NickName>
-          <Group>6</Group>
-          <SubGroup>0</SubGroup>
-          <Order>8</Order>
-          <DefValue>0</DefValue>
-          <MinValue>-32767</MinValue>
-          <MaxValue>32768</MaxValue>
-          <Usability>false</Usability>
-          <Description>cadc offset 0</Description>
-          <LogName>cadc offset 0</LogName>
-        </SFL>
       </Private>
     </Element>
     <Element Guid="0x00033F00">
@@ -7129,18 +9105,6 @@
           <Write>false</Write>
           <Group>Azalea14</Group>
           <Description>cadc_offset_1</Description>
-        </SFL>
-        <SFL Name="Scan">
-          <NickName>cadc offset 0</NickName>
-          <Group>6</Group>
-          <SubGroup>0</SubGroup>
-          <Order>9</Order>
-          <DefValue>0</DefValue>
-          <MinValue>-32767</MinValue>
-          <MaxValue>32768</MaxValue>
-          <Usability>false</Usability>
-          <Description>cadc offset 1</Description>
-          <LogName>cadc offset 1</LogName>
         </SFL>
       </Private>
     </Element>
@@ -8957,7 +10921,7 @@
           <Order>17</Order>
         </SFL>
         <SFL Name="Scan">
-          <NickName>vbatt</NickName>
+          <NickName>vbatt(mV)</NickName>
           <Group>6</Group>
           <SubGroup>0</SubGroup>
           <Order>0</Order>
@@ -9005,7 +10969,7 @@
           <Description>vcc_adc_ data_8t</Description>
         </SFL>
         <SFL Name="Scan">
-          <NickName>vcc</NickName>
+          <NickName>vcc(mV)</NickName>
           <Group>6</Group>
           <SubGroup>0</SubGroup>
           <Order>1</Order>
@@ -9053,7 +11017,7 @@
           <Description>v50v_adc_ data_8t</Description>
         </SFL>
         <SFL Name="Scan">
-          <NickName>v50v</NickName>
+          <NickName>v50v(mV)</NickName>
           <Group>6</Group>
           <SubGroup>0</SubGroup>
           <Order>2</Order>
@@ -9101,7 +11065,7 @@
           <Description>vmcu_adc_ data_8t</Description>
         </SFL>
         <SFL Name="Scan">
-          <NickName>vmcu</NickName>
+          <NickName>vmcu(mV)</NickName>
           <Group>6</Group>
           <SubGroup>0</SubGroup>
           <Order>3</Order>

@@ -97,7 +97,10 @@ namespace O2Micro.Cobra.Azalea14
                         break;
                     }
                     ddata = Regular2Physical(sdata, p.regref, p.phyref);
-                    p.phydata = (double)((ddata - 1252.5) / 4.345 + 23.0);
+                    //p.phydata = (double)((ddata - 1252.5) / 4.345 + 23.0);
+                    //p.phydata = (double)((ddata - 1220.0) / 4.25 + 23.0);  //Kevin
+                    p.phydata = (double)((ddata - 1280.0) / 4.25 + 23.0);   //Kevin v2
+
                     break;
                 case ElementDefine.SUBTYPE.EXT_TEMP:
                     int index = 0;
