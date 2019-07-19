@@ -106,11 +106,8 @@ namespace O2Micro.Cobra.Azalea14
                     int index = 0;
                     switch (p.guid)
                     {
-                        case 0x00031300: index = 0; break;
-                        case 0x00031400: index = 1; break;
-                        case 0x00031500: index = 2; break;
-                        case 0x00031600: index = 3; break;
-                        case 0x00031700: index = 4; break;
+                        case ElementDefine.THM0: index = 0; break;
+                        case ElementDefine.THM1: index = 1; break;
                     }
 
                     ret = ReadFromRegImg(p, ref wdata);
