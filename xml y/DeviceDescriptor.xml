@@ -14646,6 +14646,18 @@
           <Group>Azalea14</Group>
           <Description>thm0_ot_flag</Description>
         </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>1c</Order>
+          <NickName>thm0 ot flag</NickName>
+          <LogName>thm0 ot flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>thm0 ot flag</Description>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x0003A901">
@@ -14676,6 +14688,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>thm1_ot_flag</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>1d</Order>
+          <NickName>thm1 ot flag</NickName>
+          <LogName>thm1 ot flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>thm1 ot flag</Description>
         </SFL>
       </Private>
     </Element>
@@ -14770,6 +14794,19 @@
           <Group>Azalea14</Group>
           <Description>thm0_ot_event</Description>
         </SFL>
+        <SFL Name="Scan">
+          <Group>3</Group>
+          <SubGroup>0</SubGroup>
+          <GroupName>State Group</GroupName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Order>10</Order>
+          <NickName>thm0 ot event</NickName>
+          <Description>thm0 ot event</Description>
+          <LogName>thm0 ot event</LogName>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x0003AA01">
@@ -14800,6 +14837,19 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>thm1_ot_event</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>3</Group>
+          <SubGroup>0</SubGroup>
+          <GroupName>State Group</GroupName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Order>11</Order>
+          <NickName>thm1 ot event</NickName>
+          <Description>thm1 ot event</Description>
+          <LogName>thm1 ot event</LogName>
         </SFL>
       </Private>
     </Element>
