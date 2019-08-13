@@ -249,8 +249,6 @@ namespace O2Micro.Cobra.Azalea14
 
         public UInt32 Read(ref TASKMessage msg)
         {
-            if (msg.gm.sflname == "SCS")
-                return LibErrorCode.IDS_ERR_SUCCESSFUL;
             Reg reg = null;
             bool bsim = true;
             byte baddress = 0;
@@ -402,23 +400,7 @@ namespace O2Micro.Cobra.Azalea14
             {
                 param = (Parameter)OpParamList[i];
                 if (param == null) continue;
-                if (msg.gm.sflname == "SCS")
-                {
-                    if (param.guid == ElementDefine.TRIGGER_CADC)
-                    {
-                        param.phydata = (double)((double)(parent.m_OpRegImg[0x39].val * param.phyref) / (double)param.regref);
-                    }
-                    else if (param.guid == ElementDefine.THM0)
-                    {
-                        param.phydata = (double)((double)(parent.m_OpRegImg[0x76].val * param.phyref) / (double)param.regref);
-                    }
-                    else if (param.guid == ElementDefine.THM1)
-                    {
-                        param.phydata = (double)((double)(parent.m_OpRegImg[0x77].val * param.phyref) / (double)param.regref);
-                    }
-                }
-                else
-                    m_parent.Hex2Physical(ref param);
+                m_parent.Hex2Physical(ref param);
             }
 
             return ret;
@@ -945,10 +927,15 @@ namespace O2Micro.Cobra.Azalea14
                     }
                     else
                     {
-                        ret = ReadSAR(ref msg);
+                        //ret = ReadSAR(ref msg);
+                        Read(ref msg);
                         if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
                             return ret;
                     }
+
+                    ret = ConvertHexToPhysical(ref msg);
+                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                        return ret;
                     break;
                 case ElementDefine.COMMAND.PASSWORD:
                     msg.percent = 20;

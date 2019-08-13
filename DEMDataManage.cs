@@ -151,6 +151,7 @@ namespace O2Micro.Cobra.Azalea14
                         break;
                     }
                     sdata = (short)wdata;
+                    p.hexdata = wdata;
                     p.phydata = sdata * p.phyref * 1000 / parent.rsense; //需要带符号
                     break;
                 case ElementDefine.SUBTYPE.COULOMB_COUNTER:
