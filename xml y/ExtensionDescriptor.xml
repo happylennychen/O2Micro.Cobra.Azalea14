@@ -26,6 +26,7 @@
       </Layout>
       <SubTask>
         <Write>7</Write>
+        <SaveHex>8</SaveHex>
       </SubTask>
     </Button>
     <Button Label = "Scan"       DBModuleName="Scan"      Name = "ScanV2"         PanelName ="O2Micro.Cobra.ScanPanel">

@@ -5876,7 +5876,7 @@
           <Description>vref_adc_ctrl</Description>
         </SFL>
         <SFL Name ="Register Config">
-          <Order>10</Order>
+          <Order>a</Order>
           <NickName>vref_adc_ctrl</NickName>
           <Catalog>Miscellaneous</Catalog>
           <DefValue>0</DefValue>
@@ -5937,7 +5937,7 @@
           <Description>inter_settling_time</Description>
         </SFL>
         <SFL Name ="Register Config">
-          <Order>11</Order>
+          <Order>b</Order>
           <NickName>inter_settling_time</NickName>
           <Catalog>Miscellaneous</Catalog>
           <DefValue>0</DefValue>
@@ -5998,7 +5998,7 @@
           <Description>dda_settling_time</Description>
         </SFL>
         <SFL Name ="Register Config">
-          <Order>12</Order>
+          <Order>c</Order>
           <NickName>dda_settling_time</NickName>
           <Catalog>Miscellaneous</Catalog>
           <DefValue>0</DefValue>
@@ -6171,7 +6171,7 @@
           <Description>thm_settling_time</Description>
         </SFL>
         <SFL Name ="Register Config">
-          <Order>13</Order>
+          <Order>d</Order>
           <NickName>thm_settling_time</NickName>
           <Catalog>Miscellaneous</Catalog>
           <DefValue>0</DefValue>
@@ -14304,6 +14304,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>thm0_otr_th</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>e</Order>
+          <NickName>thm0_otr_th</NickName>
+          <Catalog>Miscellaneous</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>127</MaxValue>
+          <Description>the programmable settling time for THM0 and THM1 channel</Description>
         </SFL>
       </Private>
     </Element>

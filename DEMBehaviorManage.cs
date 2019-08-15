@@ -14,6 +14,7 @@ using System.Threading;
 using System.ComponentModel;
 using O2Micro.Cobra.Communication;
 using O2Micro.Cobra.Common;
+using System.IO;
 
 namespace O2Micro.Cobra.Azalea14
 {
@@ -974,8 +975,44 @@ namespace O2Micro.Cobra.Azalea14
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
                         return ret;
                     break;
+                case ElementDefine.COMMAND.REGISTER_CONFIG_SAVE_HEX:
+                    {
+                        InitRegisterData();
+                        ret = ConvertPhysicalToHex(ref msg);
+                        if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                            return ret;
+                        string HexData = GetRegisterHexData(ref msg);
+                        if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                            return ret;
+                        FileStream file = new FileStream(msg.sub_task_json, FileMode.Create);
+                        StreamWriter sw = new StreamWriter(file);
+                        sw.Write(HexData);
+                        sw.Close();
+                        file.Close();
+                        break;
+                    }
             }
             return ret;
+        }
+        private void InitRegisterData()
+        {
+            for (ushort i = ElementDefine.OP_USR_OFFSET; i <= ElementDefine.OP_USR_TOP; i++)
+            {
+                parent.m_OpRegImg[i].err = 0;
+                parent.m_OpRegImg[i].val = 0;
+            }
+        }
+
+        private string GetRegisterHexData(ref TASKMessage msg)
+        {
+            string tmp = "";
+            for (ushort i = ElementDefine.OP_USR_OFFSET; i <= ElementDefine.OP_USR_TOP; i++)
+            {
+                if (parent.m_OpRegImg[i].err != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                    return "";
+                tmp += "0x" + i.ToString("X2") + ", " + "0x" + parent.m_OpRegImg[i].val.ToString("X4") + "\r\n";
+            }
+            return tmp;
         }
 
         public UInt32 EpBlockRead()

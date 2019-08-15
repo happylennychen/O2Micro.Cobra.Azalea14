@@ -22,6 +22,9 @@ namespace O2Micro.Cobra.Azalea14
         internal const UInt16 ATE_CRC_OFFSET = 0x17;
 
         internal const UInt16 OP_MEMORY_SIZE = 0xFF;
+
+        internal const UInt16 OP_USR_OFFSET = 0x05;
+        internal const UInt16 OP_USR_TOP = 0x10;
         internal const Byte PARAM_HEX_ERROR = 0xFF;
         internal const Double PARAM_PHYSICAL_ERROR = -999999;
 
@@ -80,6 +83,7 @@ namespace O2Micro.Cobra.Azalea14
             SLOP_TRIM = 5,
             WATCH_DOG = 6,
             PASSWORD = 7,
+            REGISTER_CONFIG_SAVE_HEX = 8,
             SCS = 0x31,
             OPTIONS = 0xFFFF
         }
