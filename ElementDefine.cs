@@ -38,8 +38,6 @@ namespace O2Micro.Cobra.Azalea14
         internal const UInt32 TemperatureElement = 0x00010000;
         internal const UInt32 TpRsense = TemperatureElement + 0x00;
         #endregion
-        #region EFUSE参数GUID
-        #endregion
         #region Operation参数GUID
         internal const UInt32 OperationElement = 0x00030000;
         internal const UInt32 TRIGGER_CADC = 0x00033900; //
@@ -47,6 +45,11 @@ namespace O2Micro.Cobra.Azalea14
         internal const UInt32 COULOMB_COUNTER = 0x00033a00; //
         internal const UInt32 THM0 = 0x00037600; //
         internal const UInt32 THM1 = 0x00037700; //
+        internal const UInt32 THM_CRRT_SEL = 0x00031100; //
+        internal const UInt32 THM0_OT_TH = 0x0003A008; //
+        internal const UInt32 THM0_OTR_TH = 0x0003A000; //
+        internal const UInt32 THM1_OT_TH = 0x0003A108; //
+        internal const UInt32 THM1_OTR_TH = 0x0003A100; //
         #endregion
         #region Virtual parameters
         internal const UInt32 VirtualElement = 0x000c0000;
@@ -82,7 +85,8 @@ namespace O2Micro.Cobra.Azalea14
         {
             SLOP_TRIM = 5,
             WATCH_DOG = 6,
-            PASSWORD = 7,
+            REGISTER_CONFIG_WRITE_WITH_PASSWORD = 7,
+            REGISTER_CONFIG_READ = 9,
             REGISTER_CONFIG_SAVE_HEX = 8,
             SCS = 0x31,
             OPTIONS = 0xFFFF

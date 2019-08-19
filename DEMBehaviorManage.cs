@@ -377,7 +377,7 @@ namespace O2Micro.Cobra.Azalea14
             return ret;
         }
 
-        public UInt32 ConvertHexToPhysical(ref TASKMessage msg)
+        public UInt32 ConvertHexToPhysical(ref TASKMessage msg) //Scan 把这里污染了
         {
             Parameter param = null;
             UInt32 ret = LibErrorCode.IDS_ERR_SUCCESSFUL;
@@ -402,6 +402,35 @@ namespace O2Micro.Cobra.Azalea14
                 param = (Parameter)OpParamList[i];
                 if (param == null) continue;
                 m_parent.Hex2Physical(ref param);
+            }
+
+            return ret;
+        }
+        public UInt32 RegisterConfig_ConvertHexToPhysical(ref TASKMessage msg)
+        {
+            Parameter param = null;
+            UInt32 ret = LibErrorCode.IDS_ERR_SUCCESSFUL;
+
+            List<Parameter> EFUSEParamList = new List<Parameter>();
+            List<Parameter> OpParamList = new List<Parameter>();
+
+            ParamContainer demparameterlist = msg.task_parameterlist;
+            if (demparameterlist == null) return ret;
+
+            foreach (Parameter p in demparameterlist.parameterlist)
+            {
+                if ((p.guid & ElementDefine.SectionMask) == ElementDefine.VirtualElement)    //略过虚拟参数
+                    continue;
+                if (p == null) break;
+                OpParamList.Add(p);
+            }
+            OpParamList = OpParamList.Distinct().ToList();
+
+            for (int i = 0; i < OpParamList.Count; i++)
+            {
+                param = (Parameter)OpParamList[i];
+                if (param == null) continue;
+                m_parent.RegisterConfig_Hex2Physical(ref param);
             }
 
             return ret;
@@ -463,7 +492,7 @@ namespace O2Micro.Cobra.Azalea14
             }
         }
 
-        private UInt32 ReadSAR(ref TASKMessage sarmsg)
+        private UInt32 ScanReadSAR(ref TASKMessage sarmsg)
         {
             UInt32 ret = LibErrorCode.IDS_ERR_SUCCESSFUL;
 
@@ -895,7 +924,7 @@ namespace O2Micro.Cobra.Azalea14
                             //ret = ReadSAR(ref msg, ElementDefine.SAR_MODE.DISABLE);
                             break;
                         case "8_Time_Average":
-                            ret = ReadSAR(ref sarmsg);
+                            ret = ScanReadSAR(ref sarmsg);
                             break;
                     }
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
@@ -938,7 +967,7 @@ namespace O2Micro.Cobra.Azalea14
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
                         return ret;
                     break;
-                case ElementDefine.COMMAND.PASSWORD:
+                case ElementDefine.COMMAND.REGISTER_CONFIG_WRITE_WITH_PASSWORD:
                     msg.percent = 20;
                     ret = GetRegisteInfor(ref msg);
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
@@ -948,12 +977,12 @@ namespace O2Micro.Cobra.Azalea14
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
                         return ret;
                     msg.percent = 40;
-                    ret = parent.ConvertPhysicalToHex(ref msg);
+                    ret = ConvertPhysicalToHex(ref msg);
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
                         return ret;
 
                     msg.percent = 50;
-                    ret = WriteWord(0x0f, 0x3714);
+                    ret = WriteWord(0x0f, 0x3714);      //password
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
                         return ret;
 
@@ -966,7 +995,7 @@ namespace O2Micro.Cobra.Azalea14
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
                         return ret;
                     msg.percent = 80;
-                    ret = parent.ConvertHexToPhysical(ref msg);
+                    ret = RegisterConfig_ConvertHexToPhysical(ref msg);
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
                         return ret;
 
@@ -989,6 +1018,22 @@ namespace O2Micro.Cobra.Azalea14
                         sw.Write(HexData);
                         sw.Close();
                         file.Close();
+                        break;
+                    }
+                case ElementDefine.COMMAND.REGISTER_CONFIG_READ:
+                    {
+                        msg.percent = 20;
+                        ret = GetRegisteInfor(ref msg);
+                        if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                            return ret;
+                        msg.percent = 30;
+                        ret = Read(ref msg);
+                        if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                            return ret;
+                        msg.percent = 80;
+                        ret = RegisterConfig_ConvertHexToPhysical(ref msg);
+                        if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                            return ret;
                         break;
                     }
             }

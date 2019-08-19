@@ -48,6 +48,7 @@ namespace O2Micro.Cobra.Azalea14
 
 
         #region Parameters
+        public Parameter pTHM_CRRT_SEL = new Parameter();
         #endregion
         #region Enable Control bit
         #endregion
@@ -77,6 +78,8 @@ namespace O2Micro.Cobra.Azalea14
         #region other functions
         private void InitParameters()
         {
+            ParamContainer pc = m_Section_ParamlistContainer.GetParameterListByGuid(ElementDefine.OperationElement);
+            pTHM_CRRT_SEL = pc.GetParameterByGuid(ElementDefine.THM_CRRT_SEL);
         }
 
         public void Physical2Hex(ref Parameter param)
@@ -84,9 +87,13 @@ namespace O2Micro.Cobra.Azalea14
             m_dem_dm.Physical2Hex(ref param);
         }
 
-        public void Hex2Physical(ref Parameter param)
+        public void Hex2Physical(ref Parameter param)   //Scan把这里污染了
         {
             m_dem_dm.Hex2Physical(ref param);
+        }
+        public void RegisterConfig_Hex2Physical(ref Parameter param)   //Scan把这里污染了
+        {
+            m_dem_dm.RegisterConfig_Hex2Physical(ref param);
         }
 
         private void SectionParameterListInit(ref ParamListContainer devicedescriptionlist)

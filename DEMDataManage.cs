@@ -35,6 +35,41 @@ namespace O2Micro.Cobra.Azalea14
         {
             if (pTarget.errorcode != LibErrorCode.IDS_ERR_SUCCESSFUL)
                 return;
+            switch (pTarget.guid)
+            {
+                case ElementDefine.THM0_OT_TH:
+                case ElementDefine.THM0_OTR_TH:
+                    //case ElementDefine.ODUT_E:
+                    //case ElementDefine.EDUT_E:
+                    if (parent.pTHM_CRRT_SEL.phydata == 0 || parent.pTHM_CRRT_SEL.phydata == 3) //disabled
+                    {
+                        pTarget.dbPhyMin = ResistToTemp(999999);
+                        pTarget.dbPhyMax = ResistToTemp(0);
+                    }
+                    else
+                    {
+                        double current = 1;
+                        if (parent.pTHM_CRRT_SEL.phydata == 1)
+                            current = 20;
+                        else if(parent.pTHM_CRRT_SEL.phydata == 2)
+                            current = 120;
+                        double r1 = (pTarget.dbHexMin * pTarget.phyref *1000 / pTarget.regref) / current;
+                        double r2 = (pTarget.dbHexMax * pTarget.phyref * 1000 / pTarget.regref) / current;
+                        double t1 = ResistToTemp(r1);
+                        double t2 = ResistToTemp(r2);
+                        if (t1 > t2)
+                        {
+                            pTarget.dbPhyMin = t2;
+                            pTarget.dbPhyMax = t1;
+                        }
+                        else
+                        {
+                            pTarget.dbPhyMin = t1;
+                            pTarget.dbPhyMax = t2;
+                        }
+                    }
+                    break;
+            }
             return;
         }
 
@@ -51,6 +86,30 @@ namespace O2Micro.Cobra.Azalea14
             if (p == null) return;
             switch ((ElementDefine.SUBTYPE)p.subtype)
             {
+                case ElementDefine.SUBTYPE.EXT_TEMP:
+                    {
+                        ushort Cref = 0;
+                        switch (parent.m_OpRegImg[0x11].val & 0x03)
+                        {
+                            case 0x01: Cref = 20; break;
+                            case 0x02: Cref = 120; break;
+                            default: break;
+                        }
+
+                        double r = TempToResist(p.phydata);
+                        double v = r / 1000.0 * Cref;
+
+
+                        double tmp = v - p.offset;
+                        tmp = tmp * p.regref;
+                        tmp = tmp / p.phyref;
+                        wdata = (UInt16)(tmp);
+
+                        ret = WriteToRegImg(p, wdata);
+                        if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                            WriteToRegImgError(p, ret);
+                        break;
+                    }
                 default:
                     {
                         double tmp = p.phydata - p.offset;
@@ -102,7 +161,7 @@ namespace O2Micro.Cobra.Azalea14
                     p.phydata = (double)((ddata - 1280.0) / 4.25 + 23.0);   //Kevin v2
 
                     break;
-                case ElementDefine.SUBTYPE.EXT_TEMP:
+                case ElementDefine.SUBTYPE.EXT_TEMP:        //Scan SFL把这里污染了
                     int index = 0;
                     switch (p.guid)
                     {
@@ -176,6 +235,56 @@ namespace O2Micro.Cobra.Azalea14
                         p.phydata = ddata;
                         break;
                     }
+                default:
+                    ret = ReadFromRegImg(p, ref wdata);
+                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                    {
+                        p.phydata = ElementDefine.PARAM_PHYSICAL_ERROR;
+                        break;
+                    }
+                    ddata = (double)((double)wdata * p.phyref / p.regref);
+                    p.phydata = ddata + p.offset;
+                    break;
+            }
+        }
+        public void RegisterConfig_Hex2Physical(ref Parameter p)
+        {
+            UInt16 wdata = 0;
+            double ddata = 0;
+            short sdata = 0;
+            UInt32 ret = LibErrorCode.IDS_ERR_SUCCESSFUL;
+
+            if (p == null) return;
+            switch ((ElementDefine.SUBTYPE)p.subtype)
+            {
+                case ElementDefine.SUBTYPE.VOLTAGE:
+                    ret = ReadSignedFromRegImg(p, ref sdata);
+                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                    {
+                        p.phydata = ElementDefine.PARAM_PHYSICAL_ERROR;
+                        break;
+                    }
+                    p.phydata = Regular2Physical(sdata, p.regref, p.phyref);
+                    break;
+                case ElementDefine.SUBTYPE.EXT_TEMP:
+                    ushort Cref = 0;
+                    switch (parent.m_OpRegImg[0x11].val & 0x03)
+                    {
+                        case 0x01: Cref = 20; break;
+                        case 0x02: Cref = 120; break;
+                        default:break;
+                    }
+
+                    ret = ReadFromRegImg(p, ref wdata);
+                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                    {
+                        p.phydata = ElementDefine.PARAM_PHYSICAL_ERROR;
+                        break;
+                    }
+                    ddata = Regular2Physical(wdata, p.regref, p.phyref);
+                    ddata = ddata * 1000 / Cref;
+                    p.phydata = ResistToTemp(ddata);
+                    break;
                 default:
                     ret = ReadFromRegImg(p, ref wdata);
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
