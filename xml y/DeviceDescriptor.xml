@@ -14386,9 +14386,9 @@
     </Element>
     <Element Guid="0x0003A100">
       <PhysicalData>0</PhysicalData>
-      <PhyRef>1</PhyRef>
+      <PhyRef>0.625</PhyRef>
       <RegRef>1</RegRef>
-      <SubType>0</SubType>
+      <SubType>2</SubType>
       <HexMin>0</HexMin>
       <HexMax>ff</HexMax>
       <PhyMin>0</PhyMin>
@@ -14413,13 +14413,25 @@
           <Group>Azalea14</Group>
           <Description>thm1_otr_th</Description>
         </SFL>
+        <SFL Name ="Register Config">
+          <Order>4</Order>
+          <NickName>thm1_otr_th</NickName>
+          <Catalog>Thermal</Catalog>
+          <DefValue>89</DefValue>
+          <EditType>0</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>-30</MinValue>
+          <MaxValue>90</MaxValue>
+          <Description>OT release threshold</Description>
+        </SFL>
       </Private>
     </Element>
     <Element Guid="0x0003A108">
       <PhysicalData>0</PhysicalData>
-      <PhyRef>1</PhyRef>
+      <PhyRef>0.625</PhyRef>
       <RegRef>1</RegRef>
-      <SubType>0</SubType>
+      <SubType>2</SubType>
       <HexMin>0</HexMin>
       <HexMax>ff</HexMax>
       <PhyMin>0</PhyMin>
@@ -14443,6 +14455,18 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>thm1_ot_th</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>5</Order>
+          <NickName>thm1_ot_th</NickName>
+          <Catalog>Thermal</Catalog>
+          <DefValue>89</DefValue>
+          <EditType>0</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>-30</MinValue>
+          <MaxValue>90</MaxValue>
+          <Description>OT generation threshold</Description>
         </SFL>
       </Private>
     </Element>
