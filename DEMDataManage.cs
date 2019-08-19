@@ -39,8 +39,8 @@ namespace O2Micro.Cobra.Azalea14
             {
                 case ElementDefine.THM0_OT_TH:
                 case ElementDefine.THM0_OTR_TH:
-                    //case ElementDefine.ODUT_E:
-                    //case ElementDefine.EDUT_E:
+                case ElementDefine.THM1_OT_TH:
+                case ElementDefine.THM1_OTR_TH:
                     if (parent.pTHM_CRRT_SEL.phydata == 0 || parent.pTHM_CRRT_SEL.phydata == 3) //disabled
                     {
                         pTarget.dbPhyMin = ResistToTemp(999999);

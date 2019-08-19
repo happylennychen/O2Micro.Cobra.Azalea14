@@ -40,7 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DEMBehaviorManage.cs" />
+    <Compile Include="DEMBehaviorManage\DEMBehaviorManageBase.cs" />
+    <Compile Include="DEMBehaviorManage\RegisterConfigDEMBehaviorManage.cs" />
+    <Compile Include="DEMBehaviorManage\TrimDEMBehaviorManage.cs" />
+    <Compile Include="DEMBehaviorManage\SCSDEMBehaviorManage.cs" />
+    <Compile Include="DEMBehaviorManage\ScanDEMBehaviorManage.cs" />
     <Compile Include="DEMDataManage.cs" />
     <Compile Include="DEMDeviceManage.cs" />
     <Compile Include="ElementDefine.cs" />

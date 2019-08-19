@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Reflection;
 using O2Micro.Cobra.Common;
 using O2Micro.Cobra.AutoMationTest;
+using O2Micro.Cobra.Communication;
 //using O2Micro.Cobra.EM;
 
 namespace O2Micro.Cobra.Azalea14
@@ -18,7 +19,6 @@ namespace O2Micro.Cobra.Azalea14
         {
             get { return (m_busoption.GetATMElementbyGuid(AutomationElement.GUIDATMTestStart).dbValue > 0); }
         }
-        private double m_Rsense;
         internal double rsense
         {
             get
@@ -43,9 +43,14 @@ namespace O2Micro.Cobra.Azalea14
         internal COBRA_HWMode_Reg[] m_OpRegImg = new COBRA_HWMode_Reg[ElementDefine.OP_MEMORY_SIZE];
         private Dictionary<UInt32, COBRA_HWMode_Reg[]> m_HwMode_RegList = new Dictionary<UInt32, COBRA_HWMode_Reg[]>();
 
-        private DEMBehaviorManage m_dem_bm = new DEMBehaviorManage();
+        private DEMBehaviorManageBase m_dem_bm_base = new DEMBehaviorManageBase();
+        private ScanDEMBehaviorManage m_scan_dem_bm = new ScanDEMBehaviorManage();
+        private TrimDEMBehaviorManage m_trim_dem_bm = new TrimDEMBehaviorManage();
+        private SCSDEMBehaviorManage m_scs_dem_bm = new SCSDEMBehaviorManage();
+        private RegisterConfigDEMBehaviorManage m_register_config_dem_bm = new RegisterConfigDEMBehaviorManage();
         private DEMDataManage m_dem_dm = new DEMDataManage();
 
+        public CCommunicateManager m_Interface = new CCommunicateManager();
 
         #region Parameters
         public Parameter pTHM_CRRT_SEL = new Parameter();
@@ -150,27 +155,39 @@ namespace O2Micro.Cobra.Azalea14
             InitialImgReg();
             InitParameters();
 
-            m_dem_bm.Init(this);
+            CreateInterface();
+
+            m_dem_bm_base.parent = this;
+            m_scan_dem_bm.parent = this;
+            m_scs_dem_bm.parent = this;
+            m_trim_dem_bm.parent = this;
+            m_register_config_dem_bm.parent = this;
             m_dem_dm.Init(this);
             LibInfor.AssemblyRegister(Assembly.GetExecutingAssembly(), ASSEMBLY_TYPE.OCE); 
             LibErrorCode.UpdateDynamicalLibError(ref m_dynamicErrorLib_dic);
 
         }
 
-        public bool EnumerateInterface()
-        {
-            return m_dem_bm.EnumerateInterface();
-        }
 
+        #region 端口操作
         public bool CreateInterface()
         {
-            return m_dem_bm.CreateInterface();
+            bool bdevice = EnumerateInterface();
+            if (!bdevice) return false;
+
+            return m_Interface.OpenDevice(ref m_busoption);
         }
 
         public bool DestroyInterface()
         {
-            return m_dem_bm.DestroyInterface();
+            return m_Interface.CloseDevice();
         }
+
+        public bool EnumerateInterface()
+        {
+            return m_Interface.FindDevices(ref m_busoption);
+        }
+        #endregion
 
         public void UpdataDEMParameterList(Parameter p)
         {
@@ -179,60 +196,83 @@ namespace O2Micro.Cobra.Azalea14
 
         public UInt32 GetDeviceInfor(ref DeviceInfor deviceinfor)
         {
-            return m_dem_bm.GetDeviceInfor(ref deviceinfor);
+            return m_dem_bm_base.GetDeviceInfor(ref deviceinfor);
         }
 
         public UInt32 Erase(ref TASKMessage bgworker)
         {
-            //return m_dem_bm.EraseEEPROM(ref bgworker);
+            //return m_dem_bm_base.EraseEEPROM(ref bgworker);
             return LibErrorCode.IDS_ERR_SUCCESSFUL;
         }
 
         public UInt32 BlockMap(ref TASKMessage bgworker)
         {
-            return m_dem_bm.EpBlockRead();
+            return m_dem_bm_base.EpBlockRead();
         }
 
         public UInt32 Command(ref TASKMessage bgworker)
         {
-            return m_dem_bm.Command(ref bgworker);
+            UInt32 ret = LibErrorCode.IDS_ERR_SUCCESSFUL;
+
+            switch ((ElementDefine.COMMAND)bgworker.sub_task)
+            {
+                case ElementDefine.COMMAND.TRIM_SLOP:
+                    {
+                        ret = m_trim_dem_bm.Command(ref bgworker);
+                        break;
+                    }
+                case ElementDefine.COMMAND.SCAN_OPTIONS:
+                    ret = m_scan_dem_bm.Command(ref bgworker);
+                    break;
+                case ElementDefine.COMMAND.SCS:
+                    ret = m_scs_dem_bm.Command(ref bgworker);
+                    break;
+                case ElementDefine.COMMAND.REGISTER_CONFIG_WRITE_WITH_PASSWORD:
+                case ElementDefine.COMMAND.REGISTER_CONFIG_SAVE_HEX:
+                case ElementDefine.COMMAND.REGISTER_CONFIG_READ:
+                    {
+                        ret = m_register_config_dem_bm.Command(ref bgworker);
+                        break;
+                    }
+            }
+            return ret;
         }
 
         public UInt32 Read(ref TASKMessage bgworker)
         {
             UInt32 ret = 0;
-            ret = m_dem_bm.Read(ref bgworker);
+            ret = m_dem_bm_base.Read(ref bgworker);
             return ret;
         }
 
         public UInt32 Write(ref TASKMessage bgworker)
         {
-            return m_dem_bm.Write(ref bgworker);
+            return m_dem_bm_base.Write(ref bgworker);
         }
 
         public UInt32 BitOperation(ref TASKMessage bgworker)
         {
-            return m_dem_bm.BitOperation(ref bgworker);
+            return m_dem_bm_base.BitOperation(ref bgworker);
         }
 
         public UInt32 ConvertHexToPhysical(ref TASKMessage bgworker)
         {
-            return m_dem_bm.ConvertHexToPhysical(ref bgworker);
+            return m_dem_bm_base.ConvertHexToPhysical(ref bgworker);
         }
 
         public UInt32 ConvertPhysicalToHex(ref TASKMessage bgworker)
         {
-            return m_dem_bm.ConvertPhysicalToHex(ref bgworker);
+            return m_dem_bm_base.ConvertPhysicalToHex(ref bgworker);
         }
 
         public UInt32 GetSystemInfor(ref TASKMessage bgworker)
         {
-            return m_dem_bm.GetSystemInfor(ref bgworker);
+            return m_dem_bm_base.GetSystemInfor(ref bgworker);
         }
 
         public UInt32 GetRegisteInfor(ref TASKMessage bgworker)
         {
-            return m_dem_bm.GetRegisteInfor(ref bgworker);
+            return m_dem_bm_base.GetRegisteInfor(ref bgworker);
         }
         #endregion
     }

@@ -83,13 +83,13 @@ namespace O2Micro.Cobra.Azalea14
 
         internal enum COMMAND : ushort
         {
-            SLOP_TRIM = 5,
-            WATCH_DOG = 6,
+            TRIM_SLOP = 5,
+            //WATCH_DOG = 6,
             REGISTER_CONFIG_WRITE_WITH_PASSWORD = 7,
             REGISTER_CONFIG_READ = 9,
             REGISTER_CONFIG_SAVE_HEX = 8,
             SCS = 0x31,
-            OPTIONS = 0xFFFF
+            SCAN_OPTIONS = 0xFFFF
         }
         public enum CADC_MODE : byte
         {
