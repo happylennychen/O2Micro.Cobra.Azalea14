@@ -91,128 +91,6 @@ namespace O2Micro.Cobra.Azalea14
             return ret;
         }
         #endregion
-        private UInt32 ReadCADC(ElementDefine.CADC_MODE mode)       //MP version new method. Do 4 time average by HW, and we can also have the trigger flag and coulomb counter work at the same time.
-        {
-            parent.cadc_mode = mode;
-            UInt32 ret = LibErrorCode.IDS_ERR_SUCCESSFUL;
-            ushort temp = 0;
-            switch (mode)
-            {
-                case ElementDefine.CADC_MODE.DISABLE:
-                    #region disable
-                    ret = WriteWord(0x38, 0x00);        //clear all
-                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
-                        return ret;
-                    #endregion
-                    break;
-                case ElementDefine.CADC_MODE.MOVING:
-                    #region moving mode
-                    ret = ActiveModeCheck();
-                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
-                        return ret;
-                    bool cadc_moving_flag = false;
-                    {
-                        ret = WriteWord(0x01, 0x0004);        //Clear cadc_moving_flag
-                        if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
-                            return ret;
-                        ret = WriteWord(0x38, 0x18);        //Set cc_always_enable, moving_average_enable, sw_cadc_ctrl=0b00
-                        if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
-                            return ret;
-                        for (byte i = 0; i < ElementDefine.CADC_RETRY_COUNT; i++)
-                        {
-                            Thread.Sleep(30);
-                            ret = ReadWord(0x01, ref temp);
-                            if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
-                                return ret;
-#if debug
-                    cadc_moving_flag = true;
-                    break;
-#else
-                            if ((temp & 0x0004) == 0x0004)
-                            {
-                                cadc_moving_flag = true;
-                                break;
-                            }
-#endif
-                        }
-                        if (cadc_moving_flag)   //转换完成
-                        {
-#if debug
-                    temp = 15;
-#else
-                            ret = ReadWord(0x17, ref temp);
-#endif
-                            if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
-                                return ret;
-                        }
-                        else
-                        {
-                            ret = ElementDefine.IDS_ERR_DEM_READCADC_TIMEOUT;
-                        }
-                    }
-                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
-                        return ret;
-
-                    parent.m_OpRegImg[0x17].err = ret;
-                    parent.m_OpRegImg[0x17].val = temp;
-                    #endregion
-                    break;
-                case ElementDefine.CADC_MODE.TRIGGER:
-                    #region trigger mode
-                    ret = ActiveModeCheck();
-                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
-                        return ret;
-                    bool cadc_trigger_flag = false;
-                    {
-                        ret = WriteWord(0x01, 0x0002);        //Clear cadc_trigger_flag
-                        if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
-                            return ret;
-                        ret = WriteWord(0x38, 0x06);        //Set cadc_one_or_four, sw_cadc_ctrl=0b10
-                        if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
-                            return ret;
-                        for (byte i = 0; i < ElementDefine.CADC_RETRY_COUNT; i++)
-                        {
-                            Thread.Sleep(60);
-                            ret = ReadWord(0x01, ref temp);
-                            if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
-                                return ret;
-#if debug
-                            cadc_trigger_flag = true;
-                    break;
-#else
-                            if ((temp & 0x0002) == 0x0002)
-                            {
-                                cadc_trigger_flag = true;
-                                break;
-                            }
-#endif
-                        }
-                        if (cadc_trigger_flag)   //转换完成
-                        {
-#if debug
-                    temp = 15;
-#else
-                            ret = ReadWord(0x39, ref temp);
-#endif
-                            if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
-                                return ret;
-                        }
-                        else
-                        {
-                            ret = ElementDefine.IDS_ERR_DEM_READCADC_TIMEOUT;
-                        }
-                    }
-                    if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
-                        return ret;
-
-                    parent.m_OpRegImg[0x39].err = ret;
-                    parent.m_OpRegImg[0x39].val = temp;
-                    #endregion
-                    break;
-            }
-
-            return ret;
-        }
         public override UInt32 Command(ref TASKMessage msg)
         {
             UInt32 ret = LibErrorCode.IDS_ERR_SUCCESSFUL;
@@ -250,18 +128,20 @@ namespace O2Micro.Cobra.Azalea14
                     }
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
                         return ret;
+                    ElementDefine.CADC_MODE mode = ElementDefine.CADC_MODE.DISABLE;
                     switch (options["CADC Mode"])
                     {
                         case "Disable":
-                            ret = ReadCADC(ElementDefine.CADC_MODE.DISABLE);
+                            mode = ElementDefine.CADC_MODE.DISABLE;
                             break;
                         case "Trigger":
-                            ret = ReadCADC(ElementDefine.CADC_MODE.TRIGGER);
+                            mode = ElementDefine.CADC_MODE.TRIGGER;
                             break;
                         case "Consecutive":
-                            ret = ReadCADC(ElementDefine.CADC_MODE.MOVING);
+                            mode = ElementDefine.CADC_MODE.MOVING;
                             break;
                     }
+                    ret = CADCReader.ReadCADC(this, mode);
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
                         return ret;
                     Read(ref noadcmsg);
@@ -269,6 +149,108 @@ namespace O2Micro.Cobra.Azalea14
                         return ret;
                     break;
                 #endregion
+            }
+            return ret;
+        }
+
+
+        public override UInt32 GetSystemInfor(ref TASKMessage msg)
+        {
+            UInt32 ret = LibErrorCode.IDS_ERR_SUCCESSFUL;
+            msg.sm.dic.Clear();
+            UInt32 cellnum = (UInt32)parent.CellNum.phydata + 7;    //0~7 means 7~14
+            if (cellnum == 14)
+            {
+                for (byte i = 0; i < 14; i++)
+                    msg.sm.dic.Add((uint)(i), true);
+            }
+            else
+            {
+                for (byte i = 0; i < 14; i++)
+                {
+                    if (i < cellnum - 1)
+                        msg.sm.dic.Add((uint)i, true);
+                    else if (i == cellnum - 1)
+                        msg.sm.dic.Add(13, false);
+                    else if (i < 13)
+                        msg.sm.dic.Add((uint)i, false);
+                    else if (i == 13)
+                        msg.sm.dic.Add(cellnum - 1, true);
+                }
+            }
+
+            return ret;
+        }
+        public override UInt32 Read(ref TASKMessage msg)
+        {
+            bool bsim = true;
+            UInt16 wdata = 0;
+            UInt32 ret = LibErrorCode.IDS_ERR_SUCCESSFUL;
+            List<byte> OpReglist;
+
+            AutomationElement aElem = parent.m_busoption.GetATMElementbyGuid(AutomationElement.GUIDATMTestStart);
+            if (aElem != null)
+            {
+                bsim |= (aElem.dbValue > 0.0) ? true : false;
+                aElem = parent.m_busoption.GetATMElementbyGuid(AutomationElement.GUIDATMTestSimulation);
+                bsim |= (aElem.dbValue > 0.0) ? true : false;
+            }
+            OpReglist = RegisterListGenerator.Generate(ref msg);
+            if (OpReglist == null)
+                return ret;
+            switch (parent.CellNum.phydata)
+            {
+                case 0:
+                    OpReglist.Remove(0x67);
+                    OpReglist.Remove(0x68);
+                    OpReglist.Remove(0x69);
+                    OpReglist.Remove(0x6A);
+                    OpReglist.Remove(0x6B);
+                    OpReglist.Remove(0x6C);
+                    OpReglist.Remove(0x6D);
+                    break;
+                case 1:
+                    OpReglist.Remove(0x68);
+                    OpReglist.Remove(0x69);
+                    OpReglist.Remove(0x6A);
+                    OpReglist.Remove(0x6B);
+                    OpReglist.Remove(0x6C);
+                    OpReglist.Remove(0x6D);
+                    break;
+                case 2:
+                    OpReglist.Remove(0x69);
+                    OpReglist.Remove(0x6A);
+                    OpReglist.Remove(0x6B);
+                    OpReglist.Remove(0x6C);
+                    OpReglist.Remove(0x6D);
+                    break;
+                case 3:
+                    OpReglist.Remove(0x6A);
+                    OpReglist.Remove(0x6B);
+                    OpReglist.Remove(0x6C);
+                    OpReglist.Remove(0x6D);
+                    break;
+                case 4:
+                    OpReglist.Remove(0x6B);
+                    OpReglist.Remove(0x6C);
+                    OpReglist.Remove(0x6D);
+                    break;
+                case 5:
+                    OpReglist.Remove(0x6C);
+                    OpReglist.Remove(0x6D);
+                    break;
+                case 6:
+                    OpReglist.Remove(0x6D);
+                    break;
+            }
+
+            foreach (byte badd in OpReglist)
+            {
+                ret = ReadWord(badd, ref wdata);
+                parent.m_OpRegImg[badd].err = ret;
+                parent.m_OpRegImg[badd].val = wdata;
+                if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                    return ret;
             }
             return ret;
         }

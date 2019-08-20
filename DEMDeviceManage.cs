@@ -48,12 +48,12 @@ namespace O2Micro.Cobra.Azalea14
         private TrimDEMBehaviorManage m_trim_dem_bm = new TrimDEMBehaviorManage();
         private SCSDEMBehaviorManage m_scs_dem_bm = new SCSDEMBehaviorManage();
         private RegisterConfigDEMBehaviorManage m_register_config_dem_bm = new RegisterConfigDEMBehaviorManage();
-        private DEMDataManage m_dem_dm = new DEMDataManage();
 
         public CCommunicateManager m_Interface = new CCommunicateManager();
 
         #region Parameters
         public Parameter pTHM_CRRT_SEL = new Parameter();
+        public Parameter CellNum = new Parameter();
         #endregion
         #region Enable Control bit
         #endregion
@@ -85,20 +85,7 @@ namespace O2Micro.Cobra.Azalea14
         {
             ParamContainer pc = m_Section_ParamlistContainer.GetParameterListByGuid(ElementDefine.OperationElement);
             pTHM_CRRT_SEL = pc.GetParameterByGuid(ElementDefine.THM_CRRT_SEL);
-        }
-
-        public void Physical2Hex(ref Parameter param)
-        {
-            m_dem_dm.Physical2Hex(ref param);
-        }
-
-        public void Hex2Physical(ref Parameter param)   //Scan把这里污染了
-        {
-            m_dem_dm.Hex2Physical(ref param);
-        }
-        public void RegisterConfig_Hex2Physical(ref Parameter param)   //Scan把这里污染了
-        {
-            m_dem_dm.RegisterConfig_Hex2Physical(ref param);
+            CellNum = m_Section_ParamlistContainer.GetParameterListByGuid(ElementDefine.OperationElement).GetParameterByGuid(ElementDefine.CellNum);
         }
 
         private void SectionParameterListInit(ref ParamListContainer devicedescriptionlist)
@@ -133,11 +120,6 @@ namespace O2Micro.Cobra.Azalea14
                 m_OpRegImg[i].err = LibErrorCode.IDS_ERR_BUS_DATA_PEC_ERROR;
             }
         }
-
-        public UInt32 WriteToRegImg(Parameter p, UInt16 wVal)
-        {
-            return m_dem_dm.WriteToRegImg(p, wVal);
-        }
         #endregion
         #region 接口实现
         public void Init(ref BusOptions busoptions, ref ParamListContainer deviceParamlistContainer, ref ParamListContainer sflParamlistContainer)
@@ -158,11 +140,16 @@ namespace O2Micro.Cobra.Azalea14
             CreateInterface();
 
             m_dem_bm_base.parent = this;
+            m_dem_bm_base.dem_dm = new DEMDataManageBase(m_dem_bm_base);
             m_scan_dem_bm.parent = this;
+            m_scan_dem_bm.dem_dm = new ScanDEMDataManage(m_scan_dem_bm);
             m_scs_dem_bm.parent = this;
+            m_scs_dem_bm.dem_dm = new SCSDEMDataManage(m_scs_dem_bm);
             m_trim_dem_bm.parent = this;
+            m_trim_dem_bm.dem_dm = new TrimDEMDataManage(m_trim_dem_bm);
             m_register_config_dem_bm.parent = this;
-            m_dem_dm.Init(this);
+            m_register_config_dem_bm.dem_dm = new RegisterConfigDEMDataManage(m_register_config_dem_bm);
+            //m_dem_dm.Init(this);
             LibInfor.AssemblyRegister(Assembly.GetExecutingAssembly(), ASSEMBLY_TYPE.OCE); 
             LibErrorCode.UpdateDynamicalLibError(ref m_dynamicErrorLib_dic);
 
@@ -191,7 +178,7 @@ namespace O2Micro.Cobra.Azalea14
 
         public void UpdataDEMParameterList(Parameter p)
         {
-            m_dem_dm.UpdateEpParamItemList(p);
+            m_register_config_dem_bm.dem_dm.UpdateEpParamItemList(p);
         }
 
         public UInt32 GetDeviceInfor(ref DeviceInfor deviceinfor)
@@ -241,7 +228,10 @@ namespace O2Micro.Cobra.Azalea14
         public UInt32 Read(ref TASKMessage bgworker)
         {
             UInt32 ret = 0;
-            ret = m_dem_bm_base.Read(ref bgworker);
+            if (bgworker.gm.sflname == "Scan")          //Scan里面有个PreRead，所以这里只能区别处理
+                ret = m_scan_dem_bm.Read(ref bgworker);
+            else
+                ret = m_dem_bm_base.Read(ref bgworker);
             return ret;
         }
 
@@ -267,7 +257,7 @@ namespace O2Micro.Cobra.Azalea14
 
         public UInt32 GetSystemInfor(ref TASKMessage bgworker)
         {
-            return m_dem_bm_base.GetSystemInfor(ref bgworker);
+            return m_scan_dem_bm.GetSystemInfor(ref bgworker);
         }
 
         public UInt32 GetRegisteInfor(ref TASKMessage bgworker)

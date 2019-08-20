@@ -12,8 +12,8 @@ namespace O2Micro.Cobra.Azalea14
 {
     internal class DEMBehaviorManageBase
     {
-        protected byte calATECRC;
-        protected byte calUSRCRC;
+        //protected byte calATECRC;
+        //protected byte calUSRCRC;
         //父对象保存
         protected DEMDeviceManage m_parent;
         public DEMDeviceManage parent
@@ -22,11 +22,13 @@ namespace O2Micro.Cobra.Azalea14
             set { m_parent = value; }
         }
 
+        public DEMDataManageBase dem_dm { get; set; }
+
         protected object m_lock = new object();
 
         #region 操作寄存器操作
         #region 操作寄存器父级操作
-        protected UInt32 ReadWord(byte reg, ref UInt16 pval)
+        public UInt32 ReadWord(byte reg, ref UInt16 pval)
         {
             UInt32 ret = 0;
             lock (m_lock)
@@ -36,7 +38,7 @@ namespace O2Micro.Cobra.Azalea14
             return ret;
         }
 
-        protected UInt32 WriteWord(byte reg, UInt16 val)
+        public UInt32 WriteWord(byte reg, UInt16 val)
         {
             UInt32 ret = 0;
             lock (m_lock)
@@ -212,14 +214,10 @@ namespace O2Micro.Cobra.Azalea14
 
         #region 基础服务功能设计
 
-        public UInt32 Read(ref TASKMessage msg)
+        public virtual UInt32 Read(ref TASKMessage msg)
         {
-            Reg reg = null;
-            bool bsim = true;
-            byte baddress = 0;
             UInt16 wdata = 0;
             UInt32 ret = LibErrorCode.IDS_ERR_SUCCESSFUL;
-            List<byte> EFUSEReglist = new List<byte>();
             List<byte> OpReglist = new List<byte>();
 
             ParamContainer demparameterlist = msg.task_parameterlist;
@@ -228,24 +226,14 @@ namespace O2Micro.Cobra.Azalea14
             AutomationElement aElem = parent.m_busoption.GetATMElementbyGuid(AutomationElement.GUIDATMTestStart);
             if (aElem != null)
             {
+                bool bsim = true;
                 bsim |= (aElem.dbValue > 0.0) ? true : false;
                 aElem = parent.m_busoption.GetATMElementbyGuid(AutomationElement.GUIDATMTestSimulation);
                 bsim |= (aElem.dbValue > 0.0) ? true : false;
             }
-
-            foreach (Parameter p in demparameterlist.parameterlist)
-            {
-                if ((p.guid & ElementDefine.SectionMask) == ElementDefine.VirtualElement)    //略过虚拟参数
-                    continue;
-                if (p == null) break;
-                foreach (KeyValuePair<string, Reg> dic in p.reglist)
-                {
-                    reg = dic.Value;
-                    baddress = (byte)reg.address;
-                    OpReglist.Add(baddress);
-                }
-            }
-            OpReglist = OpReglist.Distinct().ToList();
+            OpReglist = RegisterListGenerator.Generate(ref msg);
+            if (OpReglist == null)
+                return ret;
 
             foreach (byte badd in OpReglist)
             {
@@ -260,28 +248,12 @@ namespace O2Micro.Cobra.Azalea14
 
         public UInt32 Write(ref TASKMessage msg)
         {
-            Reg reg = null;
-            byte baddress = 0;
             UInt32 ret = LibErrorCode.IDS_ERR_SUCCESSFUL;
             List<byte> OpReglist = new List<byte>();
 
-            ParamContainer demparameterlist = msg.task_parameterlist;
-            if (demparameterlist == null) return ret;
-
-            foreach (Parameter p in demparameterlist.parameterlist)
-            {
-                if ((p.guid & ElementDefine.SectionMask) == ElementDefine.VirtualElement)    //略过虚拟参数
-                    continue;
-                if (p == null) break;
-                foreach (KeyValuePair<string, Reg> dic in p.reglist)
-                {
-                    reg = dic.Value;
-                    baddress = (byte)reg.address;
-                    OpReglist.Add(baddress);
-                }
-            }
-
-            OpReglist = OpReglist.Distinct().ToList();
+            OpReglist = RegisterListGenerator.Generate(ref msg);
+            if (OpReglist == null)
+                return ret;
 
             foreach (byte badd in OpReglist)
             {
@@ -320,7 +292,7 @@ namespace O2Micro.Cobra.Azalea14
                                 baddress = (byte)reg.address;
 
                                 parent.m_OpRegImg[baddress].val = 0x00;
-                                parent.WriteToRegImg(p, 1);
+                                dem_dm.WriteToRegImg(p, 1);
                                 OpReglist.Add(baddress);
 
                             }
@@ -346,26 +318,16 @@ namespace O2Micro.Cobra.Azalea14
             Parameter param = null;
             UInt32 ret = LibErrorCode.IDS_ERR_SUCCESSFUL;
 
-            List<Parameter> EFUSEParamList = new List<Parameter>();
             List<Parameter> OpParamList = new List<Parameter>();
-
-            ParamContainer demparameterlist = msg.task_parameterlist;
-            if (demparameterlist == null) return ret;
-
-            foreach (Parameter p in demparameterlist.parameterlist)
-            {
-                if ((p.guid & ElementDefine.SectionMask) == ElementDefine.VirtualElement)    //略过虚拟参数
-                    continue;
-                if (p == null) break;
-                OpParamList.Add(p);
-            }
-            OpParamList = OpParamList.Distinct().ToList();
+            OpParamList = ParamListGenerator.Generate(ref msg);
+            if (OpParamList == null)
+                return ret;
 
             for (int i = 0; i < OpParamList.Count; i++)
             {
                 param = (Parameter)OpParamList[i];
                 if (param == null) continue;
-                m_parent.Hex2Physical(ref param);
+                dem_dm.Hex2Physical(ref param);
             }
 
             return ret;
@@ -377,19 +339,9 @@ namespace O2Micro.Cobra.Azalea14
             UInt32 ret = LibErrorCode.IDS_ERR_SUCCESSFUL;
 
             List<Parameter> OpParamList = new List<Parameter>();
-
-            ParamContainer demparameterlist = msg.task_parameterlist;
-            if (demparameterlist == null) return ret;
-
-
-            foreach (Parameter p in demparameterlist.parameterlist)
-            {
-                if ((p.guid & ElementDefine.SectionMask) == ElementDefine.VirtualElement)    //略过虚拟参数
-                    continue;
-                if (p == null) break;
-                OpParamList.Add(p);
-            }
-            OpParamList = OpParamList.Distinct().ToList();
+            OpParamList = ParamListGenerator.Generate(ref msg);
+            if (OpParamList == null)
+                return ret;
 
             for (int i = 0; i < OpParamList.Count; i++)
             {
@@ -397,24 +349,16 @@ namespace O2Micro.Cobra.Azalea14
                 if (param == null) continue;
                 if ((param.guid & ElementDefine.SectionMask) == ElementDefine.TemperatureElement) continue;
 
-                m_parent.Physical2Hex(ref param);
+                dem_dm.Physical2Hex(ref param);
             }
 
             return ret;
         }
 
 
-        protected UInt32 ActiveModeCheck()
+        public UInt32 ActiveModeCheck()
         {
             UInt32 ret = LibErrorCode.IDS_ERR_SUCCESSFUL;
-            /*ushort tmp = 0;
-            ret = ReadWord(0x57, ref tmp);
-            if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
-                return ret;
-            if ((tmp & 0x0080) != 0x0080)
-            {
-                ret = ElementDefine.IDS_ERR_DEM_ACTIVE_MODE_ERROR;
-            }*/
             return ret;
         }
         public virtual UInt32 Command(ref TASKMessage msg)
@@ -453,7 +397,7 @@ namespace O2Micro.Cobra.Azalea14
 #endif
         }
 
-        public UInt32 GetSystemInfor(ref TASKMessage msg)
+        public virtual UInt32 GetSystemInfor(ref TASKMessage msg)
         {
             UInt32 ret = LibErrorCode.IDS_ERR_SUCCESSFUL;
 

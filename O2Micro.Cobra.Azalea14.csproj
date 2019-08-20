@@ -45,10 +45,16 @@
     <Compile Include="DEMBehaviorManage\TrimDEMBehaviorManage.cs" />
     <Compile Include="DEMBehaviorManage\SCSDEMBehaviorManage.cs" />
     <Compile Include="DEMBehaviorManage\ScanDEMBehaviorManage.cs" />
-    <Compile Include="DEMDataManage.cs" />
+    <Compile Include="DEMDataManage\RegisterConfigDEMDataManage.cs" />
+    <Compile Include="DEMDataManage\SCSDEMDataManage.cs" />
+    <Compile Include="DEMDataManage\TrimDEMDataManage.cs" />
+    <Compile Include="DEMDataManage\ScanDEMDataManage.cs" />
+    <Compile Include="DEMDataManage\DEMDataManageBase.cs" />
     <Compile Include="DEMDeviceManage.cs" />
     <Compile Include="ElementDefine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tool\CADCReader.cs" />
+    <Compile Include="Tool\RegisterListGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Common\O2Micro.Cobra.AutoMationTest\O2Micro.Cobra.AutoMationTest.csproj">

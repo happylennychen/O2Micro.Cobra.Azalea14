@@ -13,35 +13,6 @@ namespace O2Micro.Cobra.Azalea14
     internal class RegisterConfigDEMBehaviorManage:DEMBehaviorManageBase
     {
         #region 基础服务功能设计
-        public UInt32 RegisterConfig_ConvertHexToPhysical(ref TASKMessage msg)
-        {
-            Parameter param = null;
-            UInt32 ret = LibErrorCode.IDS_ERR_SUCCESSFUL;
-
-            List<Parameter> EFUSEParamList = new List<Parameter>();
-            List<Parameter> OpParamList = new List<Parameter>();
-
-            ParamContainer demparameterlist = msg.task_parameterlist;
-            if (demparameterlist == null) return ret;
-
-            foreach (Parameter p in demparameterlist.parameterlist)
-            {
-                if ((p.guid & ElementDefine.SectionMask) == ElementDefine.VirtualElement)    //略过虚拟参数
-                    continue;
-                if (p == null) break;
-                OpParamList.Add(p);
-            }
-            OpParamList = OpParamList.Distinct().ToList();
-
-            for (int i = 0; i < OpParamList.Count; i++)
-            {
-                param = (Parameter)OpParamList[i];
-                if (param == null) continue;
-                m_parent.RegisterConfig_Hex2Physical(ref param);
-            }
-
-            return ret;
-        }
         public override UInt32 Command(ref TASKMessage msg)
         {
             UInt32 ret = LibErrorCode.IDS_ERR_SUCCESSFUL;
@@ -76,7 +47,8 @@ namespace O2Micro.Cobra.Azalea14
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
                         return ret;
                     msg.percent = 80;
-                    ret = RegisterConfig_ConvertHexToPhysical(ref msg);
+                    //ret = RegisterConfig_ConvertHexToPhysical(ref msg);
+                    ret = ConvertHexToPhysical(ref msg);
                     if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
                         return ret;
 
@@ -87,7 +59,10 @@ namespace O2Micro.Cobra.Azalea14
                     break;
                 case ElementDefine.COMMAND.REGISTER_CONFIG_SAVE_HEX:
                     {
-                        InitRegisterData();
+                        var OpRegList = RegisterListGenerator.Generate(ref msg);
+                        if (OpRegList == null)
+                            return ret;
+                        InitRegisterData(OpRegList);
                         ret = ConvertPhysicalToHex(ref msg);
                         if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
                             return ret;
@@ -112,7 +87,7 @@ namespace O2Micro.Cobra.Azalea14
                         if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
                             return ret;
                         msg.percent = 80;
-                        ret = RegisterConfig_ConvertHexToPhysical(ref msg);
+                        ret = ConvertHexToPhysical(ref msg);
                         if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL)
                             return ret;
                         break;
@@ -120,23 +95,26 @@ namespace O2Micro.Cobra.Azalea14
             }
             return ret;
         }
-        private void InitRegisterData()
+        private void InitRegisterData(List<byte> OpRegList)
         {
-            for (ushort i = ElementDefine.OP_USR_OFFSET; i <= ElementDefine.OP_USR_TOP; i++)
+            foreach(var address in OpRegList)
             {
-                parent.m_OpRegImg[i].err = 0;
-                parent.m_OpRegImg[i].val = 0;
+                parent.m_OpRegImg[address].err = 0;
+                parent.m_OpRegImg[address].val = 0;
             }
         }
 
         private string GetRegisterHexData(ref TASKMessage msg)
         {
             string tmp = "";
-            for (ushort i = ElementDefine.OP_USR_OFFSET; i <= ElementDefine.OP_USR_TOP; i++)
+            var OpRegList = RegisterListGenerator.Generate(ref msg);
+            if (OpRegList == null)
+                return tmp;
+            foreach (var address in OpRegList)
             {
-                if (parent.m_OpRegImg[i].err != LibErrorCode.IDS_ERR_SUCCESSFUL)
+                if (parent.m_OpRegImg[address].err != LibErrorCode.IDS_ERR_SUCCESSFUL)
                     return "";
-                tmp += "0x" + i.ToString("X2") + ", " + "0x" + parent.m_OpRegImg[i].val.ToString("X4") + "\r\n";
+                tmp += "0x" + address.ToString("X2") + ", " + "0x" + parent.m_OpRegImg[address].val.ToString("X4") + "\r\n";
             }
             return tmp;
         }

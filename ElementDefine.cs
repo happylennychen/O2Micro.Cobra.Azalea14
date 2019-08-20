@@ -24,7 +24,7 @@ namespace O2Micro.Cobra.Azalea14
         internal const UInt16 OP_MEMORY_SIZE = 0xFF;
 
         internal const UInt16 OP_USR_OFFSET = 0x05;
-        internal const UInt16 OP_USR_TOP = 0x10;
+        internal const UInt16 OP_USR_TOP = 0x11;
         internal const Byte PARAM_HEX_ERROR = 0xFF;
         internal const Double PARAM_PHYSICAL_ERROR = -999999;
 
@@ -50,6 +50,7 @@ namespace O2Micro.Cobra.Azalea14
         internal const UInt32 THM0_OTR_TH = 0x0003A000; //
         internal const UInt32 THM1_OT_TH = 0x0003A108; //
         internal const UInt32 THM1_OTR_TH = 0x0003A100; //
+        internal const UInt32 CellNum = 0x0003080C; //
         #endregion
         #region Virtual parameters
         internal const UInt32 VirtualElement = 0x000c0000;
