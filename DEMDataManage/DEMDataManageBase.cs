@@ -7,7 +7,7 @@ using O2Micro.Cobra.Common;
 
 namespace O2Micro.Cobra.Azalea14
 {
-    internal class DEMDataManageBase
+    public class DEMDataManageBase
     {
         //父对象保存
         private DEMBehaviorManageBase m_parent;

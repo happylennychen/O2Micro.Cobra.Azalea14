@@ -7,7 +7,7 @@ using O2Micro.Cobra.Common;
 
 namespace O2Micro.Cobra.Azalea14
 {
-    internal class RegisterConfigDEMDataManage:DEMDataManageBase
+    public class RegisterConfigDEMDataManage:DEMDataManageBase
     {
 
         public RegisterConfigDEMDataManage(object pParent) : base(pParent)

@@ -10,7 +10,7 @@ using System.IO;
 
 namespace O2Micro.Cobra.Azalea14
 {
-    internal class DEMBehaviorManageBase
+    public class DEMBehaviorManageBase
     {
         //protected byte calATECRC;
         //protected byte calUSRCRC;
