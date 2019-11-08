@@ -37,7 +37,7 @@ namespace O2Micro.Cobra.Azalea14
                         p.phydata = ElementDefine.PARAM_PHYSICAL_ERROR;
                         break;
                     }
-                    ddata = Regular2Physical(wdata, p.regref, p.phyref);
+                    ddata = Formula.Regular2Physical(wdata, p.regref, p.phyref);
                     ddata = ddata * 1000 / Cref;
                     p.phydata = ResistToTemp(ddata);
                     break;

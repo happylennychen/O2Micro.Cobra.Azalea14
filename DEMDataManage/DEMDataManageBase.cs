@@ -108,7 +108,7 @@ namespace O2Micro.Cobra.Azalea14
                         p.phydata = ElementDefine.PARAM_PHYSICAL_ERROR;
                         break;
                     }
-                    p.phydata = Regular2Physical(sdata, p.regref, p.phyref);
+                    p.phydata = Formula.Regular2Physical(sdata, p.regref, p.phyref);
                     break;
                 case ElementDefine.SUBTYPE.INT_TEMP:
                     ret = ReadSignedFromRegImg(p, ref sdata);
@@ -117,7 +117,7 @@ namespace O2Micro.Cobra.Azalea14
                         p.phydata = ElementDefine.PARAM_PHYSICAL_ERROR;
                         break;
                     }
-                    ddata = Regular2Physical(sdata, p.regref, p.phyref);
+                    ddata = Formula.Regular2Physical(sdata, p.regref, p.phyref);
                     //p.phydata = (double)((ddata - 1252.5) / 4.345 + 23.0);
                     //p.phydata = (double)((ddata - 1220.0) / 4.25 + 23.0);  //Kevin
                     p.phydata = (double)((ddata - 1280.0) / 4.25 + 23.0);   //Kevin v2
@@ -139,7 +139,7 @@ namespace O2Micro.Cobra.Azalea14
                     }
                     ushort Cref = 0;
                     Cref = parent.parent.thms[index].thm_crrt;
-                    ddata = Regular2Physical(wdata, p.regref, p.phyref);
+                    ddata = Formula.Regular2Physical(wdata, p.regref, p.phyref);
                     ddata = ddata * 1000 / Cref;
                     p.phydata = ResistToTemp(ddata);
                     break;
@@ -211,60 +211,6 @@ namespace O2Micro.Cobra.Azalea14
         }
 
         #region General functions
-        /// <summary>
-        /// 转换Hex -> Physical
-        /// </summary>
-        /// <param name="sVal"></param>
-        /// <param name="RegularRef"></param>
-        /// <param name="PhysicalRef"></param>
-        /// <returns></returns>
-        protected double Regular2Physical(UInt16 wVal, double RegularRef, double PhysicalRef)
-        {
-            double dval;
-
-            dval = (double)((double)(wVal * PhysicalRef) / (double)RegularRef);
-
-            return dval;
-        }
-
-        /// <summary>
-        /// 转换Hex -> Physical
-        /// </summary>
-        /// <param name="sVal"></param>
-        /// <param name="RegularRef"></param>
-        /// <param name="PhysicalRef"></param>
-        /// <returns></returns>
-        protected double Regular2Physical(short sVal, double RegularRef, double PhysicalRef)
-        {
-            double dval;
-
-            dval = (double)((double)(sVal * PhysicalRef) / (double)RegularRef);
-
-            return (double)dval;
-        }
-        /// <summary>
-        /// 转换Physical -> Hex
-        /// </summary>
-        /// <param name="fVal"></param>
-        /// <param name="RegularRef"></param>
-        /// <param name="PhysicalRef"></param>
-        /// <returns></returns>
-        protected UInt16 Physical2Regular(float fVal, double RegularRef, double PhysicalRef)
-        {
-            UInt16 wval;
-            double dval, integer, fraction;
-
-            dval = (double)((double)(fVal * RegularRef) / (double)PhysicalRef);
-            integer = Math.Truncate(dval);
-            fraction = (double)(dval - integer);
-            if (fraction >= 0.5)
-                integer += 1;
-            if (fraction <= -0.5)
-                integer -= 1;
-            wval = (UInt16)integer;
-
-            return wval;
-        }
 
         /// <summary>
         /// 从数据buffer中读数据
