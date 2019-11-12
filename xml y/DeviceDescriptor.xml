@@ -9126,6 +9126,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>0</Order>
+          <Name>CADC</Name>
         </SFL>
         <SFL Name="Scan">
           <Group>2</Group>
@@ -10172,6 +10173,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>1</Order>
+          <Name>Cell1</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell1</NickName>
@@ -10223,6 +10225,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>2</Order>
+          <Name>Cell2</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell2</NickName>
@@ -10274,6 +10277,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>3</Order>
+          <Name>Cell3</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell3</NickName>
@@ -10325,6 +10329,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>4</Order>
+          <Name>Cell4</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell4</NickName>
@@ -10376,6 +10381,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>5</Order>
+          <Name>Cell5</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell5</NickName>
@@ -10427,6 +10433,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>6</Order>
+          <Name>Cell6</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell6</NickName>
@@ -10478,6 +10485,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>7</Order>
+          <Name>Cell7</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell7</NickName>
@@ -10529,6 +10537,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>8</Order>
+          <Name>Cell8</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell8</NickName>
@@ -10580,6 +10589,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>9</Order>
+          <Name>Cell9</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell9</NickName>
@@ -10631,6 +10641,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>10</Order>
+          <Name>Cell10</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell10</NickName>
@@ -10682,6 +10693,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>11</Order>
+          <Name>Cell11</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell11</NickName>
@@ -10733,6 +10745,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>12</Order>
+          <Name>Cell12</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell12</NickName>
@@ -10784,6 +10797,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>13</Order>
+          <Name>Cell13</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell13</NickName>
@@ -10835,6 +10849,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>14</Order>
+          <Name>Cell14</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell14</NickName>
@@ -10886,6 +10901,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>15</Order>
+          <Name>Isense</Name>
         </SFL>
         <SFL Name="Scan">
           <Group>2</Group>
@@ -10937,6 +10953,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>16</Order>
+          <Name>Thm0</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Thm0</NickName>
@@ -11129,6 +11146,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>17</Order>
+          <Name>Vbatt</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>vbatt(mV)</NickName>

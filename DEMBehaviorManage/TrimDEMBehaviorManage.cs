@@ -86,17 +86,17 @@ namespace O2Micro.Cobra.Azalea14
                     #endregion
 
                     #region voltage
-                    for (ushort code = 0; code < 16; code++)
+                    //for (ushort code = 0; code < 16; code++)
                     {
                         #region write code
-                        ret = WriteWord(0x94, (ushort)((code << 12) | (code << 8) | (code << 4) | code));
-                        if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
-                        ret = WriteWord(0x95, (ushort)((code << 12) | (code << 8) | (code << 4) | code));
-                        if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
-                        ret = WriteWord(0x96, (ushort)((code << 12) | (code << 8) | (code << 4) | code));
-                        if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
-                        ret = WriteWord(0x97, (ushort)((code << 12) | (code << 8)));
-                        if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
+                        //ret = WriteWord(0x94, (ushort)((code << 12) | (code << 8) | (code << 4) | code));
+                        //if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
+                        //ret = WriteWord(0x95, (ushort)((code << 12) | (code << 8) | (code << 4) | code));
+                        //if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
+                        //ret = WriteWord(0x96, (ushort)((code << 12) | (code << 8) | (code << 4) | code));
+                        //if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
+                        //ret = WriteWord(0x97, (ushort)((code << 12) | (code << 8)));
+                        //if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
                         #endregion
                         Thread.Sleep(100);
                         #region read adc
@@ -124,10 +124,10 @@ namespace O2Micro.Cobra.Azalea14
                     }
                     #endregion
                     #region temp
-                    for (ushort code = 0; code < 16; code++)
+                    //for (ushort code = 0; code < 16; code++)
                     {
                         #region write code
-                        ret = WriteWord(0x99, (ushort)(code << 12));
+                        //ret = WriteWord(0x99, (ushort)(code << 12));
                         if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
                         #endregion
                         Thread.Sleep(100);
@@ -147,11 +147,11 @@ namespace O2Micro.Cobra.Azalea14
                     }
                     #endregion
                     #region sar current
-                    for (ushort code = 0; code < 32; code++)
+                    //for (ushort code = 0; code < 32; code++)
                     {
                         #region write code
-                        ret = WriteWord(0x99, (ushort)(code));
-                        if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
+                        //ret = WriteWord(0x99, (ushort)(code));
+                        //if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
                         #endregion
                         Thread.Sleep(100);
                         #region read adc
@@ -170,11 +170,11 @@ namespace O2Micro.Cobra.Azalea14
                     }
                     #endregion
                     #region cadc
-                    for (ushort code = 0; code < 256; code++)
+                    //for (ushort code = 0; code < 256; code++)
                     {
                         #region write code
-                        ret = WriteWord(0x93, (ushort)(code));
-                        if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
+                        //ret = WriteWord(0x93, (ushort)(code));
+                        //if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
                         #endregion
                         Thread.Sleep(100);
                         #region read adc
@@ -216,11 +216,11 @@ namespace O2Micro.Cobra.Azalea14
                     }
                     #endregion
                     #region vbatt
-                    for (ushort code = 0; code < 16; code++)
+                    //for (ushort code = 0; code < 16; code++)
                     {
                         #region write code
-                        ret = WriteWord(0x99, (ushort)(code << 8));
-                        if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
+                        //ret = WriteWord(0x99, (ushort)(code << 8));
+                        //if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
                         #endregion
                         Thread.Sleep(100);
                         #region read adc
