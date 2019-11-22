@@ -90,6 +90,7 @@ namespace O2Micro.Cobra.Azalea14
             REGISTER_CONFIG_READ = 9,
             REGISTER_CONFIG_SAVE_HEX = 8,
             SCS = 0x31,
+            EXPERT_AZ10D_WAKEUP = 0xFF,
             SCAN_OPTIONS = 0xFFFF
         }
         public enum CADC_MODE : byte

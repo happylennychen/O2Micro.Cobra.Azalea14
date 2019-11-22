@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Root usage="DeviceDescriptor" chip="Azalea14" version="1.00">
+<Root usage="DeviceDescriptor" chip="Azalea10D" version="1.00">
   <Section Name ="BusOptions" Guid ="0x00100000">
     <Element Guid ="0x00100000">
       <PhysicalData>0</PhysicalData>
@@ -50,7 +50,7 @@
         <SFL Name ="BusOptions">
           <Order>0</Order>
           <NickName>I2C Address:</NickName>
-          <Catalog>Azalea14</Catalog>
+          <Catalog>Azalea10D</Catalog>
           <DefValue>20</DefValue>
           <EditType>1</EditType>
           <Format>1</Format>
@@ -71,7 +71,7 @@
         <SFL Name ="BusOptions">
           <Order>1</Order>
           <NickName>PEC enable</NickName>
-          <Catalog>Azalea14</Catalog>
+          <Catalog>Azalea10D</Catalog>
           <DefValue>0</DefValue>
           <EditType>1</EditType>
           <Format>1</Format>
@@ -825,7 +825,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>chip_subver</Description>
         </SFL>
       </Private>
@@ -856,7 +856,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>chip_ver</Description>
         </SFL>
       </Private>
@@ -887,7 +887,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>chip_id</Description>
         </SFL>
       </Private>
@@ -918,7 +918,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>final_cadc_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -961,7 +961,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cadc_trigger_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -1004,7 +1004,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cadc_moving_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -1047,7 +1047,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cc_overflow_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -1090,7 +1090,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>auto_scan_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -1133,7 +1133,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>trigger_scan_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -1176,7 +1176,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>trigger_single_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -1219,7 +1219,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>trigger_sync_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -1262,7 +1262,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>int_trigger_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -1305,7 +1305,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>mcu_timeout_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -1348,7 +1348,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>chgrin_wkup_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -1391,7 +1391,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>chgrin_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -1434,7 +1434,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>uv_shutdown</Description>
         </SFL>
       </Private>
@@ -1465,7 +1465,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>mcu_hang_flag</Description>
         </SFL>
       </Private>
@@ -1496,7 +1496,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>final_cadc_ie</Description>
         </SFL>
       </Private>
@@ -1527,7 +1527,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cadc_trigger_ie</Description>
         </SFL>
       </Private>
@@ -1558,7 +1558,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cadc_moving_ie</Description>
         </SFL>
       </Private>
@@ -1589,7 +1589,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cc_overflow_ie</Description>
         </SFL>
       </Private>
@@ -1620,7 +1620,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>auto_scan_ie</Description>
         </SFL>
       </Private>
@@ -1651,7 +1651,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>trigger_scan_ie</Description>
         </SFL>
       </Private>
@@ -1682,7 +1682,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>trigger_single_ie</Description>
         </SFL>
       </Private>
@@ -1713,7 +1713,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>trigger_sync_ie</Description>
         </SFL>
       </Private>
@@ -1744,7 +1744,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>int_trigger_ie</Description>
         </SFL>
       </Private>
@@ -1775,7 +1775,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>mcu_timeout_ie</Description>
         </SFL>
       </Private>
@@ -1806,7 +1806,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>chgrin_wkup_ie</Description>
         </SFL>
       </Private>
@@ -1837,7 +1837,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>chgrin_ie</Description>
         </SFL>
       </Private>
@@ -1868,7 +1868,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>scp_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -1911,7 +1911,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>doc2p_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -1954,7 +1954,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>doc1p_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -1997,7 +1997,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cocp_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -2040,7 +2040,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>ovp_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -2083,7 +2083,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>iotp_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -2126,7 +2126,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>indsg_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -2169,7 +2169,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>uvp_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -2212,7 +2212,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>isens_wkup_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -2255,7 +2255,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>pin_wkup_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -2298,7 +2298,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>timer_wkup_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -2341,7 +2341,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>loadon_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -2384,7 +2384,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>loadoff_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -2427,7 +2427,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>i2c_timeout_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -2470,7 +2470,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cb_timeout_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -2513,7 +2513,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>porn_flag</Description>
         </SFL>
         <SFL Name="Scan">
@@ -2556,7 +2556,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>scp_ie</Description>
         </SFL>
       </Private>
@@ -2587,7 +2587,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>doc2p_ie</Description>
         </SFL>
       </Private>
@@ -2618,7 +2618,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>doc1p_ie</Description>
         </SFL>
       </Private>
@@ -2649,7 +2649,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cocp_ie</Description>
         </SFL>
       </Private>
@@ -2680,7 +2680,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>ovp_ie</Description>
         </SFL>
       </Private>
@@ -2711,7 +2711,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>iotp_ie</Description>
         </SFL>
       </Private>
@@ -2742,7 +2742,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>indsg_ie</Description>
         </SFL>
       </Private>
@@ -2773,7 +2773,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>uvp_ie</Description>
         </SFL>
       </Private>
@@ -2804,7 +2804,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>isens_wkup_ie</Description>
         </SFL>
       </Private>
@@ -2835,7 +2835,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>pin_wkup_ie</Description>
         </SFL>
       </Private>
@@ -2866,7 +2866,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>timer_wkup_ie</Description>
         </SFL>
       </Private>
@@ -2897,7 +2897,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>loadon_ie</Description>
         </SFL>
       </Private>
@@ -2928,7 +2928,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>loadoff_ie</Description>
         </SFL>
       </Private>
@@ -2959,7 +2959,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>i2c_timeout_ie</Description>
         </SFL>
       </Private>
@@ -2990,7 +2990,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cb_timeout_ie</Description>
         </SFL>
       </Private>
@@ -3279,7 +3279,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>uvp_th</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -3388,7 +3388,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>uvp_rls_hys</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -3437,7 +3437,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>uvp_dly</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -3498,7 +3498,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>uv_shutdown_th</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -3559,7 +3559,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>chg_th</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -3620,7 +3620,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>dsg_th</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -3669,7 +3669,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>uv_shutdown_dly</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -3970,7 +3970,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>ovp_th</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -4079,7 +4079,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>ovp_rls_hys</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -4128,7 +4128,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>ovp_dly</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -4429,7 +4429,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>doc1p_th</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -4478,7 +4478,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>doc1p_dly</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -4525,7 +4525,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>dsgon_inchg_disable</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -4572,7 +4572,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>chgon_indsg_disable</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -4621,14 +4621,14 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell_num</Description>
         </SFL>
         <SFL Name ="Register Config">
           <Order>1</Order>
           <NickName>cell_num</NickName>
           <Catalog>Miscellaneous</Catalog>
-          <DefValue>0</DefValue>
+          <DefValue>7</DefValue>
           <EditType>1</EditType>
           <Format>0</Format>
           <EventMode>0</EventMode>
@@ -4668,7 +4668,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>sw_load_detect_enable</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -4969,7 +4969,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cocp_th</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -5018,7 +5018,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cocp_dly</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -5065,7 +5065,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>sw_chgrin_detect_eable</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -5126,7 +5126,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>doc2p_th</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -5187,7 +5187,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>scp_dly</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -5264,7 +5264,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>doc2p_dly</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -5311,7 +5311,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>sw_indsg_enable</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -5360,7 +5360,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>scp_th</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -5409,7 +5409,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>efetc_cfg</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -5426,20 +5426,51 @@
         </SFL>
       </Private>
     </Element>
+    <Element Guid="0x00030B02">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>3f</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>63</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>B</Address>
+          <StartBit>2</StartBit>
+          <BitsNumber>6</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>B</Index>
+          <BitStart>2</BitStart>
+          <Length>6</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>cadc_db_th</Description>
+        </SFL>
+      </Private>
+    </Element>
     <Element Guid="0x00030B08">
       <PhysicalData>0</PhysicalData>
       <PhyRef>1</PhyRef>
       <RegRef>1</RegRef>
       <SubType>0</SubType>
       <HexMin>0</HexMin>
-      <HexMax>F</HexMax>
+      <HexMax>7</HexMax>
       <PhyMin>0</PhyMin>
-      <PhyMax>15</PhyMax>
+      <PhyMax>7</PhyMax>
       <LocationList>
         <Location Position="Low">
           <Address>B</Address>
           <StartBit>8</StartBit>
-          <BitsNumber>4</BitsNumber>
+          <BitsNumber>3</BitsNumber>
         </Location>
       </LocationList>
       <ItemList>
@@ -5458,11 +5489,11 @@
           <BitTotal>10</BitTotal>
           <Index>B</Index>
           <BitStart>8</BitStart>
-          <Length>4</Length>
+          <Length>3</Length>
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>wkup_time</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -5476,6 +5507,99 @@
           <MinValue>0</MinValue>
           <MaxValue>7</MaxValue>
           <Description></Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x00030B0C">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>B</Address>
+          <StartBit>12</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>B</Index>
+          <BitStart>C</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>thm0_scan</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x00030B0D">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>B</Address>
+          <StartBit>13</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>B</Index>
+          <BitStart>D</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>thm1_scan</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x00030B0E">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>3</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>3</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>B</Address>
+          <StartBit>14</StartBit>
+          <BitsNumber>2</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>B</Index>
+          <BitStart>E</BitStart>
+          <Length>2</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>otp_dly</Description>
         </SFL>
       </Private>
     </Element>
@@ -5523,7 +5647,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell_cto_off_time</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -5584,7 +5708,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell_cto_on_time</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -5633,7 +5757,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cto_time_unit_sel</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -5647,6 +5771,68 @@
           <MinValue>0</MinValue>
           <MaxValue>3</MaxValue>
           <Description></Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x00030C0A">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>3</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>3</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>C</Address>
+          <StartBit>10</StartBit>
+          <BitsNumber>2</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>C</Index>
+          <BitStart>A</BitStart>
+          <Length>2</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>thm0_ot_fet_ctrl</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x00030C0C">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>3</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>3</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>C</Address>
+          <StartBit>12</StartBit>
+          <BitsNumber>2</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>C</Index>
+          <BitStart>C</BitStart>
+          <Length>2</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>thm1_ot_fet_ctrl</Description>
         </SFL>
       </Private>
     </Element>
@@ -5682,11 +5868,11 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>vref_adc_ctrl</Description>
         </SFL>
         <SFL Name ="Register Config">
-          <Order>10</Order>
+          <Order>a</Order>
           <NickName>vref_adc_ctrl</NickName>
           <Catalog>Miscellaneous</Catalog>
           <DefValue>0</DefValue>
@@ -5743,11 +5929,11 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>inter_settling_time</Description>
         </SFL>
         <SFL Name ="Register Config">
-          <Order>11</Order>
+          <Order>b</Order>
           <NickName>inter_settling_time</NickName>
           <Catalog>Miscellaneous</Catalog>
           <DefValue>0</DefValue>
@@ -5804,11 +5990,11 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>dda_settling_time</Description>
         </SFL>
         <SFL Name ="Register Config">
-          <Order>12</Order>
+          <Order>c</Order>
           <NickName>dda_settling_time</NickName>
           <Catalog>Miscellaneous</Catalog>
           <DefValue>0</DefValue>
@@ -5977,13 +6163,13 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>thm_settling_time</Description>
         </SFL>
         <SFL Name ="Register Config">
-          <Order>13</Order>
+          <Order>1</Order>
           <NickName>thm_settling_time</NickName>
-          <Catalog>Miscellaneous</Catalog>
+          <Catalog>Thermal</Catalog>
           <DefValue>0</DefValue>
           <EditType>1</EditType>
           <Format>0</Format>
@@ -6020,7 +6206,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>auto_scan_enable</Description>
         </SFL>
       </Private>
@@ -6051,7 +6237,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>auto_one_or_eight</Description>
         </SFL>
       </Private>
@@ -6082,7 +6268,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>scan_rate</Description>
         </SFL>
       </Private>
@@ -6113,7 +6299,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>unlock_cfg_wrt</Description>
         </SFL>
       </Private>
@@ -6144,7 +6330,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>Reserved</Description>
         </SFL>
       </Private>
@@ -6175,7 +6361,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>sw_mapping_req</Description>
         </SFL>
       </Private>
@@ -6206,7 +6392,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>Reserved</Description>
         </SFL>
       </Private>
@@ -6241,7 +6427,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>sw_chg_ctrl</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -6288,7 +6474,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>sw_dsg_ctrl</Description>
         </SFL>
         <SFL Name ="Register Config">
@@ -6331,7 +6517,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>chg_drv</Description>
         </SFL>
       </Private>
@@ -6362,7 +6548,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>dsg_drv</Description>
         </SFL>
       </Private>
@@ -6383,6 +6569,12 @@
           <BitsNumber>2</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>Don't select anyone</Item>
+        <Item>20uA</Item>
+        <Item>120uA</Item>
+        <Item>Don't select anyone</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -6393,8 +6585,26 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>thm_crrt_sel</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>2</Order>
+          <NickName>thm_crrt_sel</NickName>
+          <Catalog>Thermal</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>3</MaxValue>
+          <Description>constant current selection for THM0~THM1 measurement</Description>
+          <Relations>
+            <Item>0x0003A000</Item>
+            <Item>0x0003A008</Item>
+            <Item>0x0003A100</Item>
+            <Item>0x0003A108</Item>
+          </Relations>
         </SFL>
       </Private>
     </Element>
@@ -6424,7 +6634,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>chgrin_valid</Description>
         </SFL>
         <SFL Name="Scan">
@@ -6468,7 +6678,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>loadoff_valid</Description>
         </SFL>
         <SFL Name="Scan">
@@ -6512,7 +6722,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>loadon_valid</Description>
         </SFL>
         <SFL Name="Scan">
@@ -6556,7 +6766,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>in_chg_state</Description>
         </SFL>
         <SFL Name="Scan">
@@ -6600,7 +6810,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>in_dsg_state</Description>
         </SFL>
         <SFL Name="Scan">
@@ -6644,7 +6854,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>scp_event</Description>
         </SFL>
         <SFL Name="Scan">
@@ -6688,7 +6898,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>doc2p_event</Description>
         </SFL>
         <SFL Name="Scan">
@@ -6732,7 +6942,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>doc1p_event</Description>
         </SFL>
         <SFL Name="Scan">
@@ -6776,7 +6986,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cocp_event</Description>
         </SFL>
         <SFL Name="Scan">
@@ -6820,7 +7030,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>ovp_event</Description>
         </SFL>
         <SFL Name="Scan">
@@ -6864,7 +7074,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>iotp_state</Description>
         </SFL>
         <SFL Name="Scan">
@@ -6908,7 +7118,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>dsg_drv</Description>
         </SFL>
         <SFL Name="Scan">
@@ -6952,7 +7162,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>chg_drv</Description>
         </SFL>
         <SFL Name="Scan">
@@ -6996,7 +7206,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>ohtp_state</Description>
         </SFL>
         <SFL Name="Scan">
@@ -7040,7 +7250,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>uvp_event</Description>
         </SFL>
         <SFL Name="Scan">
@@ -7084,7 +7294,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>indsg_state</Description>
         </SFL>
         <SFL Name="Scan">
@@ -7128,7 +7338,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>final_cb_sel</Description>
         </SFL>
       </Private>
@@ -7159,7 +7369,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>final_cadc_trigger_data</Description>
         </SFL>
       </Private>
@@ -7190,7 +7400,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>sw_cb_sel</Description>
         </SFL>
       </Private>
@@ -7221,7 +7431,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>unlock_pwrmd_wrt</Description>
         </SFL>
       </Private>
@@ -7252,7 +7462,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>Reserved</Description>
         </SFL>
       </Private>
@@ -7283,7 +7493,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>vmcu_down_req</Description>
         </SFL>
       </Private>
@@ -7314,7 +7524,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>sleep_req</Description>
         </SFL>
       </Private>
@@ -7345,7 +7555,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>Reserved</Description>
         </SFL>
       </Private>
@@ -7376,8 +7586,101 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>final_cadc_moving_data</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x00031800">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>3</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>3</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>18</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>2</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>18</Index>
+          <BitStart>0</BitStart>
+          <Length>2</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>efuse_mode</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x00031808">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1F</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>31</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>18</Address>
+          <StartBit>8</StartBit>
+          <BitsNumber>5</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>18</Index>
+          <BitStart>8</BitStart>
+          <Length>5</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>false</Write>
+          <Group>Azalea10D</Group>
+          <Description>slope_trim</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003180F">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>18</Address>
+          <StartBit>15</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>18</Index>
+          <BitStart>F</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>allow_wr</Description>
         </SFL>
       </Private>
     </Element>
@@ -7407,7 +7710,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>which_cell_max</Description>
         </SFL>
       </Private>
@@ -7438,7 +7741,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>which_cell_min</Description>
         </SFL>
       </Private>
@@ -7469,7 +7772,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>max_cell_data</Description>
         </SFL>
       </Private>
@@ -7500,7 +7803,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>min_cell_data</Description>
         </SFL>
       </Private>
@@ -7531,7 +7834,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell01_cto_adc_data</Description>
         </SFL>
       </Private>
@@ -7562,7 +7865,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell02_cto_adc_data</Description>
         </SFL>
       </Private>
@@ -7593,7 +7896,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell03_cto_adc_data</Description>
         </SFL>
       </Private>
@@ -7624,7 +7927,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell04_cto_adc_data</Description>
         </SFL>
       </Private>
@@ -7655,7 +7958,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell05_cto_adc_data</Description>
         </SFL>
       </Private>
@@ -7686,7 +7989,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell06_cto_adc_data</Description>
         </SFL>
       </Private>
@@ -7717,7 +8020,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell07_cto_adc_data</Description>
         </SFL>
       </Private>
@@ -7748,7 +8051,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell08_cto_adc_data</Description>
         </SFL>
       </Private>
@@ -7779,7 +8082,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell09_cto_adc_data</Description>
         </SFL>
       </Private>
@@ -7810,8 +8113,132 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell10_cto_adc_data</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x00032B00">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>FFFF</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>65535</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>2B</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>16</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>2B</Index>
+          <BitStart>0</BitStart>
+          <Length>10</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>false</Write>
+          <Group>Azalea10D</Group>
+          <Description>cell11_cto_adc_data</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x00032C00">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>FFFF</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>65535</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>2C</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>16</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>2C</Index>
+          <BitStart>0</BitStart>
+          <Length>10</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>false</Write>
+          <Group>Azalea10D</Group>
+          <Description>cell12_cto_adc_data</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x00032D00">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>FFFF</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>65535</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>2D</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>16</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>2D</Index>
+          <BitStart>0</BitStart>
+          <Length>10</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>false</Write>
+          <Group>Azalea10D</Group>
+          <Description>cell13_cto_adc_data</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x00032E00">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>FFFF</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>65535</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>2E</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>16</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>2E</Index>
+          <BitStart>0</BitStart>
+          <Length>10</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>false</Write>
+          <Group>Azalea10D</Group>
+          <Description>cell14_cto_adc_data</Description>
         </SFL>
       </Private>
     </Element>
@@ -7841,7 +8268,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>trigger_scan_channel</Description>
         </SFL>
       </Private>
@@ -7872,7 +8299,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>trigger_one_or_eight</Description>
         </SFL>
       </Private>
@@ -7903,7 +8330,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>trigger_req</Description>
         </SFL>
       </Private>
@@ -7934,7 +8361,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>trigger_adc_data</Description>
         </SFL>
       </Private>
@@ -7965,7 +8392,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>trigger_isens_adc_data</Description>
         </SFL>
       </Private>
@@ -7996,7 +8423,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>sw_cadc_ctrl</Description>
         </SFL>
       </Private>
@@ -8027,7 +8454,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cadc_one_or_four</Description>
         </SFL>
       </Private>
@@ -8058,7 +8485,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>moving_average_enable</Description>
         </SFL>
       </Private>
@@ -8089,7 +8516,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cc_always_enable</Description>
         </SFL>
         <SFL Name="Scan">
@@ -8132,7 +8559,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cadc_dither_enable</Description>
         </SFL>
       </Private>
@@ -8163,7 +8590,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>sw_cadc_dither_enable</Description>
         </SFL>
       </Private>
@@ -8194,11 +8621,12 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>final_cadc_data</Description>
         </SFL>
         <SFL Name="Trim">
           <Order>0</Order>
+          <Name>CADC</Name>
         </SFL>
         <SFL Name="Scan">
           <Group>2</Group>
@@ -8250,7 +8678,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>coulomb_counter</Description>
         </SFL>
         <SFL Name="Scan">
@@ -8293,7 +8721,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>intmp_adc_data</Description>
         </SFL>
       </Private>
@@ -8324,7 +8752,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell01_adc_data</Description>
         </SFL>
       </Private>
@@ -8355,7 +8783,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell02_adc_data</Description>
         </SFL>
       </Private>
@@ -8386,7 +8814,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell03_adc_data</Description>
         </SFL>
       </Private>
@@ -8417,7 +8845,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell04_adc_data</Description>
         </SFL>
       </Private>
@@ -8448,7 +8876,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell05_adc_data</Description>
         </SFL>
       </Private>
@@ -8479,7 +8907,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell06_adc_data</Description>
         </SFL>
       </Private>
@@ -8510,7 +8938,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell07_adc_data</Description>
         </SFL>
       </Private>
@@ -8541,7 +8969,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell08_adc_data</Description>
         </SFL>
       </Private>
@@ -8572,7 +9000,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell09_adc_data</Description>
         </SFL>
       </Private>
@@ -8603,7 +9031,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell10_adc_data</Description>
         </SFL>
       </Private>
@@ -8634,7 +9062,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>isens_adc_data</Description>
         </SFL>
       </Private>
@@ -8665,7 +9093,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>thm0_adc_data</Description>
         </SFL>
       </Private>
@@ -8696,7 +9124,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>thm1_adc_data</Description>
         </SFL>
       </Private>
@@ -8727,7 +9155,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>gp0_adc_data</Description>
         </SFL>
       </Private>
@@ -8758,7 +9186,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>gp1_adc_data</Description>
         </SFL>
       </Private>
@@ -8789,7 +9217,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>vmv_adc_data</Description>
         </SFL>
       </Private>
@@ -8820,7 +9248,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>vbatt_adc_data</Description>
         </SFL>
       </Private>
@@ -8851,7 +9279,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>vcc_adc_ data</Description>
         </SFL>
       </Private>
@@ -8882,7 +9310,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>v50v_adc_data</Description>
         </SFL>
       </Private>
@@ -8913,7 +9341,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>vmcu_adc_data</Description>
         </SFL>
       </Private>
@@ -8944,7 +9372,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>int_adc_data_8t</Description>
         </SFL>
         <SFL Name="Scan">
@@ -8992,11 +9420,12 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell01_adc_data_8t</Description>
         </SFL>
         <SFL Name="Trim">
           <Order>1</Order>
+          <Name>Cell1</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell1</NickName>
@@ -9043,11 +9472,12 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell02_adc_data_8t</Description>
         </SFL>
         <SFL Name="Trim">
           <Order>2</Order>
+          <Name>Cell2</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell2</NickName>
@@ -9094,11 +9524,12 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell03_adc_data_8t</Description>
         </SFL>
         <SFL Name="Trim">
           <Order>3</Order>
+          <Name>Cell3</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell3</NickName>
@@ -9145,11 +9576,12 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell04_adc_data_8t</Description>
         </SFL>
         <SFL Name="Trim">
           <Order>4</Order>
+          <Name>Cell4</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell4</NickName>
@@ -9196,11 +9628,12 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell05_adc_data_8t</Description>
         </SFL>
         <SFL Name="Trim">
           <Order>5</Order>
+          <Name>Cell5</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell5</NickName>
@@ -9247,11 +9680,12 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell06_adc_data_8t</Description>
         </SFL>
         <SFL Name="Trim">
           <Order>6</Order>
+          <Name>Cell6</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell6</NickName>
@@ -9298,11 +9732,12 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell07_adc_data_8t</Description>
         </SFL>
         <SFL Name="Trim">
           <Order>7</Order>
+          <Name>Cell7</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell7</NickName>
@@ -9349,11 +9784,12 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell08_adc_data_8t</Description>
         </SFL>
         <SFL Name="Trim">
           <Order>8</Order>
+          <Name>Cell8</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell8</NickName>
@@ -9400,11 +9836,12 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell09_adc_data_8t</Description>
         </SFL>
         <SFL Name="Trim">
           <Order>9</Order>
+          <Name>Cell9</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell9</NickName>
@@ -9451,11 +9888,12 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>cell10_adc_data_8t</Description>
         </SFL>
         <SFL Name="Trim">
           <Order>10</Order>
+          <Name>Cell10</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell10</NickName>
@@ -9502,11 +9940,12 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>isens_adc_data_8t</Description>
         </SFL>
         <SFL Name="Trim">
           <Order>15</Order>
+          <Name>Isense</Name>
         </SFL>
         <SFL Name="Scan">
           <Group>2</Group>
@@ -9553,11 +9992,12 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>thm0_adc_data_8t</Description>
         </SFL>
         <SFL Name="Trim">
           <Order>16</Order>
+          <Name>Thm0</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Thm0</NickName>
@@ -9604,7 +10044,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>thm1_adc_data_8t</Description>
         </SFL>
         <SFL Name="Scan">
@@ -9652,7 +10092,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>gp0_adc_data_8t</Description>
         </SFL>
       </Private>
@@ -9683,7 +10123,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>gp1_adc_data_8t</Description>
         </SFL>
       </Private>
@@ -9714,7 +10154,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>vmv_adc_data_8t</Description>
         </SFL>
       </Private>
@@ -9745,11 +10185,12 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>vbatt_adc_data_8t</Description>
         </SFL>
         <SFL Name="Trim">
           <Order>17</Order>
+          <Name>Vbatt</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>vbatt(mV)</NickName>
@@ -9796,7 +10237,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>vcc_adc_ data_8t</Description>
         </SFL>
         <SFL Name="Scan">
@@ -9844,7 +10285,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>v50v_adc_ data_8t</Description>
         </SFL>
         <SFL Name="Scan">
@@ -9892,7 +10333,7 @@
           <Value>0</Value>
           <Read>true</Read>
           <Write>false</Write>
-          <Group>Azalea14</Group>
+          <Group>Azalea10D</Group>
           <Description>vmcu_adc_ data_8t</Description>
         </SFL>
         <SFL Name="Scan">
@@ -9911,6 +10352,819 @@
           <Group>0</Group>
           <LogName>vmcu</LogName>
           <Order>19</Order>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A000">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>0.625</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>2</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>ff</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>255</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A0</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>8</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A0</Index>
+          <BitStart>0</BitStart>
+          <Length>8</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>thm0_otr_th</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>2</Order>
+          <NickName>thm0_otr_th</NickName>
+          <Catalog>Thermal</Catalog>
+          <DefValue>89</DefValue>
+          <EditType>0</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>-30</MinValue>
+          <MaxValue>90</MaxValue>
+          <Description>OT release threshold</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A008">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>0.625</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>2</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>ff</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>255</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A0</Address>
+          <StartBit>8</StartBit>
+          <BitsNumber>8</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A0</Index>
+          <BitStart>8</BitStart>
+          <Length>8</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>thm0_ot_th</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>3</Order>
+          <NickName>thm0_ot_th</NickName>
+          <Catalog>Thermal</Catalog>
+          <DefValue>89</DefValue>
+          <EditType>0</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>-30</MinValue>
+          <MaxValue>90</MaxValue>
+          <Description>OT generation threshold</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A100">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>0.625</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>2</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>ff</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>255</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A1</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>8</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A1</Index>
+          <BitStart>0</BitStart>
+          <Length>8</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>thm1_otr_th</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>4</Order>
+          <NickName>thm1_otr_th</NickName>
+          <Catalog>Thermal</Catalog>
+          <DefValue>89</DefValue>
+          <EditType>0</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>-30</MinValue>
+          <MaxValue>90</MaxValue>
+          <Description>OT release threshold</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A108">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>0.625</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>2</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>ff</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>255</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A1</Address>
+          <StartBit>8</StartBit>
+          <BitsNumber>8</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A1</Index>
+          <BitStart>8</BitStart>
+          <Length>8</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>thm1_ot_th</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>5</Order>
+          <NickName>thm1_ot_th</NickName>
+          <Catalog>Thermal</Catalog>
+          <DefValue>89</DefValue>
+          <EditType>0</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>-30</MinValue>
+          <MaxValue>90</MaxValue>
+          <Description>OT generation threshold</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A700">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>f</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>15</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A7</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>4</BitsNumber>
+        </Location>
+      </LocationList>
+      <ItemList>
+        <Item>2</Item>
+        <Item>4</Item>
+        <Item>6</Item>
+        <Item>8</Item>
+        <Item>10</Item>
+        <Item>12</Item>
+        <Item>14</Item>
+        <Item>16</Item>
+        <Item>18</Item>
+        <Item>20</Item>
+        <Item>22</Item>
+        <Item>24</Item>
+        <Item>26</Item>
+        <Item>28</Item>
+        <Item>30</Item>
+        <Item>32</Item>
+      </ItemList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A7</Index>
+          <BitStart>0</BitStart>
+          <Length>4</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>pwm_scp_dly</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>1</Order>
+          <NickName>pwm_scp_dly</NickName>
+          <Catalog>PWM</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>15</MaxValue>
+          <Description>PWM cycle-based for SCP, the expressed range is from 2 to 32, 2 cycles/step</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A708">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>3</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>3</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A7</Address>
+          <StartBit>8</StartBit>
+          <BitsNumber>2</BitsNumber>
+        </Location>
+      </LocationList>
+      <ItemList>
+        <Item>2X</Item>
+        <Item>4X</Item>
+        <Item>8X</Item>
+        <Item>16X</Item>
+      </ItemList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A7</Index>
+          <BitStart>8</BitStart>
+          <Length>2</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>pwm_doc2p_dly_factor</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>2</Order>
+          <NickName>pwm_doc2p_dly_factor</NickName>
+          <Catalog>PWM</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>15</MaxValue>
+          <Description>“00”: 2X, “01”: 4X, “10”: 8X, “11”: 16X.</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A70A">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>3f</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>63</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A7</Address>
+          <StartBit>10</StartBit>
+          <BitsNumber>6</BitsNumber>
+        </Location>
+      </LocationList>
+      <ItemList>
+        <Item>1</Item>
+        <Item>2</Item>
+        <Item>3</Item>
+        <Item>4</Item>
+        <Item>5</Item>
+        <Item>6</Item>
+        <Item>7</Item>
+        <Item>8</Item>
+        <Item>9</Item>
+        <Item>10</Item>
+        <Item>11</Item>
+        <Item>12</Item>
+        <Item>13</Item>
+        <Item>14</Item>
+        <Item>15</Item>
+        <Item>16</Item>
+        <Item>17</Item>
+        <Item>18</Item>
+        <Item>19</Item>
+        <Item>20</Item>
+        <Item>21</Item>
+        <Item>22</Item>
+        <Item>23</Item>
+        <Item>24</Item>
+        <Item>25</Item>
+        <Item>26</Item>
+        <Item>27</Item>
+        <Item>28</Item>
+        <Item>29</Item>
+        <Item>30</Item>
+        <Item>31</Item>
+        <Item>32</Item>
+        <Item>33</Item>
+        <Item>34</Item>
+        <Item>35</Item>
+        <Item>36</Item>
+        <Item>37</Item>
+        <Item>38</Item>
+        <Item>39</Item>
+        <Item>40</Item>
+        <Item>41</Item>
+        <Item>42</Item>
+        <Item>43</Item>
+        <Item>44</Item>
+        <Item>45</Item>
+        <Item>46</Item>
+        <Item>47</Item>
+        <Item>48</Item>
+        <Item>49</Item>
+        <Item>50</Item>
+        <Item>51</Item>
+        <Item>52</Item>
+        <Item>53</Item>
+        <Item>54</Item>
+        <Item>55</Item>
+        <Item>56</Item>
+        <Item>57</Item>
+        <Item>58</Item>
+        <Item>59</Item>
+        <Item>60</Item>
+        <Item>61</Item>
+        <Item>62</Item>
+        <Item>63</Item>
+        <Item>64</Item>
+      </ItemList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A7</Index>
+          <BitStart>A</BitStart>
+          <Length>6</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>pwm_doc2p_dly_num</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>3</Order>
+          <NickName>pwm_doc2p_dly_num</NickName>
+          <Catalog>PWM</Catalog>
+          <DefValue>2</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>63</MaxValue>
+          <Description>PWM cycle-based delay for DOC2P</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A800">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A8</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A8</Index>
+          <BitStart>0</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>thm0_ot_ie</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A801">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A8</Address>
+          <StartBit>1</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A8</Index>
+          <BitStart>1</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>thm1_ot_ie</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A806">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A8</Address>
+          <StartBit>6</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A8</Index>
+          <BitStart>6</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>pwm_scp_ie</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A807">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A8</Address>
+          <StartBit>7</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A8</Index>
+          <BitStart>7</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>pwm_doc2p_ie</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A900">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A9</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A9</Index>
+          <BitStart>0</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>thm0_ot_flag</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>1c</Order>
+          <NickName>thm0 ot flag</NickName>
+          <LogName>thm0 ot flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>thm0 ot flag</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A901">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A9</Address>
+          <StartBit>1</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A9</Index>
+          <BitStart>1</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>thm1_ot_flag</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>1d</Order>
+          <NickName>thm1 ot flag</NickName>
+          <LogName>thm1 ot flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>thm1 ot flag</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A906">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A9</Address>
+          <StartBit>6</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A9</Index>
+          <BitStart>6</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>pwm_scp_flag</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A907">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A9</Address>
+          <StartBit>7</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A9</Index>
+          <BitStart>7</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>pwm_doc2p_flag</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003AA00">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>AA</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>AA</Index>
+          <BitStart>0</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>thm0_ot_event</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>3</Group>
+          <SubGroup>0</SubGroup>
+          <GroupName>State Group</GroupName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Order>10</Order>
+          <NickName>thm0 ot event</NickName>
+          <Description>thm0 ot event</Description>
+          <LogName>thm0 ot event</LogName>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003AA01">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>AA</Address>
+          <StartBit>1</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>AA</Index>
+          <BitStart>1</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>thm1_ot_event</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>3</Group>
+          <SubGroup>0</SubGroup>
+          <GroupName>State Group</GroupName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Order>11</Order>
+          <NickName>thm1 ot event</NickName>
+          <Description>thm1 ot event</Description>
+          <LogName>thm1 ot event</LogName>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003AA06">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>AA</Address>
+          <StartBit>6</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>AA</Index>
+          <BitStart>6</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>pwm_scp_event</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003AA07">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>AA</Address>
+          <StartBit>7</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>AA</Index>
+          <BitStart>7</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea10D</Group>
+          <Description>pwm_doc2p_event</Description>
         </SFL>
       </Private>
     </Element>

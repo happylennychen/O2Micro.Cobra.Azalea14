@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Root usage="ExtensionDescriptor" chip="Azalea10D" chiptype="14" bustype ="I2C" libname ="O2Micro.Cobra.Azalea14" AppVersion="2.00.03" OCEVersion="1.00.03.00" ProjectCode="OCEAZXDX">
+<Root usage="ExtensionDescriptor" chip="Azalea10D" chiptype="14" bustype ="I2C" libname ="O2Micro.Cobra.Azalea14" AppVersion="2.00.03" OCEVersion="1.00.00.00" ProjectCode="OCEAZXDX">
   <Part Name="DBConfig">
     <ChipName>Azalea10D</ChipName>
     <ChipVersion>A0</ChipVersion>
     <UserType>X</UserType>
-    <Date>20191108</Date>
+    <Date>20191121</Date>
     <HasCom>true</HasCom>
     <HasAMT>true</HasAMT>
   </Part>
@@ -20,7 +20,9 @@
         <Button Name ="EraseBtn" IsEnable ="False" Visibility="Collapsed"/>
       </Layout>
       <SubTask>
+        <Read>9</Read>
         <Write>7</Write>
+        <SaveHex>8</SaveHex>
       </SubTask>
     </Button>
     <Button Label = "Scan"       DBModuleName="Scan"      Name = "ScanV2"         PanelName ="O2Micro.Cobra.ScanPanel">

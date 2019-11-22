@@ -5430,20 +5430,51 @@
         </SFL>
       </Private>
     </Element>
+    <Element Guid="0x00030B02">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>3f</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>63</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>B</Address>
+          <StartBit>2</StartBit>
+          <BitsNumber>6</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>B</Index>
+          <BitStart>2</BitStart>
+          <Length>6</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>cadc_db_th</Description>
+        </SFL>
+      </Private>
+    </Element>
     <Element Guid="0x00030B08">
       <PhysicalData>0</PhysicalData>
       <PhyRef>1</PhyRef>
       <RegRef>1</RegRef>
       <SubType>0</SubType>
       <HexMin>0</HexMin>
-      <HexMax>F</HexMax>
+      <HexMax>7</HexMax>
       <PhyMin>0</PhyMin>
-      <PhyMax>15</PhyMax>
+      <PhyMax>7</PhyMax>
       <LocationList>
         <Location Position="Low">
           <Address>B</Address>
           <StartBit>8</StartBit>
-          <BitsNumber>4</BitsNumber>
+          <BitsNumber>3</BitsNumber>
         </Location>
       </LocationList>
       <ItemList>
@@ -5462,7 +5493,7 @@
           <BitTotal>10</BitTotal>
           <Index>B</Index>
           <BitStart>8</BitStart>
-          <Length>4</Length>
+          <Length>3</Length>
           <Value>0</Value>
           <Read>true</Read>
           <Write>true</Write>
@@ -5480,6 +5511,99 @@
           <MinValue>0</MinValue>
           <MaxValue>7</MaxValue>
           <Description></Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x00030B0C">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>B</Address>
+          <StartBit>12</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>B</Index>
+          <BitStart>C</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>thm0_scan</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x00030B0D">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>B</Address>
+          <StartBit>13</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>B</Index>
+          <BitStart>D</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>thm1_scan</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x00030B0E">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>3</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>3</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>B</Address>
+          <StartBit>14</StartBit>
+          <BitsNumber>2</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>B</Index>
+          <BitStart>E</BitStart>
+          <Length>2</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>otp_dly</Description>
         </SFL>
       </Private>
     </Element>
@@ -5654,6 +5778,68 @@
         </SFL>
       </Private>
     </Element>
+    <Element Guid="0x00030C0A">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>3</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>3</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>C</Address>
+          <StartBit>10</StartBit>
+          <BitsNumber>2</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>C</Index>
+          <BitStart>A</BitStart>
+          <Length>2</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>thm0_ot_fet_ctrl</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x00030C0C">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>3</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>3</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>C</Address>
+          <StartBit>12</StartBit>
+          <BitsNumber>2</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>C</Index>
+          <BitStart>C</BitStart>
+          <Length>2</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>thm1_ot_fet_ctrl</Description>
+        </SFL>
+      </Private>
+    </Element>
     <Element Guid="0x00030C0E">
       <PhysicalData>0</PhysicalData>
       <PhyRef>1</PhyRef>
@@ -5690,7 +5876,7 @@
           <Description>vref_adc_ctrl</Description>
         </SFL>
         <SFL Name ="Register Config">
-          <Order>10</Order>
+          <Order>a</Order>
           <NickName>vref_adc_ctrl</NickName>
           <Catalog>Miscellaneous</Catalog>
           <DefValue>0</DefValue>
@@ -5751,7 +5937,7 @@
           <Description>inter_settling_time</Description>
         </SFL>
         <SFL Name ="Register Config">
-          <Order>11</Order>
+          <Order>b</Order>
           <NickName>inter_settling_time</NickName>
           <Catalog>Miscellaneous</Catalog>
           <DefValue>0</DefValue>
@@ -5812,7 +5998,7 @@
           <Description>dda_settling_time</Description>
         </SFL>
         <SFL Name ="Register Config">
-          <Order>12</Order>
+          <Order>c</Order>
           <NickName>dda_settling_time</NickName>
           <Catalog>Miscellaneous</Catalog>
           <DefValue>0</DefValue>
@@ -5985,9 +6171,9 @@
           <Description>thm_settling_time</Description>
         </SFL>
         <SFL Name ="Register Config">
-          <Order>13</Order>
+          <Order>1</Order>
           <NickName>thm_settling_time</NickName>
-          <Catalog>Miscellaneous</Catalog>
+          <Catalog>Thermal</Catalog>
           <DefValue>0</DefValue>
           <EditType>1</EditType>
           <Format>0</Format>
@@ -6387,6 +6573,12 @@
           <BitsNumber>2</BitsNumber>
         </Location>
       </LocationList>
+      <ItemList>
+        <Item>Don't select anyone</Item>
+        <Item>20uA</Item>
+        <Item>120uA</Item>
+        <Item>Don't select anyone</Item>
+      </ItemList>
       <Private>
         <SFL Name="Expert">
           <CustomerMode>true</CustomerMode>
@@ -6399,6 +6591,24 @@
           <Write>true</Write>
           <Group>Azalea14</Group>
           <Description>thm_crrt_sel</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>2</Order>
+          <NickName>thm_crrt_sel</NickName>
+          <Catalog>Thermal</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>3</MaxValue>
+          <Description>constant current selection for THM0~THM1 measurement</Description>
+          <Relations>
+            <Item>0x0003A000</Item>
+            <Item>0x0003A008</Item>
+            <Item>0x0003A100</Item>
+            <Item>0x0003A108</Item>
+          </Relations>
         </SFL>
       </Private>
     </Element>
@@ -7385,6 +7595,99 @@
         </SFL>
       </Private>
     </Element>
+    <Element Guid="0x00031800">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>3</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>3</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>18</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>2</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>18</Index>
+          <BitStart>0</BitStart>
+          <Length>2</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>efuse_mode</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x00031808">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1F</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>31</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>18</Address>
+          <StartBit>8</StartBit>
+          <BitsNumber>5</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>18</Index>
+          <BitStart>8</BitStart>
+          <Length>5</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>false</Write>
+          <Group>Azalea14</Group>
+          <Description>slope_trim</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003180F">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>18</Address>
+          <StartBit>15</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>18</Index>
+          <BitStart>F</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>allow_wr</Description>
+        </SFL>
+      </Private>
+    </Element>
     <Element Guid="0x00031D00">
       <PhysicalData>0</PhysicalData>
       <PhyRef>1</PhyRef>
@@ -8327,6 +8630,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>0</Order>
+          <Name>CADC</Name>
         </SFL>
         <SFL Name="Scan">
           <Group>2</Group>
@@ -9249,6 +9553,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>1</Order>
+          <Name>Cell1</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell1</NickName>
@@ -9300,6 +9605,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>2</Order>
+          <Name>Cell2</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell2</NickName>
@@ -9351,6 +9657,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>3</Order>
+          <Name>Cell3</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell3</NickName>
@@ -9402,6 +9709,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>4</Order>
+          <Name>Cell4</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell4</NickName>
@@ -9453,6 +9761,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>5</Order>
+          <Name>Cell5</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell5</NickName>
@@ -9504,6 +9813,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>6</Order>
+          <Name>Cell6</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell6</NickName>
@@ -9555,6 +9865,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>7</Order>
+          <Name>Cell7</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell7</NickName>
@@ -9606,6 +9917,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>8</Order>
+          <Name>Cell8</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell8</NickName>
@@ -9657,6 +9969,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>9</Order>
+          <Name>Cell9</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell9</NickName>
@@ -9708,6 +10021,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>10</Order>
+          <Name>Cell10</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell10</NickName>
@@ -9759,6 +10073,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>11</Order>
+          <Name>Cell11</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell11</NickName>
@@ -9810,6 +10125,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>12</Order>
+          <Name>Cell12</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell12</NickName>
@@ -9861,6 +10177,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>13</Order>
+          <Name>Cell13</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell13</NickName>
@@ -9912,6 +10229,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>14</Order>
+          <Name>Cell14</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Cell14</NickName>
@@ -9963,6 +10281,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>15</Order>
+          <Name>Isense</Name>
         </SFL>
         <SFL Name="Scan">
           <Group>2</Group>
@@ -10014,6 +10333,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>16</Order>
+          <Name>Thm0</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>Thm0</NickName>
@@ -10206,6 +10526,7 @@
         </SFL>
         <SFL Name="Trim">
           <Order>17</Order>
+          <Name>Vbatt</Name>
         </SFL>
         <SFL Name="Scan">
           <NickName>vbatt(mV)</NickName>
@@ -10367,6 +10688,819 @@
           <Group>0</Group>
           <LogName>vmcu</LogName>
           <Order>19</Order>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A000">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>0.625</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>2</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>ff</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>255</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A0</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>8</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A0</Index>
+          <BitStart>0</BitStart>
+          <Length>8</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>thm0_otr_th</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>2</Order>
+          <NickName>thm0_otr_th</NickName>
+          <Catalog>Thermal</Catalog>
+          <DefValue>89</DefValue>
+          <EditType>0</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>-30</MinValue>
+          <MaxValue>90</MaxValue>
+          <Description>OT release threshold</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A008">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>0.625</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>2</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>ff</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>255</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A0</Address>
+          <StartBit>8</StartBit>
+          <BitsNumber>8</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A0</Index>
+          <BitStart>8</BitStart>
+          <Length>8</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>thm0_ot_th</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>3</Order>
+          <NickName>thm0_ot_th</NickName>
+          <Catalog>Thermal</Catalog>
+          <DefValue>89</DefValue>
+          <EditType>0</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>-30</MinValue>
+          <MaxValue>90</MaxValue>
+          <Description>OT generation threshold</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A100">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>0.625</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>2</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>ff</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>255</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A1</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>8</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A1</Index>
+          <BitStart>0</BitStart>
+          <Length>8</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>thm1_otr_th</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>4</Order>
+          <NickName>thm1_otr_th</NickName>
+          <Catalog>Thermal</Catalog>
+          <DefValue>89</DefValue>
+          <EditType>0</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>-30</MinValue>
+          <MaxValue>90</MaxValue>
+          <Description>OT release threshold</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A108">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>0.625</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>2</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>ff</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>255</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A1</Address>
+          <StartBit>8</StartBit>
+          <BitsNumber>8</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A1</Index>
+          <BitStart>8</BitStart>
+          <Length>8</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>thm1_ot_th</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>5</Order>
+          <NickName>thm1_ot_th</NickName>
+          <Catalog>Thermal</Catalog>
+          <DefValue>89</DefValue>
+          <EditType>0</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>-30</MinValue>
+          <MaxValue>90</MaxValue>
+          <Description>OT generation threshold</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A700">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>f</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>15</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A7</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>4</BitsNumber>
+        </Location>
+      </LocationList>
+      <ItemList>
+        <Item>2</Item>
+        <Item>4</Item>
+        <Item>6</Item>
+        <Item>8</Item>
+        <Item>10</Item>
+        <Item>12</Item>
+        <Item>14</Item>
+        <Item>16</Item>
+        <Item>18</Item>
+        <Item>20</Item>
+        <Item>22</Item>
+        <Item>24</Item>
+        <Item>26</Item>
+        <Item>28</Item>
+        <Item>30</Item>
+        <Item>32</Item>
+      </ItemList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A7</Index>
+          <BitStart>0</BitStart>
+          <Length>4</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>pwm_scp_dly</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>1</Order>
+          <NickName>pwm_scp_dly</NickName>
+          <Catalog>PWM</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>15</MaxValue>
+          <Description>PWM cycle-based for SCP, the expressed range is from 2 to 32, 2 cycles/step</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A708">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>3</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>3</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A7</Address>
+          <StartBit>8</StartBit>
+          <BitsNumber>2</BitsNumber>
+        </Location>
+      </LocationList>
+      <ItemList>
+        <Item>2X</Item>
+        <Item>4X</Item>
+        <Item>8X</Item>
+        <Item>16X</Item>
+      </ItemList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A7</Index>
+          <BitStart>8</BitStart>
+          <Length>2</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>pwm_doc2p_dly_factor</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>2</Order>
+          <NickName>pwm_doc2p_dly_factor</NickName>
+          <Catalog>PWM</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>15</MaxValue>
+          <Description>“00”: 2X, “01”: 4X, “10”: 8X, “11”: 16X.</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A70A">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>3f</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>63</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A7</Address>
+          <StartBit>10</StartBit>
+          <BitsNumber>6</BitsNumber>
+        </Location>
+      </LocationList>
+      <ItemList>
+        <Item>1</Item>
+        <Item>2</Item>
+        <Item>3</Item>
+        <Item>4</Item>
+        <Item>5</Item>
+        <Item>6</Item>
+        <Item>7</Item>
+        <Item>8</Item>
+        <Item>9</Item>
+        <Item>10</Item>
+        <Item>11</Item>
+        <Item>12</Item>
+        <Item>13</Item>
+        <Item>14</Item>
+        <Item>15</Item>
+        <Item>16</Item>
+        <Item>17</Item>
+        <Item>18</Item>
+        <Item>19</Item>
+        <Item>20</Item>
+        <Item>21</Item>
+        <Item>22</Item>
+        <Item>23</Item>
+        <Item>24</Item>
+        <Item>25</Item>
+        <Item>26</Item>
+        <Item>27</Item>
+        <Item>28</Item>
+        <Item>29</Item>
+        <Item>30</Item>
+        <Item>31</Item>
+        <Item>32</Item>
+        <Item>33</Item>
+        <Item>34</Item>
+        <Item>35</Item>
+        <Item>36</Item>
+        <Item>37</Item>
+        <Item>38</Item>
+        <Item>39</Item>
+        <Item>40</Item>
+        <Item>41</Item>
+        <Item>42</Item>
+        <Item>43</Item>
+        <Item>44</Item>
+        <Item>45</Item>
+        <Item>46</Item>
+        <Item>47</Item>
+        <Item>48</Item>
+        <Item>49</Item>
+        <Item>50</Item>
+        <Item>51</Item>
+        <Item>52</Item>
+        <Item>53</Item>
+        <Item>54</Item>
+        <Item>55</Item>
+        <Item>56</Item>
+        <Item>57</Item>
+        <Item>58</Item>
+        <Item>59</Item>
+        <Item>60</Item>
+        <Item>61</Item>
+        <Item>62</Item>
+        <Item>63</Item>
+        <Item>64</Item>
+      </ItemList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A7</Index>
+          <BitStart>A</BitStart>
+          <Length>6</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>pwm_doc2p_dly_num</Description>
+        </SFL>
+        <SFL Name ="Register Config">
+          <Order>3</Order>
+          <NickName>pwm_doc2p_dly_num</NickName>
+          <Catalog>PWM</Catalog>
+          <DefValue>2</DefValue>
+          <EditType>1</EditType>
+          <Format>0</Format>
+          <EventMode>0</EventMode>
+          <MinValue>0</MinValue>
+          <MaxValue>63</MaxValue>
+          <Description>PWM cycle-based delay for DOC2P</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A800">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A8</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A8</Index>
+          <BitStart>0</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>thm0_ot_ie</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A801">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A8</Address>
+          <StartBit>1</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A8</Index>
+          <BitStart>1</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>thm1_ot_ie</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A806">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A8</Address>
+          <StartBit>6</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A8</Index>
+          <BitStart>6</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>pwm_scp_ie</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A807">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A8</Address>
+          <StartBit>7</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A8</Index>
+          <BitStart>7</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>pwm_doc2p_ie</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A900">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A9</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A9</Index>
+          <BitStart>0</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>thm0_ot_flag</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>1c</Order>
+          <NickName>thm0 ot flag</NickName>
+          <LogName>thm0 ot flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>thm0 ot flag</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A901">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A9</Address>
+          <StartBit>1</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A9</Index>
+          <BitStart>1</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>thm1_ot_flag</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <GroupName>Flag Group</GroupName>
+          <Order>1d</Order>
+          <NickName>thm1 ot flag</NickName>
+          <LogName>thm1 ot flag</LogName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <BClearable>true</BClearable>
+          <Description>thm1 ot flag</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A906">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A9</Address>
+          <StartBit>6</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A9</Index>
+          <BitStart>6</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>pwm_scp_flag</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003A907">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>A9</Address>
+          <StartBit>7</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>A9</Index>
+          <BitStart>7</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>pwm_doc2p_flag</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003AA00">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>AA</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>AA</Index>
+          <BitStart>0</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>thm0_ot_event</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>3</Group>
+          <SubGroup>0</SubGroup>
+          <GroupName>State Group</GroupName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Order>10</Order>
+          <NickName>thm0 ot event</NickName>
+          <Description>thm0 ot event</Description>
+          <LogName>thm0 ot event</LogName>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003AA01">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>AA</Address>
+          <StartBit>1</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>AA</Index>
+          <BitStart>1</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>thm1_ot_event</Description>
+        </SFL>
+        <SFL Name="Scan">
+          <Group>3</Group>
+          <SubGroup>0</SubGroup>
+          <GroupName>State Group</GroupName>
+          <DefValue>0</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>1</MaxValue>
+          <Usability>false</Usability>
+          <Order>11</Order>
+          <NickName>thm1 ot event</NickName>
+          <Description>thm1 ot event</Description>
+          <LogName>thm1 ot event</LogName>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003AA06">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>AA</Address>
+          <StartBit>6</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>AA</Index>
+          <BitStart>6</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>pwm_scp_event</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid="0x0003AA07">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <HexMin>0</HexMin>
+      <HexMax>1</HexMax>
+      <PhyMin>0</PhyMin>
+      <PhyMax>1</PhyMax>
+      <LocationList>
+        <Location Position="Low">
+          <Address>AA</Address>
+          <StartBit>7</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>AA</Index>
+          <BitStart>7</BitStart>
+          <Length>1</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>Azalea14</Group>
+          <Description>pwm_doc2p_event</Description>
         </SFL>
       </Private>
     </Element>

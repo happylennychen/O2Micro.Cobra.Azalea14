@@ -15132,4 +15132,30 @@
       </Private>
     </Element>
   </Section>
+  <Section Name ="TestModeDefintion" Guid ="0x00040000">
+    <Element Guid ="0x00040000">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>CB</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>4</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <TestMode>Azalea10D Wake Up</TestMode>
+          <SubTask>FF</SubTask>
+          <ReadBack>False</ReadBack>
+          <CustomerMode>true</CustomerMode>
+          <Group>0xCB00040d</Group>
+          <Order>0</Order>
+        </SFL>
+      </Private>
+    </Element>
+  </Section>
+
 </Root>

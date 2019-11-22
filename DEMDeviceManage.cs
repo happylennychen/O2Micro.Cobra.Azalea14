@@ -48,6 +48,7 @@ namespace O2Micro.Cobra.Azalea14
         private TrimDEMBehaviorManage m_trim_dem_bm = new TrimDEMBehaviorManage();
         private SCSDEMBehaviorManage m_scs_dem_bm = new SCSDEMBehaviorManage();
         private RegisterConfigDEMBehaviorManage m_register_config_dem_bm = new RegisterConfigDEMBehaviorManage();
+        private ExpertDEMBehaviorManage m_expert_dem_bm = new ExpertDEMBehaviorManage();
 
         public CCommunicateManager m_Interface = new CCommunicateManager();
 
@@ -149,6 +150,8 @@ namespace O2Micro.Cobra.Azalea14
             m_trim_dem_bm.dem_dm = new TrimDEMDataManage(m_trim_dem_bm);
             m_register_config_dem_bm.parent = this;
             m_register_config_dem_bm.dem_dm = new RegisterConfigDEMDataManage(m_register_config_dem_bm);
+            m_expert_dem_bm.parent = this;
+            m_expert_dem_bm.dem_dm = new DEMDataManageBase(m_dem_bm_base);
             //m_dem_dm.Init(this);
             LibInfor.AssemblyRegister(Assembly.GetExecutingAssembly(), ASSEMBLY_TYPE.OCE); 
             LibErrorCode.UpdateDynamicalLibError(ref m_dynamicErrorLib_dic);
@@ -221,6 +224,9 @@ namespace O2Micro.Cobra.Azalea14
                         ret = m_register_config_dem_bm.Command(ref bgworker);
                         break;
                     }
+                case ElementDefine.COMMAND.EXPERT_AZ10D_WAKEUP:
+                    ret = m_expert_dem_bm.Command(ref bgworker);
+                    break;
             }
             return ret;
         }

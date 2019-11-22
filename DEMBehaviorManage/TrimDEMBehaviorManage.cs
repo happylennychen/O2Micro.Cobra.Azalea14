@@ -10,7 +10,7 @@ using System.IO;
 
 namespace O2Micro.Cobra.Azalea14
 {
-    internal class TrimDEMBehaviorManage:DEMBehaviorManageBase
+    internal class TrimDEMBehaviorManage : DEMBehaviorManageBase
     {
         #region 基础服务功能设计
         public override UInt32 Command(ref TASKMessage msg)
@@ -29,6 +29,7 @@ namespace O2Micro.Cobra.Azalea14
                     ParamContainer demparameterlist = msg.task_parameterlist;
                     if (demparameterlist == null) return ret;
 
+                    byte cellnum = GetCellNumber();
                     for (ushort i = 0; i < demparameterlist.parameterlist.Count; i++)
                     {
                         Parameter param = demparameterlist.parameterlist[i];
@@ -100,23 +101,28 @@ namespace O2Micro.Cobra.Azalea14
                         #endregion
                         Thread.Sleep(100);
                         #region read adc
-                        ushort[] voltageadc = new ushort[14];
-                        for (byte i = 0; i < 14; i++)
+                        ushort[] voltageadc = new ushort[cellnum];
+                        for (byte i = 0; i < cellnum; i++)
                         {
-                            ret = ReadWord((byte)(i + 0x61), ref voltageadc[i]);
+                            byte address = 0;
+                            if (i == cellnum - 1)
+                                address = 0x6E;
+                            else
+                                address = (byte)(i + 0x61);
+                            ret = ReadWord(address, ref voltageadc[i]);
                             if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return ret;
                         }
                         #endregion
                         #region calculate
-                        double[] voltagephy = new double[14];
-                        for (byte i = 0; i < 14; i++)
+                        double[] voltagephy = new double[cellnum];
+                        for (byte i = 0; i < cellnum; i++)
                         {
                             short s = (short)voltageadc[i];
                             voltagephy[i] = s * 0.625 / 4;
                         }
                         #endregion
                         #region save
-                        for (byte i = 0; i < 14; i++)
+                        for (byte i = 0; i < cellnum; i++)
                         {
                             voltageparams[i].sphydata += voltagephy[i].ToString() + ",";
                         }
@@ -238,9 +244,19 @@ namespace O2Micro.Cobra.Azalea14
                     }
                     #endregion
                     break;
-                #endregion
+                    #endregion
             }
             return ret;
+        }
+
+        private byte GetCellNumber()
+        {
+            UInt32 ret = LibErrorCode.IDS_ERR_SUCCESSFUL;
+            ushort buf = 0;
+            ret = ReadWord(0x08, ref buf);
+            if (ret != LibErrorCode.IDS_ERR_SUCCESSFUL) return 0;
+            byte cellnum = (byte)(((buf & 0x7000) >> 12) + 7);
+            return cellnum;
         }
         #endregion
     }

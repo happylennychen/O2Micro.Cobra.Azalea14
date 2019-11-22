@@ -2,9 +2,9 @@
 <Root usage="ExtensionDescriptor" chip="Azalea14" chiptype="14" bustype ="I2C" libname ="O2Micro.Cobra.Azalea14" AppVersion="2.00.03" OCEVersion="1.00.05.00" ProjectCode="OCAZL14Y">
   <Part Name="DBConfig">
     <ChipName>Azalea14</ChipName>
-    <ChipVersion>B0</ChipVersion>
+    <ChipVersion>B1</ChipVersion>
     <UserType>Y</UserType>
-    <Date>20190816</Date>
+    <Date>20191120</Date>
     <HasCom>true</HasCom>
     <HasAMT>true</HasAMT>
   </Part>
