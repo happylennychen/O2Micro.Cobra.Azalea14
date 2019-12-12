@@ -630,7 +630,7 @@
       </Private>
     </Element>
     <Element Guid ="0x00010013">
-      <PhysicalData>3800</PhysicalData>
+      <PhysicalData>3536</PhysicalData>
       <Key>55</Key>
       <PhyRef>1</PhyRef>
       <RegRef>1</RegRef>
@@ -640,7 +640,7 @@
           <Order>12</Order>
           <NickName>55℃</NickName>
           <Catalog>Temperature Configuration</Catalog>
-          <DefValue>3800</DefValue>
+          <DefValue>3536</DefValue>
           <EditType>0</EditType>
           <Format>1</Format>
           <MinValue>0</MinValue>
